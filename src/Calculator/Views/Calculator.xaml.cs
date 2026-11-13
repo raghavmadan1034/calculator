@@ -11,11 +11,11 @@ using Windows.Foundation;
 using Windows.Globalization.NumberFormatting;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Input;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml.Input;
 
 namespace CalculatorApp
 {
@@ -259,10 +259,9 @@ namespace CalculatorApp
 
             // Delay load things later when we get a chance.
             WeakReference weakThis = new WeakReference(this);
-            _ = this.Dispatcher.RunAsync(
-                CoreDispatcherPriority.Normal, () =>
+            _ = DispatcherQueue.TryEnqueue(() =>
                 {
-                    if (TraceLogger.GetInstance().IsWindowIdInLog(ApplicationView.GetApplicationViewIdForWindow(CoreWindow.GetForCurrentThread())))
+                    if (TraceLogger.GetInstance().IsWindowIdInLog(Utilities.GetWindowId()))
                     {
                         if (weakThis.Target is Calculator refThis)
                         {
@@ -643,7 +642,7 @@ namespace CalculatorApp
             }
         }
 
-        private readonly Windows.UI.Xaml.Controls.MenuFlyout m_displayFlyout;
+        private readonly Microsoft.UI.Xaml.Controls.MenuFlyout m_displayFlyout;
         private bool m_doAnimate;
         private bool m_resultAnimate;
         private bool m_isLastAnimatedInScientific;
@@ -658,7 +657,7 @@ namespace CalculatorApp
         private string m_dockPanelHistoryMemoryLists;
         private string m_dockPanelMemoryList;
 
-        private Windows.UI.Xaml.Controls.PivotItem m_pivotItem;
+        private Microsoft.UI.Xaml.Controls.PivotItem m_pivotItem;
         private Memory m_memory;
 
         private void HistoryFlyout_Opened(object sender, object args)
@@ -929,14 +928,15 @@ namespace CalculatorApp
 
         private string GetMemoryPivotItemUiaString(bool isEmpty)
         {
-            var loader = ResourceLoader.GetForCurrentView();
+            // The MRT Core loader reads the app's resources directly; it needs no current view.
+            var loader = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader();
             var label = loader.GetString("MemoryLabel/Text");
             return isEmpty ? $"{loader.GetString("MemoryPaneEmpty/Text")} {label}" : label;
         }
 
         private string GetHistoryPivotItemUiaString(bool isEmpty)
         {
-            var loader = ResourceLoader.GetForCurrentView();
+            var loader = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader();
             var label = loader.GetString("HistoryLabel/Text");
             return isEmpty ? $"{loader.GetString("HistoryEmpty/Text")} {label}" : label;
         }

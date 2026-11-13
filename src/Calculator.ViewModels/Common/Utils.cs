@@ -9,8 +9,8 @@ using Windows.Storage;
 using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Media;
 
 namespace CalculatorApp.ViewModel.Common
 {
@@ -51,6 +51,42 @@ namespace CalculatorApp.ViewModel.Common
             {
                 var _ = currentDispatcher.RunAsync(CoreDispatcherPriority.Normal, () => function());
             }
+        }
+
+        /// <summary>
+        /// A size in device-independent pixels, in the physical pixels AppWindow sizing uses for this window's DPI.
+        /// </summary>
+        public static Windows.Graphics.SizeInt32 ToPhysicalSize(Microsoft.UI.Windowing.AppWindow appWindow, Windows.Foundation.Size size)
+        {
+            var dpi = GetDpiForWindow(Microsoft.UI.Win32Interop.GetWindowFromWindowId(appWindow.Id));
+            var scale = dpi == 0 ? 1.0 : dpi / 96.0;
+            return new Windows.Graphics.SizeInt32(
+                checked((int)Math.Round(size.Width * scale)),
+                checked((int)Math.Round(size.Height * scale)));
+        }
+
+        [DllImport("user32.dll")]
+        private static extern uint GetDpiForWindow(IntPtr hwnd);
+
+        /// <summary>The client area in device-independent pixels, which SetClientSize reproduces.</summary>
+        public static Windows.Foundation.Size GetClientSizeInDips(Microsoft.UI.Windowing.AppWindow appWindow)
+        {
+            var dpi = GetDpiForWindow(Microsoft.UI.Win32Interop.GetWindowFromWindowId(appWindow.Id));
+            var scale = dpi == 0 ? 1.0 : dpi / 96.0;
+            return new Windows.Foundation.Size(appWindow.ClientSize.Width / scale, appWindow.ClientSize.Height / scale);
+        }
+
+        /// <summary>
+        /// Gives the window a client area of exactly <paramref name="size"/> device-independent pixels, like a UWP view size.
+        /// AppWindow.ResizeClient adds a standard caption, which a window whose content extends into the title bar
+        /// does not have, so the frame is measured instead.
+        /// </summary>
+        public static void SetClientSize(Microsoft.UI.Windowing.AppWindow appWindow, Windows.Foundation.Size size)
+        {
+            var client = ToPhysicalSize(appWindow, size);
+            var frameWidth = appWindow.Size.Width - appWindow.ClientSize.Width;
+            var frameHeight = appWindow.Size.Height - appWindow.ClientSize.Height;
+            appWindow.Resize(new Windows.Graphics.SizeInt32(client.Width + frameWidth, client.Height + frameHeight));
         }
 
         public static bool IsLastCharacterTarget(string input, char target)
@@ -171,12 +207,13 @@ namespace CalculatorApp.ViewModel.Common
             return 0x0000001000000000;
         }
 
-        public static bool GetIntegratedDisplaySize(out double sizeInInches)
+        public static bool GetIntegratedDisplaySize(IntPtr window, out double sizeInInches)
         {
             sizeInInches = 0.0;
             try
             {
-                var displayInfo = Windows.Graphics.Display.DisplayInformation.GetForCurrentView();
+                // A desktop process has no current view; the display is the one showing the owning window.
+                var displayInfo = Windows.Graphics.Display.DisplayInformationInterop.GetForWindow(window);
                 // Compute diagonal size from raw pixels and DPI
                 double rawWidth = displayInfo.ScreenWidthInRawPixels;
                 double rawHeight = displayInfo.ScreenHeightInRawPixels;

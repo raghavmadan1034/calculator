@@ -9,10 +9,10 @@ using System.Linq;
 using Windows.ApplicationModel;
 using Windows.System;
 using Windows.UI.Core;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation.Peers;
-using Windows.UI.Xaml.Automation.Provider;
-using Windows.UI.Xaml.Controls;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation.Peers;
+using Microsoft.UI.Xaml.Automation.Provider;
+using Microsoft.UI.Xaml.Controls;
 
 // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -22,7 +22,7 @@ namespace CalculatorApp
     {
         private const string BUILD_YEAR = "2025";
 
-        public event Windows.UI.Xaml.RoutedEventHandler BackButtonClick;
+        public event Microsoft.UI.Xaml.RoutedEventHandler BackButtonClick;
 
         public GridLength TitleBarHeight
         {
@@ -38,6 +38,8 @@ namespace CalculatorApp
             var resourceLoader = AppResourceProvider.GetInstance();
 
             InitializeComponent();
+
+            BackButton.KeyboardAccelerators.Add(new Microsoft.UI.Xaml.Input.KeyboardAccelerator { Key = VirtualKey.GoBack });
 
             Language = locService.GetLanguage();
 
@@ -66,8 +68,6 @@ namespace CalculatorApp
         // OnLoaded would be invoked by Popup several times while contructed once
         private void OnLoaded(object sender, RoutedEventArgs args)
         {
-            SystemNavigationManager.GetForCurrentView().BackRequested += System_BackRequested;
-
             AnnouncePageOpened();
 
             var currentTheme = ThemeHelper.RootTheme.ToString();
@@ -88,8 +88,6 @@ namespace CalculatorApp
         {
             // back to the default state
             AppThemeExpander.IsExpanded = false;
-
-            SystemNavigationManager.GetForCurrentView().BackRequested -= System_BackRequested;
         }
 
         private void FeedbackButton_Click(object sender, RoutedEventArgs e)
@@ -137,18 +135,6 @@ namespace CalculatorApp
             ContributeRunBeforeLink.Text = contributeTextBeforeHyperlink;
             ContributeRunLink.Text = contributeTextLink;
             ContributeRunAfterLink.Text = contributeTextAfterHyperlink;
-        }
-
-        private void System_BackRequested(object sender, BackRequestedEventArgs e)
-        {
-            if (!e.Handled && BackButton.IsEnabled)
-            {
-                var buttonPeer = new ButtonAutomationPeer(BackButton);
-                IInvokeProvider invokeProvider = buttonPeer.GetPattern(PatternInterface.Invoke) as IInvokeProvider;
-                invokeProvider.Invoke();
-
-                e.Handled = true;
-            }
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

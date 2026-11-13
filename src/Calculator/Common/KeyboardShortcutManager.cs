@@ -10,9 +10,9 @@ using System.Diagnostics;
 using System.Linq;
 
 using Windows.UI.Core;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
 
 using MUXC = Microsoft.UI.Xaml.Controls;
 
@@ -239,13 +239,13 @@ namespace CalculatorApp
                 target.SetValue(VirtualKeyControlShiftChordProperty, value);
             }
 
-            internal static void Initialize()
+            internal static void Initialize(UIElement root)
             {
-                var coreWindow = Window.Current.CoreWindow;
-                coreWindow.CharacterReceived += OnCharacterReceivedHandler;
-                coreWindow.KeyDown += OnKeyDownHandler;
-                coreWindow.KeyUp += OnKeyUpHandler;
-                coreWindow.Dispatcher.AcceleratorKeyActivated += OnAcceleratorKeyActivated;
+                // A desktop window has no CoreWindow. The page's routed key events, including those its controls
+                // already handled, carry the same input; Alt chords arrive as key-ups with the menu key down.
+                root.AddHandler(UIElement.CharacterReceivedEvent, new Windows.Foundation.TypedEventHandler<UIElement, Microsoft.UI.Xaml.Input.CharacterReceivedRoutedEventArgs>(OnCharacterReceivedHandler), true);
+                root.AddHandler(UIElement.KeyDownEvent, new Microsoft.UI.Xaml.Input.KeyEventHandler(OnKeyDownHandler), true);
+                root.AddHandler(UIElement.KeyUpEvent, new Microsoft.UI.Xaml.Input.KeyEventHandler(OnKeyUpHandler), true);
                 KeyboardShortcutManager.RegisterNewAppViewId();
             }
 
@@ -620,14 +620,14 @@ namespace CalculatorApp
             // In the three event handlers below we will not mark the event as handled
             // because this is a supplemental operation and we don't want to interfere with
             // the normal keyboard handling.
-            private static void OnCharacterReceivedHandler(CoreWindow sender, CharacterReceivedEventArgs args)
+            private static void OnCharacterReceivedHandler(UIElement sender, Microsoft.UI.Xaml.Input.CharacterReceivedRoutedEventArgs args)
             {
                 int viewId = Utilities.GetWindowId();
                 bool hit = s_fHonorShortcuts.TryGetValue(viewId, out var currentHonorShortcuts);
 
                 if (!hit || currentHonorShortcuts)
                 {
-                    char character = ((char)args.KeyCode);
+                    char character = args.Character;
                     var buttons = EqualRange(s_characterForButtons[viewId], character);
                     KeyboardShortcutManagerLocals.RunFirstEnabledButtonCommand(buttons);
 
@@ -635,7 +635,7 @@ namespace CalculatorApp
                 }
             }
 
-            private static void OnKeyDownHandler(CoreWindow sender, KeyEventArgs args)
+            private static void OnKeyDownHandler(object sender, Microsoft.UI.Xaml.Input.KeyRoutedEventArgs args)
             {
                 s_keyHandlerCount++;
                 
@@ -644,12 +644,12 @@ namespace CalculatorApp
                     return;
                 }
 
-                var key = args.VirtualKey;
+                var key = args.Key;
                 int viewId = Utilities.GetWindowId();
 
-                bool isControlKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
-                bool isShiftKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
-                bool isAltKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Menu) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                bool isControlKeyPressed = (Microsoft.UI.Input.InputKeyboardSource.GetKeyStateForCurrentThread(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                bool isShiftKeyPressed = (Microsoft.UI.Input.InputKeyboardSource.GetKeyStateForCurrentThread(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                bool isAltKeyPressed = (Microsoft.UI.Input.InputKeyboardSource.GetKeyStateForCurrentThread(Windows.System.VirtualKey.Menu) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
 
                 // Handle Ctrl + E for DateCalculator
                 if ((key == Windows.System.VirtualKey.E) && isControlKeyPressed && !isShiftKeyPressed && !isAltKeyPressed)
@@ -708,39 +708,37 @@ namespace CalculatorApp
                 }
             }
 
-            private static void OnKeyUpHandler(CoreWindow sender, KeyEventArgs args)
+            private static void OnKeyUpHandler(object sender, Microsoft.UI.Xaml.Input.KeyRoutedEventArgs args)
             {
                 s_keyHandlerCount--;
                 if (s_keyHandlerCount == 0 && s_deferredEnableShortcut)
                 {
                     DisableShortcuts(false);
                     s_deferredEnableShortcut = false;
-                }             
+                }
+
+                // UWP raised AcceleratorKeyActivated for released Alt chords; the released key's status carries
+                // the same menu-key state.
+                OnAcceleratorKeyReleased(args.Key, args.KeyStatus.IsMenuKeyDown);
             }
             
-            private static void OnAcceleratorKeyActivated(CoreDispatcher dispatcher, AcceleratorKeyEventArgs args)
+            private static void OnAcceleratorKeyReleased(Windows.System.VirtualKey key, bool altPressed)
             {
-                if (args.KeyStatus.IsKeyReleased)
+                // If the Alt/Menu key is not pressed then we don't care about the key anymore
+                if (!altPressed)
                 {
-                    var key = args.VirtualKey;
-                    bool altPressed = args.KeyStatus.IsMenuKeyDown;
-
-                    // If the Alt/Menu key is not pressed then we don't care about the key anymore
-                    if (!altPressed)
-                    {
-                        return;
-                    }
-
-                    bool controlKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
-                    // Ctrl is pressed in addition to alt, this means Alt Gr is intended.  do not navigate.
-                    if (controlKeyPressed)
-                    {
-                        return;
-                    }
-
-                    bool shiftKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
-                    NavigateModeByShortcut(false, shiftKeyPressed, true, key, null);
+                    return;
                 }
+
+                bool controlKeyPressed = (Microsoft.UI.Input.InputKeyboardSource.GetKeyStateForCurrentThread(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                // Ctrl is pressed in addition to alt, this means Alt Gr is intended.  do not navigate.
+                if (controlKeyPressed)
+                {
+                    return;
+                }
+
+                bool shiftKeyPressed = (Microsoft.UI.Input.InputKeyboardSource.GetKeyStateForCurrentThread(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                NavigateModeByShortcut(false, shiftKeyPressed, true, key, null);
             }
 
             private static SortedDictionary<MyVirtualKey, List<WeakReference>> GetCurrentKeyDictionary(bool controlKeyPressed, bool shiftKeyPressed, bool altPressed)

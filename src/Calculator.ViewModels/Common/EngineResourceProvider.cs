@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-using Windows.ApplicationModel.Resources;
+using Microsoft.Windows.ApplicationModel.Resources;
 
 namespace CalculatorApp.ViewModel.Common
 {
@@ -18,7 +18,7 @@ namespace CalculatorApp.ViewModel.Common
         {
             try
             {
-                _resLoader = ResourceLoader.GetForViewIndependentUse("CEngineStrings");
+                _resLoader = new ResourceLoader(ResourceLoader.GetDefaultResourceFilePath(), "CEngineStrings");
             }
             catch
             {

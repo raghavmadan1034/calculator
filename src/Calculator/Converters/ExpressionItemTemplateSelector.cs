@@ -5,14 +5,14 @@ using CalculatorApp.ViewModel.Common;
 
 using System;
 
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 
 namespace CalculatorApp
 {
     namespace Converters
     {
-        [Windows.UI.Xaml.Data.Bindable]
-        public sealed class ExpressionItemTemplateSelector : Windows.UI.Xaml.Controls.DataTemplateSelector
+        [Microsoft.UI.Xaml.Data.Bindable]
+        public sealed class ExpressionItemTemplateSelector : Microsoft.UI.Xaml.Controls.DataTemplateSelector
         {
             protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
             {
@@ -36,11 +36,11 @@ namespace CalculatorApp
                 return SeparatorTemplate;
             }
 
-            public Windows.UI.Xaml.DataTemplate OperatorTemplate { get; set; }
+            public Microsoft.UI.Xaml.DataTemplate OperatorTemplate { get; set; }
 
-            public Windows.UI.Xaml.DataTemplate OperandTemplate { get; set; }
+            public Microsoft.UI.Xaml.DataTemplate OperandTemplate { get; set; }
 
-            public Windows.UI.Xaml.DataTemplate SeparatorTemplate { get; set; }
+            public Microsoft.UI.Xaml.DataTemplate SeparatorTemplate { get; set; }
         }
     }
 }

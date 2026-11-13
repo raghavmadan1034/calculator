@@ -10,7 +10,7 @@ using CalculatorApp.Common;
 using CalculatorApp.ViewModel;
 using CalculatorApp.ViewModel.Common;
 
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 
 namespace CalculatorApp
 {

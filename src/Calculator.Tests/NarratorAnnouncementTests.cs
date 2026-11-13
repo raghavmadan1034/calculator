@@ -3,7 +3,7 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CalculatorApp.ViewModel.Common.Automation;
-using Windows.UI.Xaml.Automation.Peers;
+using Microsoft.UI.Xaml.Automation.Peers;
 
 namespace Calculator.Tests
 {

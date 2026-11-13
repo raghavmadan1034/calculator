@@ -12,7 +12,7 @@
       xmlns:utils="using:CalculatorApp.Utils"
       xmlns:vmcom="using:CalculatorApp.ViewModel.Common"
       x:Name="PageRoot"
-      muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+
       Loaded="OnPageLoaded"
       mc:Ignorable="d">
 

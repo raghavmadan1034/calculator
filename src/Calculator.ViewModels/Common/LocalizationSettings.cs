@@ -10,8 +10,8 @@ using Windows.Globalization;
 using Windows.Globalization.DateTimeFormatting;
 using Windows.Globalization.NumberFormatting;
 using Windows.UI.Text;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Media;
 
 namespace CalculatorApp.ViewModel.Common
 {
@@ -214,9 +214,18 @@ namespace CalculatorApp.ViewModel.Common
         {
             try
             {
-                var flowDirection = Windows.ApplicationModel.Resources.Core.ResourceContext.GetForCurrentView()
-                    .QualifierValues["LayoutDirection"];
-                return flowDirection == "RTL";
+                // MRT Core's context carries the app's layout-direction qualifier without a current view.
+                var context = new Microsoft.Windows.ApplicationModel.Resources.ResourceManager().CreateResourceContext();
+                if (context.QualifierValues.TryGetValue("LayoutDirection", out var flowDirection))
+                {
+                    return flowDirection == "RTL";
+                }
+
+                var language = Windows.Globalization.ApplicationLanguages.Languages.Count > 0
+                    ? Windows.Globalization.ApplicationLanguages.Languages[0]
+                    : null;
+                return language != null
+                    && new Windows.Globalization.Language(language).LayoutDirection == Windows.Globalization.LanguageLayoutDirection.Rtl;
             }
             catch
             {

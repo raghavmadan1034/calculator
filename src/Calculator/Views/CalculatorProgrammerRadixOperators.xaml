@@ -463,7 +463,9 @@
                                        Content="&#xF88F;"/>
 
             <controls:CalculatorButton x:Name="LshLogicalButton"
-                                       x:Uid="LshLogicalButton"
+                                       common:KeyboardShortcutManager.Character="{utils:ResourceString Name=lshLogicalButton/[using:CalculatorApp.Common]KeyboardShortcutManager/Character}"
+                                       AuditoryFeedback="{utils:ResourceString Name=lshLogicalButton/[using:CalculatorApp.Controls]CalculatorButton/AuditoryFeedback}"
+                                       AutomationProperties.Name="{utils:ResourceString Name=lshLogicalButton/[using:Windows.UI.Xaml.Automation]AutomationProperties/Name}"
                                        Style="{StaticResource SymbolOperatorButtonStyle}"
                                        FontSize="12"
                                        x:DeferLoadStrategy="Lazy"

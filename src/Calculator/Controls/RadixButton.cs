@@ -7,7 +7,7 @@ namespace CalculatorApp
 {
     namespace Controls
     {
-        public sealed class RadixButton : Windows.UI.Xaml.Controls.RadioButton
+        public sealed class RadixButton : Microsoft.UI.Xaml.Controls.RadioButton
         {
             public RadixButton()
             { }

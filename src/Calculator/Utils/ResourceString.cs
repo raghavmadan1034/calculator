@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 using CalculatorApp.ViewModel.Common;
-using Windows.UI.Xaml.Markup;
+using Microsoft.UI.Xaml.Markup;
 
 namespace CalculatorApp.Utils
 {

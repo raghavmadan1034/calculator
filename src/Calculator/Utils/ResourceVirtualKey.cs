@@ -3,7 +3,7 @@
 
 using CalculatorApp.ViewModel.Common;
 using System;
-using Windows.UI.Xaml.Markup;
+using Microsoft.UI.Xaml.Markup;
 
 namespace CalculatorApp.Utils
 {

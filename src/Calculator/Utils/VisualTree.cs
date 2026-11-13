@@ -3,8 +3,8 @@
 
 using System;
 
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Media;
 
 // Light C++/CX port of Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree from the Windows Community toolkit
 // Original version here:

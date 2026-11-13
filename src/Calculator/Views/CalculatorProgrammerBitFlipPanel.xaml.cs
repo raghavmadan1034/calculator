@@ -14,8 +14,8 @@ using CalculatorApp.ViewModel.Common;
 
 using System.Diagnostics;
 
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation;
 
 
 namespace CalculatorApp

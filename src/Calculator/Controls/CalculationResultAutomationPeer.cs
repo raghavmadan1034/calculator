@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation.Peers;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation.Peers;
 
 namespace CalculatorApp
 {
     namespace Controls
     {
-        public sealed class CalculationResultAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer,
-                                                              Windows.UI.Xaml.Automation.Provider.IInvokeProvider
+        public sealed class CalculationResultAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer,
+                                                              Microsoft.UI.Xaml.Automation.Provider.IInvokeProvider
         {
             public CalculationResultAutomationPeer(FrameworkElement owner) : base(owner)
             {

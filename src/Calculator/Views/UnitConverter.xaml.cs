@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.System;
 using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Input;
 
 // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -72,7 +72,7 @@ namespace CalculatorApp
             PasteMenuItem.Text = resLoader.GetResourceString("pasteMenuItem");
         }
 
-        public Windows.UI.Xaml.HorizontalAlignment FlowDirectionHorizontalAlignment { get; } = default;
+        public Microsoft.UI.Xaml.HorizontalAlignment FlowDirectionHorizontalAlignment { get; } = default;
 
         public void AnimateConverter()
         {
@@ -91,7 +91,7 @@ namespace CalculatorApp
         public static readonly DependencyProperty ViewModelProperty =
             DependencyProperty.Register(nameof(ViewModel), typeof(CalculatorApp.ViewModel.UnitConverterViewModel), typeof(UnitConverter), new PropertyMetadata(null));
 
-        public Windows.UI.Xaml.FlowDirection LayoutDirection { get; } = default;
+        public Microsoft.UI.Xaml.FlowDirection LayoutDirection { get; } = default;
 
         public void SetDefaultFocus()
         {
@@ -106,7 +106,7 @@ namespace CalculatorApp
             }
         }
 
-        private void OnValueKeyDown(object sender, Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
+        private void OnValueKeyDown(object sender, Microsoft.UI.Xaml.Input.KeyRoutedEventArgs e)
         {
             if (e.Key == VirtualKey.Space)
             {
@@ -411,13 +411,13 @@ namespace CalculatorApp
             CurrencyLoadingProgressRing.IsActive = false;
         }
 
-        private void SupplementaryResultsPanelInGrid_SizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e)
+        private void SupplementaryResultsPanelInGrid_SizeChanged(object sender, Microsoft.UI.Xaml.SizeChangedEventArgs e)
         {
             // We add 0.01 to be sure to not create an infinite loop with SizeChanged events cascading due to float approximation
             RowDltrUnits.MinHeight = Math.Max(48.0, e.NewSize.Height + 0.01);
         }
 
-        private void OnVisualStateChanged(object sender, Windows.UI.Xaml.VisualStateChangedEventArgs e)
+        private void OnVisualStateChanged(object sender, Microsoft.UI.Xaml.VisualStateChangedEventArgs e)
         {
             if (ViewModel?.CurrentCategory == null) return;
             var mode = NavCategoryStates.Deserialize(ViewModel.CurrentCategory.GetModelCategoryId());
@@ -425,13 +425,13 @@ namespace CalculatorApp
         }
 
         private static readonly Lazy<UISettings> uiSettings = new Lazy<UISettings>(true);
-        private readonly Windows.UI.Xaml.Controls.MenuFlyout m_resultsFlyout = default;
+        private readonly Microsoft.UI.Xaml.Controls.MenuFlyout m_resultsFlyout = default;
 
         private readonly string m_chargesMayApplyText;
         private readonly string m_failedToRefreshText;
 
         private bool m_meteredConnectionOverride;
 
-        private Windows.UI.Xaml.DispatcherTimer m_delayTimer;
+        private Microsoft.UI.Xaml.DispatcherTimer m_delayTimer;
     }
 }

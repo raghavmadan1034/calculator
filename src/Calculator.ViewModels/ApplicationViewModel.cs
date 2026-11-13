@@ -12,7 +12,7 @@ using Windows.Foundation;
 using Windows.Storage;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 
 using CalculatorApp.ViewModel;
 using CalculatorApp.ViewModel.Common;
@@ -27,9 +27,6 @@ namespace CalculatorApp.ViewModel
 
         [ObservableProperty]
         private DateCalculatorViewModel _dateCalcViewModel;
-
-        [ObservableProperty]
-        private GraphingCalculatorViewModel _graphingCalcViewModel;
 
         [ObservableProperty]
         private UnitConverterViewModel _converterViewModel;
@@ -100,26 +97,37 @@ namespace CalculatorApp.ViewModel
             private set => SetProperty(ref _displayNormalAlwaysOnTopOption, value);
         }
 
+        /// <summary>
+        /// The desktop window this view model's view is shown in. A desktop process has no current view,
+        /// so the page that owns this view model supplies its window before the mode is first set.
+        /// </summary>
+        public Microsoft.UI.Windowing.AppWindow AppWindow { get; set; }
+
         public async Task ToggleAlwaysOnTop(double width, double height)
         {
             var DefaultSize = new Size(320, 394);
             const string LaunchedSettingsKey = "calculatorAlwaysOnTopLaunched";
             var settings = ApplicationData.Current.LocalSettings;
-            if (ApplicationView.GetForCurrentView().ViewMode == ApplicationViewMode.CompactOverlay)
+            if (AppWindow.Presenter.Kind == Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay)
             {
                 settings.Values[WidthLocalSettingsKey] = width;
                 settings.Values[HeightLocalSettingsKey] = height;
-                bool success = await ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.Default);
+                AppWindow.SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
+                bool success = AppWindow.Presenter.Kind != Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay;
+                if (success)
+                {
+                    WindowPlacement.Resume();
+                }
                 CalculatorViewModel.HistoryVM.AreHistoryShortcutsEnabled = success;
                 CalculatorViewModel.IsAlwaysOnTop = !success;
                 IsAlwaysOnTop = !success;
             }
             else
             {
-                var compactOptions = ViewModePreferences.CreateDefault(ApplicationViewMode.CompactOverlay);
+                Size customSize;
                 if (!settings.Values.ContainsKey(LaunchedSettingsKey))
                 {
-                    compactOptions.CustomSize = DefaultSize;
+                    customSize = DefaultSize;
                     settings.Values[LaunchedSettingsKey] = true;
                 }
                 else
@@ -129,29 +137,44 @@ namespace CalculatorApp.ViewModel
                         if (settings.Values.TryGetValue(WidthLocalSettingsKey, out var oldWidth) &&
                             settings.Values.TryGetValue(HeightLocalSettingsKey, out var oldHeight))
                         {
-                            compactOptions.CustomSize = new Size((double)oldWidth, (double)oldHeight);
+                            customSize = new Size((double)oldWidth, (double)oldHeight);
                         }
                         else
                         {
-                            compactOptions.CustomSize = DefaultSize;
+                            customSize = DefaultSize;
                         }
                     }
                     catch (InvalidCastException)
                     {
-                        compactOptions.CustomSize = DefaultSize;
+                        customSize = DefaultSize;
                     }
                 }
-                bool success = await ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.CompactOverlay, compactOptions);
+                // Keep the normal placement for the next launch; the window is resized while switching presenters.
+                WindowPlacement.Pause(AppWindow);
+                AppWindow.SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
+                bool success = AppWindow.Presenter.Kind == Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay;
+                if (success)
+                {
+                    // ViewModePreferences.CustomSize was the view size in device-independent pixels, title bar included.
+                    Utils.SetClientSize(AppWindow, customSize);
+                }
+                else
+                {
+                    WindowPlacement.Resume();
+                }
                 CalculatorViewModel.HistoryVM.AreHistoryShortcutsEnabled = !success;
                 CalculatorViewModel.IsAlwaysOnTop = success;
                 IsAlwaysOnTop = success;
             }
             SetDisplayNormalAlwaysOnTopOption();
+            await Task.CompletedTask;
         }
 
         public void Initialize(ViewMode mode)
         {
-            if (!NavCategoryStates.IsValidViewMode(mode) || !NavCategoryStates.IsViewModeEnabled(mode))
+            // Graphing is not part of the WinUI 3 build: its GraphControl is C++/CX, which WinUI 3 cannot host.
+            if (!NavCategoryStates.IsValidViewMode(mode) || !NavCategoryStates.IsViewModeEnabled(mode)
+                || NavCategory.IsGraphingCalculatorViewMode(mode))
             {
                 mode = ViewMode.Standard;
             }
@@ -226,13 +249,6 @@ namespace CalculatorApp.ViewModel
                 }
                 CalculatorViewModel.SetCalculatorType(_mode);
             }
-            else if (NavCategory.IsGraphingCalculatorViewMode(_mode))
-            {
-                if (GraphingCalcViewModel == null)
-                {
-                    GraphingCalcViewModel = new GraphingCalculatorViewModel();
-                }
-            }
             else if (NavCategory.IsDateCalculatorViewMode(_mode))
             {
                 if (DateCalcViewModel == null)
@@ -266,7 +282,7 @@ namespace CalculatorApp.ViewModel
             {
                 TraceLogger.GetInstance().LogWindowCreated(
                     _mode,
-                    ApplicationView.GetApplicationViewIdForWindow(CoreWindow.GetForCurrentThread()));
+                    Utils.GetWindowId());
             }
             OnPropertyChanged(nameof(ClearMemoryVisibility));
         }
@@ -303,8 +319,9 @@ namespace CalculatorApp.ViewModel
 
         private void SetDisplayNormalAlwaysOnTopOption()
         {
+            // Every desktop AppWindow supports the compact-overlay presenter.
             DisplayNormalAlwaysOnTopOption = _mode == ViewMode.Standard &&
-                ApplicationView.GetForCurrentView().IsViewModeSupported(ApplicationViewMode.CompactOverlay) &&
+                AppWindow != null &&
                 !_isAlwaysOnTop;
         }
 

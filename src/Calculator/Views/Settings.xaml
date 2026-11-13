@@ -59,7 +59,13 @@
                 FontSize="12"
                 AutomationProperties.Name="{utils:ResourceString Name=TitleBarBackButton/[using:Windows.UI.Xaml.Automation]AutomationProperties/Name}"
                 Click="BackButton_Click"
-                Content="&#xE72B;"/>
+                Content="&#xE72B;">
+            <!-- Decision D13: the desktop window has no system back button; these keys reach the in-app one.
+                 The GoBack key is added in code: WinUI 3 markup cannot convert "GoBack" to a VirtualKey. -->
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="Left" Modifiers="Menu"/>
+            </Button.KeyboardAccelerators>
+        </Button>
 
         <Grid Grid.Row="1"
               Height="{StaticResource HamburgerHeight}"

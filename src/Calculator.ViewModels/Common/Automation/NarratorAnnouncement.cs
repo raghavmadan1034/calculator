@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 using System;
-using Windows.UI.Xaml.Automation.Peers;
+using Microsoft.UI.Xaml.Automation.Peers;
 
 namespace CalculatorApp.ViewModel.Common.Automation
 {

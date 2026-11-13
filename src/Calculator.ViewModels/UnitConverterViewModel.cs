@@ -13,7 +13,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace CalculatorApp.ViewModel
 {
-    [Windows.UI.Xaml.Data.Bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     public sealed partial class Category : ObservableObject
     {
         private readonly int _id;
@@ -29,13 +29,13 @@ namespace CalculatorApp.ViewModel
 
         public string Name => _name;
 
-        public Windows.UI.Xaml.Visibility NegateVisibility =>
-            _supportsNegative ? Windows.UI.Xaml.Visibility.Visible : Windows.UI.Xaml.Visibility.Collapsed;
+        public Microsoft.UI.Xaml.Visibility NegateVisibility =>
+            _supportsNegative ? Microsoft.UI.Xaml.Visibility.Visible : Microsoft.UI.Xaml.Visibility.Collapsed;
 
         public int GetModelCategoryId() => _id;
     }
 
-    [Windows.UI.Xaml.Data.Bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     public sealed partial class Unit : ObservableObject
     {
         private readonly int _id;
@@ -63,7 +63,7 @@ namespace CalculatorApp.ViewModel
         public int ModelUnitID() => _id;
     }
 
-    [Windows.UI.Xaml.Data.Bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     public sealed class SupplementaryResult : ObservableObject
     {
         private string _value;
@@ -100,7 +100,7 @@ namespace CalculatorApp.ViewModel
         bool IsActive { get; set; }
     }
 
-    [Windows.UI.Xaml.Data.Bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     public sealed partial class UnitConverterViewModel : ObservableObject
     {
         public const string NetworkBehaviorPropertyName = "NetworkBehavior";
@@ -113,7 +113,7 @@ namespace CalculatorApp.ViewModel
         private readonly CalcManager.Interop.UnitConverterWrapper _model;
         private readonly object _modelLock = new object();
         private readonly DataLoaders.CurrencyDataLoader _currencyDataLoader;
-        private readonly Windows.UI.Core.CoreDispatcher _dispatcher;
+        private readonly Microsoft.UI.Dispatching.DispatcherQueue _dispatcher;
         private char _decimalSeparator;
         private bool _isInputBlocked;
         private bool _isCategoryChanging;
@@ -326,7 +326,7 @@ namespace CalculatorApp.ViewModel
             _value1cp = ConversionParameter.Source;
 
             // Capture the UI dispatcher for marshaling callbacks from background threads
-            _dispatcher = Windows.UI.Core.CoreWindow.GetForCurrentThread()?.Dispatcher;
+            _dispatcher = Microsoft.UI.Dispatching.DispatcherQueue.GetForCurrentThread();
 
             // Set up VM callback
             var vmCallback = new UnitConverterVMCallback(this);
@@ -401,13 +401,13 @@ namespace CalculatorApp.ViewModel
             }
         }
 
-        public Windows.UI.Xaml.Visibility SupplementaryVisibility =>
-            SupplementaryResults?.Count > 0 ? Windows.UI.Xaml.Visibility.Visible : Windows.UI.Xaml.Visibility.Collapsed;
+        public Microsoft.UI.Xaml.Visibility SupplementaryVisibility =>
+            SupplementaryResults?.Count > 0 ? Microsoft.UI.Xaml.Visibility.Visible : Microsoft.UI.Xaml.Visibility.Collapsed;
 
-        public Windows.UI.Xaml.Visibility CurrencySymbolVisibility =>
+        public Microsoft.UI.Xaml.Visibility CurrencySymbolVisibility =>
             string.IsNullOrEmpty(CurrencySymbol1) || string.IsNullOrEmpty(CurrencySymbol2)
-                ? Windows.UI.Xaml.Visibility.Collapsed
-                : Windows.UI.Xaml.Visibility.Visible;
+                ? Microsoft.UI.Xaml.Visibility.Collapsed
+                : Microsoft.UI.Xaml.Visibility.Visible;
 
         #endregion
 
@@ -1110,7 +1110,7 @@ namespace CalculatorApp.ViewModel
                     {
                         Id = CurrentCategory.GetModelCategoryId(),
                         Name = CurrentCategory.Name,
-                        SupportsNegative = CurrentCategory.NegateVisibility == Windows.UI.Xaml.Visibility.Visible
+                        SupportsNegative = CurrentCategory.NegateVisibility == Microsoft.UI.Xaml.Visibility.Visible
                     });
 
                 BuildUnitList(result.Units);
@@ -1382,7 +1382,7 @@ namespace CalculatorApp.ViewModel
         {
             if (_dispatcher != null && !_dispatcher.HasThreadAccess)
             {
-                _ = _dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, action);
+                _ = _dispatcher.TryEnqueue(() => action());
             }
             else
             {

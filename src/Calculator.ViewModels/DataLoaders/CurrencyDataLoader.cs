@@ -118,11 +118,8 @@ namespace CalculatorApp.ViewModel.DataLoaders
             _client.Initialize(DefaultCurrencyCode, _responseLanguage);
 
             var localizationSettings = LocalizationSettings.GetInstance();
-            _isRtlLanguage = false;
-            if (CoreWindow.GetForCurrentThread() != null)
-            {
-                _isRtlLanguage = localizationSettings.IsRtlLayout();
-            }
+            // The layout direction no longer needs a CoreWindow on this thread; it comes from the app's resource context.
+            _isRtlLanguage = localizationSettings.IsRtlLayout();
 
             _ratioFormatter = localizationSettings.GetRegionalSettingsAwareDecimalFormatter();
             _ratioFormatter.IsGrouped = true;

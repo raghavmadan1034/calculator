@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -10,10 +11,11 @@ using Windows.Graphics.Display;
 using Windows.Storage;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Navigation;
+using Microsoft.UI.Windowing;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Controls;
 
 using CalculatorApp.Common;
@@ -23,7 +25,7 @@ using CalculatorApp.ViewModel;
 using CalculatorApp.ViewModel.Common;
 using CalculatorApp.ViewModel.Common.Automation;
 
-using wuxc = Windows.UI.Xaml.Controls;
+using wuxc = Microsoft.UI.Xaml.Controls;
 
 namespace CalculatorApp
 {
@@ -43,16 +45,20 @@ namespace CalculatorApp
         public MainPage()
         {
             ViewModel = new ApplicationViewModel();
+            ViewModel.AppWindow = global::CalculatorApp.App.MainWindow.AppWindow;
             InitializeNavViewCategoriesSource();
             InitializeComponent();
 
-            KeyboardShortcutManager.Initialize();
+            KeyboardShortcutManager.Initialize(this);
 
-            Application.Current.Suspending += App_Suspending;
+            // Decision D8: the always-on-top size UWP saved on Suspending is saved when the window is asked to close.
+            global::CalculatorApp.App.MainWindow.AppWindow.Closing += OnMainWindowClosing;
             ViewModel.PropertyChanged += OnAppPropertyChanged;
-            m_accessibilitySettings = new AccessibilitySettings();
+            // AccessibilitySettings events need a CoreWindow; ThemeSettings reports the main window's high-contrast state.
+            m_themeSettings = Microsoft.UI.System.ThemeSettings.CreateForWindowId(global::CalculatorApp.App.MainWindow.AppWindow.Id);
+            m_isHighContrast = m_themeSettings.HighContrast;
 
-            if (Utilities.GetIntegratedDisplaySize(out var sizeInInches))
+            if (Utilities.GetIntegratedDisplaySize(WinRT.Interop.WindowNative.GetWindowHandle(global::CalculatorApp.App.MainWindow), out var sizeInInches))
             {
                 if (sizeInInches < 7.0) // If device's display size (diagonal length) is less than 7 inches then keep the calc always in Portrait mode only
                 {
@@ -60,7 +66,9 @@ namespace CalculatorApp
                 }
             }
 
-            UserActivityRequestManager.GetForCurrentView().UserActivityRequested += async (_, args) =>
+            var userActivityRequestManager = TryGetUserActivityRequestManager(global::CalculatorApp.App.MainWindow);
+            if (userActivityRequestManager != null)
+            userActivityRequestManager.UserActivityRequested += async (_, args) =>
             {
                 using (var deferral = args.GetDeferral())
                 {
@@ -99,8 +107,8 @@ namespace CalculatorApp
 
         public void UnregisterEventHandlers()
         {
-            Window.Current.SizeChanged -= WindowSizeChanged;
-            m_accessibilitySettings.HighContrastChanged -= OnHighContrastChanged;
+            global::CalculatorApp.App.MainWindow.SizeChanged -= WindowSizeChanged;
+            m_themeSettings.Changed -= OnHighContrastChanged;
 
             if (m_calculator != null)
             {
@@ -117,10 +125,6 @@ namespace CalculatorApp
             if (m_dateCalculator != null && m_dateCalculator.Visibility == Visibility.Visible)
             {
                 m_dateCalculator.SetDefaultFocus();
-            }
-            if (m_graphingCalculator != null && m_graphingCalculator.Visibility == Visibility.Visible)
-            {
-                m_graphingCalculator.SetDefaultFocus();
             }
             if (m_converter != null && m_converter.Visibility == Visibility.Visible)
             {
@@ -198,8 +202,7 @@ namespace CalculatorApp
 
                 if (!restored)
                 {
-                    _ = Window.Current.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
-                        async () => await ShowSnapshotLaunchErrorAsync());
+                    _ = DispatcherQueue.TryEnqueue(async () => await ShowSnapshotLaunchErrorAsync());
                     if (snapshotArgs.HasError)
                     {
                         TraceLogger.GetInstance().LogRecallError("OnNavigatedTo:Found errors.");
@@ -215,7 +218,7 @@ namespace CalculatorApp
         private void InitializeNavViewCategoriesSource()
         {
             NavViewCategoriesSource = ExpandNavViewCategoryGroups(ViewModel.Categories);
-            _ = Window.Current.Dispatcher.RunAsync(CoreDispatcherPriority.Low, () =>
+            _ = DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>
             {
                 var graphCategory = (NavCategory)NavViewCategoriesSource.Find(x =>
                 {
@@ -228,7 +231,8 @@ namespace CalculatorApp
                         return false;
                     }
                 });
-                graphCategory.IsEnabled = NavCategoryStates.IsViewModeEnabled(ViewMode.Graphing);
+                // Graphing is not part of the WinUI 3 build: its GraphControl is C++/CX, which WinUI 3 cannot host.
+                graphCategory.IsEnabled = false;
             });
         }
 
@@ -246,7 +250,7 @@ namespace CalculatorApp
             return result;
         }
 
-        private void UpdatePopupSize(Windows.UI.Core.WindowSizeChangedEventArgs e)
+        private void UpdatePopupSize(Microsoft.UI.Xaml.WindowSizeChangedEventArgs e)
         {
             if (PopupContent != null)
             {
@@ -255,7 +259,7 @@ namespace CalculatorApp
             }
         }
 
-        private void WindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        private void WindowSizeChanged(object sender, Microsoft.UI.Xaml.WindowSizeChangedEventArgs e)
         {
             // We don't use layout aware page's view states, we have our own
             UpdateViewState();
@@ -296,10 +300,6 @@ namespace CalculatorApp
                         {
                             m_calculator.AnimateCalculator(NavCategory.IsConverterViewMode(previousMode));
                         }
-                        break;
-                    case ViewMode.Graphing:
-                        EnsureGraphingCalculator();
-                        KeyboardShortcutManager.DisableShortcuts(true);
                         break;
                     default:
                         if (NavCategory.IsDateCalculatorViewMode(newValue))
@@ -395,7 +395,7 @@ namespace CalculatorApp
             {
                 FindName("PopupContent");
 
-                var windowBounds = Window.Current.Bounds;
+                var windowBounds = global::CalculatorApp.App.MainWindow.Bounds;
                 PopupContent.Width = windowBounds.Width;
                 PopupContent.Height = windowBounds.Height;
             }
@@ -452,15 +452,16 @@ namespace CalculatorApp
 
         private void TitleBarAlwaysOnTopButtonClick(object sender, RoutedEventArgs e)
         {
-            var bounds = Window.Current.Bounds;
-            ViewModel.ToggleAlwaysOnTop(bounds.Width, bounds.Height);
+            // Window.Bounds also covers the title bar strip the content extends into, while always-on-top restores
+            // the client area; saving Bounds made the window one title bar taller on every round trip.
+            var size = CalculatorApp.ViewModel.Common.Utils.GetClientSizeInDips(global::CalculatorApp.App.MainWindow.AppWindow);
+            ViewModel.ToggleAlwaysOnTop(size.Width, size.Height);
         }
 
         private void ShowHideControls(ViewMode mode)
         {
             var isCalcViewMode = NavCategory.IsCalculatorViewMode(mode);
             var isDateCalcViewMode = NavCategory.IsDateCalculatorViewMode(mode);
-            var isGraphingCalcViewMode = NavCategory.IsGraphingCalculatorViewMode(mode);
             var isConverterViewMode = NavCategory.IsConverterViewMode(mode);
 
             if (m_calculator != null)
@@ -473,12 +474,6 @@ namespace CalculatorApp
             {
                 m_dateCalculator.Visibility = BooleanToVisibilityConverter.Convert(isDateCalcViewMode);
                 m_dateCalculator.IsEnabled = isDateCalcViewMode;
-            }
-
-            if (m_graphingCalculator != null)
-            {
-                m_graphingCalculator.Visibility = BooleanToVisibilityConverter.Convert(isGraphingCalcViewMode);
-                m_graphingCalculator.IsEnabled = isGraphingCalcViewMode;
             }
 
             if (m_converter != null)
@@ -509,51 +504,102 @@ namespace CalculatorApp
             }
         }
 
-        private void OnHighContrastChanged(AccessibilitySettings sender, object args)
+        private void OnHighContrastChanged(Microsoft.UI.System.ThemeSettings sender, object args)
         {
-            if (ViewModel.IsAlwaysOnTop && ActualHeight < 394)
+            _ = DispatcherQueue.TryEnqueue(() =>
             {
-                // Sets to default always-on-top size to force re-layout
-                ApplicationView.GetForCurrentView().TryResizeView(new Size(320, 394));
-            }
+                // ThemeSettings reports every theme change; UWP raised this handler only when high contrast changed.
+                if (m_isHighContrast == sender.HighContrast)
+                {
+                    return;
+                }
+
+                m_isHighContrast = sender.HighContrast;
+
+                if (ViewModel.IsAlwaysOnTop && ActualHeight < 394)
+                {
+                    // Sets to default always-on-top size to force re-layout
+                    var appWindow = global::CalculatorApp.App.MainWindow.AppWindow;
+                    CalculatorApp.ViewModel.Common.Utils.SetClientSize(appWindow, new Size(320, 394));
+                }
+            });
         }
 
         private void OnPageLoaded(object sender, RoutedEventArgs args)
         {
-            if (m_converter == null && m_calculator == null && m_dateCalculator == null && m_graphingCalculator == null)
+            if (m_converter == null && m_calculator == null && m_dateCalculator == null)
             {
                 // We have just launched into our default mode (standard calc) so ensure calc is loaded
                 EnsureCalculator();
                 ViewModel.CalculatorViewModel.IsStandard = true;
             }
 
-            Window.Current.SizeChanged += WindowSizeChanged;
-            m_accessibilitySettings.HighContrastChanged += OnHighContrastChanged;
+            global::CalculatorApp.App.MainWindow.SizeChanged += WindowSizeChanged;
+            m_themeSettings.Changed += OnHighContrastChanged;
             UpdateViewState();
 
             SetHeaderAutomationName();
             SetDefaultFocus();
 
             // Delay load things later when we get a chance.
-            _ = Dispatcher.RunAsync(
-                CoreDispatcherPriority.Normal, new DispatchedHandler(() =>
+            _ = DispatcherQueue.TryEnqueue(() =>
                 {
-                    if (TraceLogger.GetInstance().IsWindowIdInLog(ApplicationView.GetApplicationViewIdForWindow(CoreWindow.GetForCurrentThread())))
+                    if (TraceLogger.GetInstance().IsWindowIdInLog(Utilities.GetWindowId()))
                     {
                         AppLifecycleLogger.GetInstance().LaunchUIResponsive();
                         AppLifecycleLogger.GetInstance().LaunchVisibleComplete();
                     }
-                }));
+                });
         }
 
-        private void App_Suspending(object sender, Windows.ApplicationModel.SuspendingEventArgs e)
+        private void OnMainWindowClosing(AppWindow sender, AppWindowClosingEventArgs e)
         {
             if (ViewModel.IsAlwaysOnTop)
             {
+                // The client size, not the page size: see TitleBarAlwaysOnTopButtonClick.
+                var size = CalculatorApp.ViewModel.Common.Utils.GetClientSizeInDips(sender);
                 ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-                localSettings.Values[ApplicationViewModel.WidthLocalSettingsKey] = ActualWidth;
-                localSettings.Values[ApplicationViewModel.HeightLocalSettingsKey] = ActualHeight;
+                localSettings.Values[ApplicationViewModel.WidthLocalSettingsKey] = size.Width;
+                localSettings.Values[ApplicationViewModel.HeightLocalSettingsKey] = size.Height;
             }
+        }
+
+        // A desktop window has no current view; the request manager is obtained for the owning window
+        // through the interop factory that IUserActivityRequestManagerInterop documents.
+        private static UserActivityRequestManager TryGetUserActivityRequestManager(Window window)
+        {
+            try
+            {
+                var factory = WinRT.ActivationFactory.Get("Windows.ApplicationModel.UserActivities.UserActivityRequestManager");
+                var interop = (IUserActivityRequestManagerInterop)Marshal.GetObjectForIUnknown(factory.ThisPtr);
+                var iid = new Guid("0C30BE4E-903D-48D6-82D4-4043ED57791B"); // IUserActivityRequestManager
+                var abi = interop.GetForWindow(WinRT.Interop.WindowNative.GetWindowHandle(window), ref iid);
+                try
+                {
+                    return UserActivityRequestManager.FromAbi(abi);
+                }
+                finally
+                {
+                    Marshal.Release(abi);
+                }
+            }
+            catch (Exception ex)
+            {
+                TraceLogger.GetInstance().LogRecallError($"UserActivityRequestManager is unavailable for this window. Exception: {ex}");
+                return null;
+            }
+        }
+
+        [ComImport]
+        [Guid("DD69F876-9699-4715-9095-E37EA30DFA1B")]
+        [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        private interface IUserActivityRequestManagerInterop
+        {
+            // The IInspectable slots that precede GetForWindow in the vtable.
+            void GetIids();
+            void GetRuntimeClassName();
+            void GetTrustLevel();
+            IntPtr GetForWindow(IntPtr appWindow, ref Guid riid);
         }
 
         private void EnsureCalculator()
@@ -628,20 +674,6 @@ namespace CalculatorApp
             }
         }
 
-        private void EnsureGraphingCalculator()
-        {
-            if (m_graphingCalculator == null)
-            {
-                m_graphingCalculator = new GraphingCalculator
-                {
-                    Name = "GraphingCalculator",
-                    DataContext = ViewModel.GraphingCalcViewModel
-                };
-
-                GraphingCalcHolder.Child = m_graphingCalculator;
-            }
-        }
-
         private void EnsureConverter()
         {
             if (m_converter == null)
@@ -699,9 +731,9 @@ namespace CalculatorApp
         }
 
         private Calculator m_calculator;
-        private GraphingCalculator m_graphingCalculator;
         private UnitConverter m_converter;
         private DateCalculator m_dateCalculator;
-        private readonly AccessibilitySettings m_accessibilitySettings;
+        private readonly Microsoft.UI.System.ThemeSettings m_themeSettings;
+        private bool m_isHighContrast;
     }
 }
