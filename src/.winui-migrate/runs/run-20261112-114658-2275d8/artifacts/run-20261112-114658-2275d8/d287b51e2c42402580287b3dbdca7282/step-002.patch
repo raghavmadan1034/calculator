@@ -1,0 +1,11 @@
+--- a/Calculator.ViewModels/Common/Automation/NarratorNotifier.cs
++++ b/Calculator.ViewModels/Common/Automation/NarratorNotifier.cs
+@@ -2,7 +2,7 @@
+ // Licensed under the MIT License.
+ 
+ using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation.Peers;
++using Microsoft.UI.Xaml.Automation.Peers;
+ using Windows.UI.Xaml.Controls;
+ 
+ namespace CalculatorApp.ViewModel.Common.Automation

@@ -1,0 +1,11 @@
+--- a/Calculator.ViewModels/ApplicationViewModel.cs
++++ b/Calculator.ViewModels/ApplicationViewModel.cs
+@@ -12,7 +12,7 @@
+ using Windows.Storage;
+ using Windows.UI.Core;
+ using Windows.UI.ViewManagement;
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ using CalculatorApp.ViewModel;
+ using CalculatorApp.ViewModel.Common;

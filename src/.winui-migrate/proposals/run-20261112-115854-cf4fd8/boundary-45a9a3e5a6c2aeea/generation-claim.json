@@ -1,0 +1,38 @@
+{
+  "request": {
+    "workspace": "C:\\phase2\\calculator-winui3",
+    "runId": "run-20261112-115854-cf4fd8",
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "windowing-compatibility",
+    "skill": "winui2-to-winui3-hwnd-interop",
+    "intent": "Resolve the recorded winui2-to-winui3-hwnd-interop capability boundary for Calculator\\Calculator.csproj. Preserve the approved requirements and existing behavior; do not invent architecture. No deterministic execution recipe implements this procedure. \u0027DataTransferManager.GetForCurrentView\u0027 needs more than a rename. Acquire per-window via interop interface and HWND.",
+    "files": [
+      "Calculator\\App.xaml",
+      "Calculator\\App.xaml.cs",
+      "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml",
+      "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml.cs"
+    ],
+    "automaticUnitKey": "",
+    "automaticUnitName": ""
+  },
+  "transactionId": "boundary-45a9a3e5a6c2aeea",
+  "boundary": {
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "windowing-compatibility",
+    "evaluationId": "ea82169b9bda4233903dd4bac03c0427"
+  },
+  "parentHash": "017fc4264e3f18f4d01b00d7300c68c7a42209dd4aa601d30f891731d759ac19",
+  "startedAt": "2026-11-12T12:07:28.670083+00:00",
+  "mode": "winui-skill-repair-v1",
+  "maxFiles": 16,
+  "maxSourceBytes": 131072,
+  "maxPromptCharacters": 30000,
+  "maxSeconds": 600,
+  "maxTransportInvocations": 1,
+  "maxContextFiles": 2000,
+  "maxContextBytes": 33554432,
+  "maxContextFileBytes": 524288,
+  "maxAgentToolCalls": 64,
+  "maxAgentToolResultBytes": 8388608,
+  "maxAgentOutputBytes": 33554432
+}

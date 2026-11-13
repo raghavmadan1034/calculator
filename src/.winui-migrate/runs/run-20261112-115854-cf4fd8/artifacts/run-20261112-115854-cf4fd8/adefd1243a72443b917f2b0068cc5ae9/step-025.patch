@@ -1,0 +1,26 @@
+--- a/Calculator/Views/MainPage.xaml.cs
++++ b/Calculator/Views/MainPage.xaml.cs
+@@ -10,10 +10,10 @@
+ using Windows.Storage;
+ using Windows.UI.Core;
+ using Windows.UI.ViewManagement;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation;
+-using Windows.UI.Xaml.Data;
+-using Windows.UI.Xaml.Navigation;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Automation;
++using Microsoft.UI.Xaml.Data;
++using Microsoft.UI.Xaml.Navigation;
+ using Microsoft.UI.Xaml.Controls;
+ 
+ using CalculatorApp.Common;
+@@ -23,7 +23,7 @@
+ using CalculatorApp.ViewModel.Common;
+ using CalculatorApp.ViewModel.Common.Automation;
+ 
+-using wuxc = Windows.UI.Xaml.Controls;
++using wuxc = Microsoft.UI.Xaml.Controls;
+ 
+ namespace CalculatorApp
+ {

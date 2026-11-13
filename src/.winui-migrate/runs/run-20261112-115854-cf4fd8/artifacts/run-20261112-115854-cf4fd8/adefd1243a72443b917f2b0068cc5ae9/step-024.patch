@@ -1,0 +1,32 @@
+--- a/Calculator/Views/HistoryList.xaml.cs
++++ b/Calculator/Views/HistoryList.xaml.cs
+@@ -3,8 +3,8 @@
+ using CalculatorApp.ViewModel;
+ using CalculatorApp.ViewModel.Common;
+ 
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ using MUXC = Microsoft.UI.Xaml.Controls;
+ 
+@@ -37,15 +37,15 @@
+             }
+         }
+ 
+-        public Windows.UI.Xaml.GridLength RowHeight
++        public Microsoft.UI.Xaml.GridLength RowHeight
+         {
+-            get => (Windows.UI.Xaml.GridLength)GetValue(RowHeightProperty);
++            get => (Microsoft.UI.Xaml.GridLength)GetValue(RowHeightProperty);
+             set => SetValue(RowHeightProperty, value);
+         }
+ 
+         // Using a DependencyProperty as the backing store for RowHeight.  This enables animation, styling, binding, etc...
+         public static readonly DependencyProperty RowHeightProperty =
+-            DependencyProperty.Register(nameof(RowHeight), typeof(Windows.UI.Xaml.GridLength), typeof(HistoryList), new PropertyMetadata(default(Windows.UI.Xaml.GridLength)));
++            DependencyProperty.Register(nameof(RowHeight), typeof(Microsoft.UI.Xaml.GridLength), typeof(HistoryList), new PropertyMetadata(default(Microsoft.UI.Xaml.GridLength)));
+ 
+         public static string GetHistoryItemAutomationName(string accExpression, string accResult)
+         {

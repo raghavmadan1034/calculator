@@ -1,0 +1,21 @@
+Build started 11/12/2026 4:33:49 PM.
+     1>Project "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" on node 1 (default targets).
+     1>PrepareForBuild:
+         Creating directory "bin\x64\Debug\net10.0\".
+         Creating directory "obj\x64\Debug\net10.0\".
+         Creating directory "C:\phase2\calculator-winui3\CalculatorUITests\obj\x64\Debug\net10.0\refint\".
+         Creating directory "obj\x64\Debug\net10.0\ref".
+     1>C:\Program Files\dotnet\sdk\10.0.404\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1004: Assets file 'C:\phase2\calculator-winui3\CalculatorUITests\obj\project.assets.json' not found. Run a NuGet package restore to generate this file. [C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj]
+     1>Done Building Project "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (default target) (1) ->
+       (ResolvePackageAssets target) -> 
+         C:\Program Files\dotnet\sdk\10.0.404\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1004: Assets file 'C:\phase2\calculator-winui3\CalculatorUITests\obj\project.assets.json' not found. Run a NuGet package restore to generate this file. [C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.59
+

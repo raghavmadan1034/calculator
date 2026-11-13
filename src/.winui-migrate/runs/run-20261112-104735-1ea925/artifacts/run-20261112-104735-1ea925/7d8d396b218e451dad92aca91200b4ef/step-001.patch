@@ -1,0 +1,109 @@
+--- a/Calculator.Tests/UnitTestApp.xaml.cs
++++ b/Calculator.Tests/UnitTestApp.xaml.cs
+@@ -3,22 +3,40 @@
+ 
+ using Microsoft.VisualStudio.TestPlatform.TestExecutor;
+ using Windows.ApplicationModel.Activation;
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace Calculator.Tests
+ {
+-    sealed partial class App : Application
++    sealed partial class App : global::Microsoft.UI.Xaml.Application
+     {
+         public App()
+         {
+             this.InitializeComponent();
+         }
+ 
+-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+-        {
+-            UnitTestClient.CreateDefaultUI();
+-            Window.Current.Activate();
+-            UnitTestClient.Run(e.Arguments);
+-        }
++        protected override async void OnLaunched(global::Microsoft.UI.Xaml.LaunchActivatedEventArgs e)
++{
++            
++    __WinUiTestWindow = new global::Microsoft.UI.Xaml.Window { Content = new global::Microsoft.UI.Xaml.Controls.Grid() };
++    __WinUiTestWindow.Activate();
++    global::Microsoft.VisualStudio.TestTools.UnitTesting.AppContainer.UITestMethodAttribute.DispatcherQueue = __WinUiTestWindow.DispatcherQueue;
++    try
++    {
++        var testArguments = global::System.Environment.GetCommandLineArgs()[1..];
++        global::System.Environment.ExitCode =
++            await global::Calculator.Tests.MicrosoftTestingPlatformApplication.RunAsync(testArguments);
++    }
++    catch (global::System.Exception error)
++    {
++        global::System.Console.Error.WriteLine(error);
++        global::System.Environment.ExitCode = 1;
++    }
++    finally
++    {
++        __WinUiTestWindow.Close();
++        Exit();
++    }
++}
++private global::Microsoft.UI.Xaml.Window __WinUiTestWindow = null!;
+     }
+ }
+
+--- a/Calculator.Tests/Calculator.Tests.csproj
++++ b/Calculator.Tests/Calculator.Tests.csproj
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
++
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+@@ -15,7 +16,7 @@
+     <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+     <EnableMsixTooling>true</EnableMsixTooling>
+     <WindowsPackageType>MSIX</WindowsPackageType>
+-  </PropertyGroup>
++  <WinUIMigrateTestHost>mstest-winui-mtp-v1</WinUIMigrateTestHost><IsTestProject>true</IsTestProject><EnableMSTestRunner>true</EnableMSTestRunner><GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint><GenerateTestingPlatformApplicationHelper>true</GenerateTestingPlatformApplicationHelper><TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport><WindowsAppSdkBootstrapInitialize>true</WindowsAppSdkBootstrapInitialize><WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp>true</WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp><WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize></PropertyGroup>
+ 
+   <ItemGroup>
+     <Compile Include="**\*.cs" />
+@@ -31,12 +32,12 @@
+   </ItemGroup>
+ 
+   <ItemGroup>
+-    <Content Include="Assets\StoreLogo.png" />
+-    <Content Include="Assets\Square150x150Logo.png" />
+-    <Content Include="Assets\Square44x44Logo.png" />
+-    <Content Include="Assets\Wide310x150Logo.png" />
+-    <Content Include="Assets\SplashScreen.png" />
+-    <Content Include="..\Calculator.ViewModels\DataLoaders\DefaultFromToCurrency.json">
++    <Content Include="Assets\StoreLogo.png" CopyToOutputDirectory="PreserveNewest" />
++    <Content Include="Assets\Square150x150Logo.png" CopyToOutputDirectory="PreserveNewest" />
++    <Content Include="Assets\Square44x44Logo.png" CopyToOutputDirectory="PreserveNewest" />
++    <Content Include="Assets\Wide310x150Logo.png" CopyToOutputDirectory="PreserveNewest" />
++    <Content Include="Assets\SplashScreen.png" CopyToOutputDirectory="PreserveNewest" />
++    <Content Include="..\Calculator.ViewModels\DataLoaders\DefaultFromToCurrency.json" CopyToOutputDirectory="PreserveNewest">
+       <Link>DataLoaders\DefaultFromToCurrency.json</Link>
+     </Content>
+   </ItemGroup>
+@@ -67,16 +68,16 @@
+ 
+   <ItemGroup>
+     <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.6.5" />
+-    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+-    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
++    
++    
+   </ItemGroup>
+ 
+   <!-- winui-migrate native component recipe: NuGet cannot restore a C++ project as a .NET dependency and .NET cannot reference Windows Runtime metadata directly, so the component's metadata
+        feeds the C#/WinRT projection and its implementation DLL is copied beside this project's output, where C#/WinRT activates it. -->
+   <Target Name="WinUIMigrateNativeWinRTComponents" AfterTargets="ResolveProjectReferences">
+     <ItemGroup>
+-      <ReferenceCopyLocalPaths Include="@(WinUIMigrateNativeWinRTComponent->'%(RootDir)%(Directory)%(Implementation)')" Condition="'%(WinUIMigrateNativeWinRTComponent.Implementation)' != ''" />
++      <ReferenceCopyLocalPaths Include="@(WinUIMigrateNativeWinRTComponent-&gt;'%(RootDir)%(Directory)%(Implementation)')" Condition="'%(WinUIMigrateNativeWinRTComponent.Implementation)' != ''" />
+     </ItemGroup>
+   </Target>
+ 
+-</Project>
++<ItemGroup><PackageReference Include="MSTest" Version="4.5.3" /><PackageReference Include="Microsoft.Testing.Extensions.PackagedApp" Version="2.5.3" /></ItemGroup></Project>

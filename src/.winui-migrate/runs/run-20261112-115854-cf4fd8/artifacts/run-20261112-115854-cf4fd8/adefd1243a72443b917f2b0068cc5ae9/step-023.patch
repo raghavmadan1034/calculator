@@ -1,0 +1,16 @@
+--- a/Calculator/Views/DateCalculator.xaml.cs
++++ b/Calculator/Views/DateCalculator.xaml.cs
+@@ -15,10 +15,10 @@
+ 
+ using Windows.Globalization;
+ using Windows.Globalization.DateTimeFormatting;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Automation;
+ using Microsoft.UI.Xaml.Automation.Peers;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml.Controls;
+ 
+ namespace CalculatorApp
+ {

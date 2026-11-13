@@ -1,0 +1,8 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  pch.cpp
+  TraceLoggingCommon.cpp
+     Creating library C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.lib and object C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.exp
+  TraceLogging.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.dll
+

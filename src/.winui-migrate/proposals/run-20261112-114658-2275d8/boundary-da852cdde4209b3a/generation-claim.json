@@ -1,0 +1,40 @@
+{
+  "request": {
+    "workspace": "C:\\phase2\\calculator-winui3",
+    "runId": "run-20261112-114658-2275d8",
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "runtime-compatibility",
+    "skill": "winui2-to-winui3-resources-and-theming",
+    "intent": "Resolve the recorded winui2-to-winui3-resources-and-theming capability boundary for Calculator\\Calculator.csproj. Preserve the approved requirements and existing behavior; do not invent architecture. ResourceLoader.GetForCurrentView has no registered deterministic repair yet. The UWP ResourceLoader factory is bound to a current view, which a desktop WinUI process does not have. ResourceLoader.GetForCurrentView is unsafe in the desktop current-view model. Detection is read-only; no source repair is registered in this change.",
+    "files": [
+      "Calculator\\App.xaml",
+      "Calculator\\App.xaml.cs",
+      "Calculator\\Views\\Calculator.xaml",
+      "Calculator\\Views\\Calculator.xaml.cs",
+      "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml",
+      "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml.cs"
+    ],
+    "automaticUnitKey": "",
+    "automaticUnitName": ""
+  },
+  "transactionId": "boundary-da852cdde4209b3a",
+  "boundary": {
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "runtime-compatibility",
+    "evaluationId": "69d90cfddd4a49d7ab811cd5b82d858a"
+  },
+  "parentHash": "20663cbbef18b4005342090d18d7eb4d9a310187b55d895853e7f26e78b89963",
+  "startedAt": "2026-11-12T11:51:18.7818051+00:00",
+  "mode": "winui-skill-repair-v1",
+  "maxFiles": 16,
+  "maxSourceBytes": 131072,
+  "maxPromptCharacters": 30000,
+  "maxSeconds": 600,
+  "maxTransportInvocations": 1,
+  "maxContextFiles": 2000,
+  "maxContextBytes": 33554432,
+  "maxContextFileBytes": 524288,
+  "maxAgentToolCalls": 64,
+  "maxAgentToolResultBytes": 8388608,
+  "maxAgentOutputBytes": 33554432
+}

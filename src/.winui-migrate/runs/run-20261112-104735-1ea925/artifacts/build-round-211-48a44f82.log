@@ -1,0 +1,7 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  GraphingImpl.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\GraphingImpl\GraphingImpl.dll
+  TraceLogging.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.dll
+  GraphControl.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\GraphControl\GraphControl.dll
+

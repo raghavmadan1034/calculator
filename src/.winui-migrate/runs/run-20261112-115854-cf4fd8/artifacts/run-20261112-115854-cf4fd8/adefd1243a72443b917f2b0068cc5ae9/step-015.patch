@@ -1,0 +1,16 @@
+--- a/Calculator/Controls/SupplementaryItemsControl.cs
++++ b/Calculator/Controls/SupplementaryItemsControl.cs
+@@ -5,10 +5,10 @@
+ 
+ using System.Collections.Generic;
+ 
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Automation;
+ using Microsoft.UI.Xaml.Automation.Peers;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml.Controls;
+ 
+ namespace CalculatorApp
+ {

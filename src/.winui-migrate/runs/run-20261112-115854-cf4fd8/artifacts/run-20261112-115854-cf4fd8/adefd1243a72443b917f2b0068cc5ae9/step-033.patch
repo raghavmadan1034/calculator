@@ -1,0 +1,116 @@
+--- a/Calculator/Views/TitleBar.xaml.cs
++++ b/Calculator/Views/TitleBar.xaml.cs
+@@ -4,8 +4,8 @@
+ using Windows.System.Profile;
+ using Windows.UI.Core;
+ using Windows.UI.ViewManagement;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
+ 
+@@ -47,7 +47,7 @@
+                 self.OnIsAlwaysOnTopModePropertyChanged((bool)args.OldValue, (bool)args.NewValue);
+             }));
+ 
+-        public event Windows.UI.Xaml.RoutedEventHandler AlwaysOnTopClick;
++        public event Microsoft.UI.Xaml.RoutedEventHandler AlwaysOnTopClick;
+ 
+         private void OnLoaded(object sender, RoutedEventArgs e)
+         {
+@@ -205,69 +205,69 @@
+         }
+ 
+         // Dependency properties for the color of the system title bar buttons
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonBackground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonBackground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonBackgroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonBackgroundProperty);
+             set => SetValue(ButtonBackgroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonBackgroundProperty =
+-            DependencyProperty.Register(nameof(ButtonBackground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonBackground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonForeground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonForeground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonForegroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonForegroundProperty);
+             set => SetValue(ButtonForegroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonForegroundProperty =
+-            DependencyProperty.Register(nameof(ButtonForeground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonForeground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonInactiveBackground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonInactiveBackground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonInactiveBackgroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonInactiveBackgroundProperty);
+             set => SetValue(ButtonInactiveBackgroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonInactiveBackgroundProperty =
+-            DependencyProperty.Register(nameof(ButtonInactiveBackground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonInactiveBackground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonInactiveForeground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonInactiveForeground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonInactiveForegroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonInactiveForegroundProperty);
+             set => SetValue(ButtonInactiveForegroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonInactiveForegroundProperty =
+-            DependencyProperty.Register(nameof(ButtonInactiveForeground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonInactiveForeground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonHoverBackground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonHoverBackground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonHoverBackgroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonHoverBackgroundProperty);
+             set => SetValue(ButtonHoverBackgroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonHoverBackgroundProperty =
+-            DependencyProperty.Register(nameof(ButtonHoverBackground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonHoverBackground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonHoverForeground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonHoverForeground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonHoverForegroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonHoverForegroundProperty);
+             set => SetValue(ButtonHoverForegroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonHoverForegroundProperty =
+-            DependencyProperty.Register(nameof(ButtonHoverForeground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonHoverForeground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonPressedBackground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonPressedBackground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonPressedBackgroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonPressedBackgroundProperty);
+             set => SetValue(ButtonPressedBackgroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonPressedBackgroundProperty =
+-            DependencyProperty.Register(nameof(ButtonPressedBackground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonPressedBackground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+-        public Windows.UI.Xaml.Media.SolidColorBrush ButtonPressedForeground
++        public Microsoft.UI.Xaml.Media.SolidColorBrush ButtonPressedForeground
+         {
+-            get => (Windows.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonPressedForegroundProperty);
++            get => (Microsoft.UI.Xaml.Media.SolidColorBrush)GetValue(ButtonPressedForegroundProperty);
+             set => SetValue(ButtonPressedForegroundProperty, value);
+         }
+         public static readonly DependencyProperty ButtonPressedForegroundProperty =
+-            DependencyProperty.Register(nameof(ButtonPressedForeground), typeof(Windows.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
++            DependencyProperty.Register(nameof(ButtonPressedForeground), typeof(Microsoft.UI.Xaml.Media.SolidColorBrush), typeof(TitleBar), new PropertyMetadata(null));
+ 
+         public bool BackButtonSpaceReserved
+         {

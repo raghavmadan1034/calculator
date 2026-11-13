@@ -1,0 +1,11 @@
+--- a/Calculator/Views/CalculatorScientificAngleButtons.xaml.cs
++++ b/Calculator/Views/CalculatorScientificAngleButtons.xaml.cs
+@@ -10,7 +10,7 @@
+ using CalculatorApp.ViewModel;
+ using CalculatorApp.ViewModel.Common;
+ 
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace CalculatorApp
+ {

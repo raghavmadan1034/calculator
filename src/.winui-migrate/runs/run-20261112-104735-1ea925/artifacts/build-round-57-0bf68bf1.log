@@ -1,0 +1,23 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  pch.cpp
+  TraceLogging.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.dll
+  dllmain.cpp
+  MathSolver.cpp
+     Creating library C:\phase2\calculator-winui3\x64\Debug\GraphingImpl\GraphingImpl.lib and object C:\phase2\calculator-winui3\x64\Debug\GraphingImpl\GraphingImpl.exp
+  GraphingImpl.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\GraphingImpl\GraphingImpl.dll
+  pch.cpp
+  Grapher.cpp
+  DeviceResources.cpp
+  NearestPointRenderer.cpp
+  RenderMain.cpp
+  TraceLogger.cpp
+  Equation.cpp
+  KeyGraphFeaturesInfo.cpp
+  XamlTypeInfo.Impl.g.cpp
+  XamlLibMetadataProvider.g.cpp
+  XamlTypeInfo.g.cpp
+     Creating library C:\phase2\calculator-winui3\x64\Debug\GraphControl\GraphControl.lib and object C:\phase2\calculator-winui3\x64\Debug\GraphControl\GraphControl.exp
+  GraphControl.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\GraphControl\GraphControl.dll
+

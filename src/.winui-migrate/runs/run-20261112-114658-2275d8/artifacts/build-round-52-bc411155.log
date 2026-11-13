@@ -1,0 +1,13 @@
+
+C:\phase2\calculator-winui3\Calculator.Tests\Calculator.Tests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+  CalcManager.Interop.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager.Interop\CalcManager.dll
+C:\phase2\calculator-winui3\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  GraphingImpl.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\GraphingImpl\GraphingImpl.dll
+  TraceLogging.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\TraceLogging\TraceLogging.dll
+C:\phase2\calculator-winui3\Calculator.ViewModels\Calculator.ViewModels.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  TraceLogging.Managed -> C:\phase2\calculator-winui3\TraceLogging.Managed\bin\x64\Debug\net8.0-windows10.0.26100.0\TraceLogging.Managed.dll
+  Calculator.ViewModels -> C:\phase2\calculator-winui3\Calculator.ViewModels\bin\x64\Debug\net8.0-windows10.0.26100.0\Calculator.ViewModels.dll
+C:\Program Files\dotnet\sdk\10.0.404\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1235,5): error NETSDK1130: TraceLogging.winmd cannot be referenced. Referencing a Windows Metadata component directly when targeting .NET 5 or higher is not supported. For more information, see https://aka.ms/netsdk1130 [C:\phase2\calculator-winui3\Calculator.Tests\Calculator.Tests.csproj]
+

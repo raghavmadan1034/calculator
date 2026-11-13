@@ -1,0 +1,58 @@
+Build started 11/12/2026 5:34:37 PM.
+     1>Project "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" on node 1 (default targets).
+     1>C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+     1>C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+     1>C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+     1>Project "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (1) is building "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" (2:2) on node 1 (default targets).
+     2>C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+     2>C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+     2>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreGenerateAssemblyInfo:
+       Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj\x64\Debug\net10.0\CalculatorUITestFramework.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         CalculatorUITestFramework -> C:\phase2\calculator-winui3\CalculatorUITestFramework\bin\x64\Debug\net10.0\CalculatorUITestFramework.dll
+     2>Done Building Project "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" (default targets).
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreGenerateAssemblyInfo:
+       Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj\x64\Debug\net10.0\CalculatorUITests.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       _CopyOutOfDateSourceItemsToOutputDirectory:
+       Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildRuntimeConfigurationFiles:
+       Skipping target "GenerateBuildRuntimeConfigurationFiles" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         CalculatorUITests -> C:\phase2\calculator-winui3\CalculatorUITests\bin\x64\Debug\net10.0\CalculatorUITests.dll
+     1>Done Building Project "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (default targets).
+
+Build succeeded.
+
+       "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (default target) (1) ->
+       (ResolvePackageAssets target) -> 
+         C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+         C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+         C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+
+
+       "C:\phase2\calculator-winui3\CalculatorUITests\CalculatorUITests.csproj" (default target) (1) ->
+       "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" (default target) (2:2) ->
+         C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+         C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+
+    5 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.43
+

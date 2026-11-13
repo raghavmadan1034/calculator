@@ -1,0 +1,33 @@
+Build started 11/12/2026 6:21:13 PM.
+     1>Project "C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj" on node 1 (default targets).
+     1>C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj\x64\Debug\net8.0-windows10.0.26100.0\TraceLogging.Managed.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         TraceLogging.Managed -> C:\phase2\calculator-winui3\TraceLogging.Managed\bin\x64\Debug\net8.0-windows10.0.26100.0\TraceLogging.Managed.dll
+       ComputeProcessXamlFiles:
+         (Out) ProcessedXamlFiles == 
+       CustomOutputGroupForPackaging:
+         (Out) Project='TraceLogging.Managed' ProcessedXamlFiles == 
+         (Out) XamlPackagingRootFolder == obj\x64\Debug\net8.0-windows10.0.26100.0\
+         (Out) ProcessedXamlFilesFullPath == 
+         (Out) Project='TraceLogging.Managed' CustomOutputGroupForPackagingOutput == 
+     1>Done Building Project "C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj" (default targets).
+
+Build succeeded.
+
+       "C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj" (default target) (1) ->
+       (ResolvePackageAssets target) -> 
+         C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.49
+

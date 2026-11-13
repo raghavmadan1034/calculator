@@ -1,0 +1,2881 @@
+{
+  "version": 1,
+  "parentInputRevision": "03a4c4514d040ccebe1c144e41cc38b285d47c97128c05b1e01ca34da0c65013",
+  "contextHash": "7fd25c24041de37b6f7a05d331bfa5e4bfac8c8127407ea8864f7ba54095c6e5",
+  "fileCount": 319,
+  "totalBytes": 17791316,
+  "capturedAt": "2026-11-12T12:07:29.8213426+00:00",
+  "files": [
+    {
+      "path": "Calculator.Tests\\Calculator.Tests.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\Calculator.Tests.csproj",
+      "bytes": 4410,
+      "hash": "fc6db33a90df6237dae3b2999ce49a205c0807f8954580f720a92f29a9af4b55",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\CopyPasteManagerTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\CopyPasteManagerTests.cs",
+      "bytes": 58843,
+      "hash": "8115265c05fad78c1652d50241d1c1039a46dccf116d1abfb62a5fab2fcc7e6c",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\CurrencyConverterTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\CurrencyConverterTests.cs",
+      "bytes": 15184,
+      "hash": "5c29f5bb52bd7acb56e75fcd6e297a3baa9edec3c9f6e6ebd6e8061bf9dc14c7",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\DateCalculatorTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\DateCalculatorTests.cs",
+      "bytes": 34816,
+      "hash": "c31fb1dae621d2ffd459584f36bf7eb1e2dd0b7dbdb00a58a487c565950600e8",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\GraphingViewModelTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\GraphingViewModelTests.cs",
+      "bytes": 1830,
+      "hash": "5a8ff0b4bfedaf24968b268ddc548925757eba47d368adfefc755d8d12565721",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\HistoryTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\HistoryTests.cs",
+      "bytes": 27106,
+      "hash": "788932b2d47882e0255b13e2dd5ee1161d7bedbd96ed5fa44cbac1280d00921d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\KeystrokeLatencyTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\KeystrokeLatencyTests.cs",
+      "bytes": 2665,
+      "hash": "70e27d905ff609123d6723e110fe9437e5ef5229227934862b3f62f8a6a5569f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\LocalizationSettingsTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\LocalizationSettingsTests.cs",
+      "bytes": 3737,
+      "hash": "a30ef2adfe218ea18051fb93977cbd1a5b87547fe58d67093253d481473ff0e8",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\MultiWindowTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\MultiWindowTests.cs",
+      "bytes": 35142,
+      "hash": "2b89bc3c803d117065a39828f80f7fc1d5d34b753ccc602a4b9c43db61c29b44",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\NarratorAnnouncementTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\NarratorAnnouncementTests.cs",
+      "bytes": 11143,
+      "hash": "b340b8d23f1047d1bb3a1f31948cd313b5496c30d7a53ba272c01ddc1211ccab",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\NavCategoryTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\NavCategoryTests.cs",
+      "bytes": 22778,
+      "hash": "4f3e39fc1512e6d390602c93f7f241fd5982a62476fd3cc56e77b0fa26beeea1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\Package.appxmanifest",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\Package.appxmanifest",
+      "bytes": 1870,
+      "hash": "99c0875fa554900127d818436814a03064d1b305bc79b0aae814f3e020c64724",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\SnapshotJsonTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\SnapshotJsonTests.cs",
+      "bytes": 9815,
+      "hash": "92fbd1284b815896028cfc3c175c68e5adc54842eca7b875d81941cdc0c86d1f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\SnapshotRoundTripTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\SnapshotRoundTripTests.cs",
+      "bytes": 20214,
+      "hash": "4d956300a78730b09b15fd76fb8b0758aa7f9a9bcb591e1850e2a0de31afe1f9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\StandardCalculatorViewModelTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\StandardCalculatorViewModelTests.cs",
+      "bytes": 58564,
+      "hash": "f99981b19028206976f8fb9b3a95a196a7864e4712c20bc55be4152864cabbe4",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\UnitConverterViewModelTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\UnitConverterViewModelTests.cs",
+      "bytes": 26972,
+      "hash": "f91f460466de94111233570bae59bf85840a204afc7ba6225a9f39221242d704",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\UnitTestApp.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\UnitTestApp.xaml",
+      "bytes": 234,
+      "hash": "6cf11911a82bf37a9ac3bb8aadb8044024b115ec54e7837c798767e54b799848",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\UnitTestApp.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\UnitTestApp.xaml.cs",
+      "bytes": 1433,
+      "hash": "467edec00244b53b4786376d608463ccba535d2b68e40e752dc2b40c50bd2fcd",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\UtilsTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\UtilsTests.cs",
+      "bytes": 1331,
+      "hash": "f1c2c8e706f7f47ba42c51e56a0923204ca9112be4a58ba39c8e223b77398f30",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.Tests\\ViewModelLifetimeTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.Tests\\ViewModelLifetimeTests.cs",
+      "bytes": 4484,
+      "hash": "bf4bd50dd6c7997908ada11f097a949faa8206f00e18416151fd997b9a8b848f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.Tests\\Calculator.Tests.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\ApplicationViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\ApplicationViewModel.cs",
+      "bytes": 11973,
+      "hash": "cc79533e713f602f396efcc05c973c75b42f4187ed7cc4d35f778ba61e53cb97",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "bytes": 2326,
+      "hash": "27ff36520e66408d518144a405aae1afdb280f5a4246dac6e7a052a9478f6ce5",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\AppResourceProvider.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\AppResourceProvider.cs",
+      "bytes": 1342,
+      "hash": "2bf0b26c3adb49149d692c06fb4553e20e6c8b1c0231a6e59722a24c9a08aac0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\Automation\\NarratorAnnouncement.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\Automation\\NarratorAnnouncement.cs",
+      "bytes": 9375,
+      "hash": "464e4c787bb07f60c70425a966c3575fca3495e559cd01d27c62c5f1d6e70c21",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\Automation\\NarratorNotifier.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\Automation\\NarratorNotifier.cs",
+      "bytes": 2556,
+      "hash": "645e8337e9419d17e2a79dbcf0ed997344933b9601087b5a604ebc4facbbfc78",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\BitLength.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\BitLength.cs",
+      "bytes": 344,
+      "hash": "e76d958fad2e575a0c058d406d1958e609b7900b07886fd44a285afe14e6b790",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\CalculatorButtonPressedEventArgs.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\CalculatorButtonPressedEventArgs.cs",
+      "bytes": 1633,
+      "hash": "b2a1b1b2e610e66058b02c8c8d467f23bfd3c5a93546ed44a9b655f87b44bbff",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\CalculatorDisplay.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\CalculatorDisplay.cs",
+      "bytes": 4854,
+      "hash": "d6413aebffa2fbbbe85c7a6d6dd2c6bc3c08b4d54213bd3201c0df4c139ca97a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\CopyPasteManager.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\CopyPasteManager.cs",
+      "bytes": 24776,
+      "hash": "cfee60f5a85af5ede3c2c3116600f12a0d4d42389ed55e90b2810f53edd09ec2",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\DateCalculator.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\DateCalculator.cs",
+      "bytes": 12603,
+      "hash": "aa8cf36d3cf81282c210ef4d706aad6636e3b6fdbf8ab60a530fd52f9580fa20",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\DelegateCommand.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\DelegateCommand.cs",
+      "bytes": 760,
+      "hash": "bb1ff440d17ad96756e1067b690e2cb57bf22bdf363eb06f3fc5642ad41a6675",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\DisplayExpressionToken.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\DisplayExpressionToken.cs",
+      "bytes": 1613,
+      "hash": "489a0e408f28d0ce2861c91006a81a2eb3a66a2eb8b98ecbbcc8ca3303e35471",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\EngineResourceProvider.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\EngineResourceProvider.cs",
+      "bytes": 1866,
+      "hash": "d9bdaedb121e3c91715000883d6d6755121a620a7a5259c9e4070242f0b5a311",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\ExpressionCommandDeserializer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\ExpressionCommandDeserializer.cs",
+      "bytes": 4116,
+      "hash": "00f9dd4b4d155f603470c4b30d15f3e1629446c4999a67054fa54b6809bcddb1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\ExpressionCommandSerializer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\ExpressionCommandSerializer.cs",
+      "bytes": 1637,
+      "hash": "bb13643532ace53a1a3202e773661ba521b321aafc4938b353dba5a12ba0ad21",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\LocalizationSettings.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\LocalizationSettings.cs",
+      "bytes": 23819,
+      "hash": "62169ea8949f522d239e95727c4a38b9363f8eec3b7310d1c3409cd6fb106a0f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\LocalizationStringUtil.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\LocalizationStringUtil.cs",
+      "bytes": 4589,
+      "hash": "ef7238b6ee6377bd3ffe0fe18c74fa9cc60238681476c1ffc5926fbbc7da23a0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\MyVirtualKey.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\MyVirtualKey.cs",
+      "bytes": 3050,
+      "hash": "2eeabf8148a4094d5776881cf69cd2012a01a9efa5304115872b9c33c8b22b41",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\NavCategory.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\NavCategory.cs",
+      "bytes": 20635,
+      "hash": "7666ac8d6c37b7969342c2a5b1829b1846a4f1dbac654b66477e1038c6243b40",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\NetworkManager.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\NetworkManager.cs",
+      "bytes": 4069,
+      "hash": "8e5c86e5b70dc5135c9c14f8fdc432dba13b6c11c35c55691163679bad02f84b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\NumberBase.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\NumberBase.cs",
+      "bytes": 300,
+      "hash": "0cd2b15f9d86c883a418137c33f9ab36d674f81f900b8b6d23cf0d46d3bcad54",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\NumbersAndOperatorsEnum.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\NumbersAndOperatorsEnum.cs",
+      "bytes": 4744,
+      "hash": "dff4fd198eeb688de55bc3417167375310df1c4a2824a91c15ea60516195fb39",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\RadixType.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\RadixType.cs",
+      "bytes": 253,
+      "hash": "83c70b770be14f60f1a356b100db8724b6a8db9274f79082cd1bc075baad71e9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\TokenType.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\TokenType.cs",
+      "bytes": 245,
+      "hash": "82ba6b7295a3baebf30198aaaa26daeebcf7392b0b5e5746d198bff22ce9a9d3",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\TraceLogger.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\TraceLogger.cs",
+      "bytes": 14357,
+      "hash": "f51a0f2045942777d0b331ec819d2c765651b8f40450278e993889a4aa96e35f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Common\\Utils.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Common\\Utils.cs",
+      "bytes": 7065,
+      "hash": "8e04e222853727b3e75aeff7be12906e833f342876cc73474026ca7ff15c600e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\DataLoaders\\CurrencyDataLoader.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\DataLoaders\\CurrencyDataLoader.cs",
+      "bytes": 37574,
+      "hash": "2b2cd957578a61c2a9817c796120aaf7b2bc0d62245390a5d21a1b1ca9380196",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\DataLoaders\\CurrencyHttpClient.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\DataLoaders\\CurrencyHttpClient.cs",
+      "bytes": 3814,
+      "hash": "7409bbabe3dc49e441053336706e09bd25e3711e532dac2b6623aa99efc28ac0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\DataLoaders\\DefaultFromToCurrency.json",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\DataLoaders\\DefaultFromToCurrency.json",
+      "bytes": 1888,
+      "hash": "1a6678a0a6b7232e396c338c984f517d0749abd4dee97a0fea83b9d7b01716cd",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\DataLoaders\\UnitConverterDataLoader.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\DataLoaders\\UnitConverterDataLoader.cs",
+      "bytes": 50492,
+      "hash": "d374e6964b1173911ff54cb06303821b5c166f5815059eb1c1fbc01008089d2a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\DateCalculatorViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\DateCalculatorViewModel.cs",
+      "bytes": 13021,
+      "hash": "09d352c9ac8722266101168e45355ea5e70b2d709d8b872bda8946a59d654c58",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\GraphingCalculatorEnums.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\GraphingCalculatorEnums.cs",
+      "bytes": 740,
+      "hash": "7158d9c0c469377ab2fb28b7f25afa9a5902674852b5ce0b4f6d4e2ec8923b4e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\GraphingCalculator\\EquationViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\GraphingCalculator\\EquationViewModel.cs",
+      "bytes": 21024,
+      "hash": "81df70f57d0ff97e0c47b64c2b3d33da52294a0615099aa8c79bea662ca73953",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\GraphingCalculator\\GraphingCalculatorViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\GraphingCalculator\\GraphingCalculatorViewModel.cs",
+      "bytes": 3226,
+      "hash": "4fa6223c9979b17209b855c39b8ace47b667ce5948157ec18dd233ddfdc70ab8",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\GraphingCalculator\\GraphingSettingsViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\GraphingCalculator\\GraphingSettingsViewModel.cs",
+      "bytes": 10210,
+      "hash": "fb989fd2eea69d614ddc1c1dca19259239a31e3f22f550390850b7404069a49b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\GraphingCalculator\\VariableViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\GraphingCalculator\\VariableViewModel.cs",
+      "bytes": 3474,
+      "hash": "48e5352bf55f4b0702c3347cecec07fb631812c40cf5e0f251596de6c2a7cfe2",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\HistoryItemViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\HistoryItemViewModel.cs",
+      "bytes": 2949,
+      "hash": "5404b09e09622c6090a757f38c9daf3f8e93c14a599a3291f0c0b51f0967ea83",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\HistoryViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\HistoryViewModel.cs",
+      "bytes": 6987,
+      "hash": "5307fd8fd27305a41508784529d3a994f7efecb0ebced83446392f613fdd3b80",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\MemoryItemViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\MemoryItemViewModel.cs",
+      "bytes": 1005,
+      "hash": "1bf0f7d6927ee0190199a99d7fa2244580a566469cf34ab0fd6385682b1bf3f1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Properties\\AssemblyInfo.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Properties\\AssemblyInfo.cs",
+      "bytes": 541,
+      "hash": "52881d30f919648e65d5c911811098316445c41aace8c6675afe1227f66e78a8",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Properties\\Calculator.ViewModels.rd.xml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Properties\\Calculator.ViewModels.rd.xml",
+      "bytes": 1585,
+      "hash": "c625741b153013c9a0dddea493077e074fa90cf1705b2920d5638f810a883a4d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Snapshots.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Snapshots.cs",
+      "bytes": 10976,
+      "hash": "c8b70d590a8ce8c5ef38a0bbecde63d6eaca0003d6ebea23bc247c99debd437b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\StandardCalculatorViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\StandardCalculatorViewModel.cs",
+      "bytes": 83708,
+      "hash": "6bf167d9e20ca72f408ed72532d032304086807339c203c89bb34cb197c6efbd",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\UnitConverterViewModel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\UnitConverterViewModel.cs",
+      "bytes": 59269,
+      "hash": "93d07270f8d58db48f5451a8b9da57bb3e4c160da345662cefb8e00a00cc9ea1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Utils\\JsonUtils.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Utils\\JsonUtils.cs",
+      "bytes": 11795,
+      "hash": "bf2704ae018febe94dfa59fff5b21ca8313b48273fed8ac005861af0a91046bd",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.ViewModels\\Utils\\SnapshotLaunchArguments.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.ViewModels\\Utils\\SnapshotLaunchArguments.cs",
+      "bytes": 1326,
+      "hash": "21ce44997052cb2386294b08c39fa920c70b65ae3d85d1a806295c7cf39971e0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator.ViewModels\\Calculator.ViewModels.csproj"
+    },
+    {
+      "path": "Calculator.slnx",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator.slnx",
+      "bytes": 2374,
+      "hash": "5e7314af9858dd6a871112098f834d529432f44f0ec3330c9d2bdc33b4c4591c",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": ""
+    },
+    {
+      "path": "CalculatorUITestFramework\\CalculatorApp.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\CalculatorApp.cs",
+      "bytes": 3691,
+      "hash": "8756d0d262b1d3c5a4c603515173277e8e0c2591d4afa1b13e49ddf00ae5b685",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\CalculatorDriver.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\CalculatorDriver.cs",
+      "bytes": 2620,
+      "hash": "726596bec4d7fff80f3f6ed3ae6a16df3590a2e7666b226f7befc4ac7a4c46ec",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\CalculatorResults.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\CalculatorResults.cs",
+      "bytes": 2743,
+      "hash": "31b3c84c869ed23ed5c0c28b8683211e64e1fe8fb393ef5258156c5e2715a172",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "bytes": 506,
+      "hash": "b59f9fd52cdd680ee85d171299966f5175c2dbc40ee36b5d9a9e1ea862cb19aa",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\HistoryItem.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\HistoryItem.cs",
+      "bytes": 742,
+      "hash": "e591f2d49407e4057449a21abd481a8b2324550d2cbdcd9d7df3e0f8a55cb7c2",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\HistoryPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\HistoryPanel.cs",
+      "bytes": 5973,
+      "hash": "a2c8b650e6220612b069ddc02921caa7c7b9591ea6f3e08e06d68ecd214b90f5",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\MemoryItem.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\MemoryItem.cs",
+      "bytes": 455,
+      "hash": "21e4614c331933a600696b2051618de439235eed2c0650e4a203b1c831d59178",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\MemoryPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\MemoryPanel.cs",
+      "bytes": 7530,
+      "hash": "b9076e8ea00d96060db66183167570f5a3cc3628eea106c9fd36db1703ee1954",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\NavigationMenu.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\NavigationMenu.cs",
+      "bytes": 2506,
+      "hash": "5ab5764f523a70db148b44dca030ab9be8b7563e12d98fe8ecd8efb40f67faf4",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\NumberPad.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\NumberPad.cs",
+      "bytes": 3632,
+      "hash": "78491db5810657ef9bc5472165dc82eb40b2e9ebde3760a1d1e51b5c692db0c9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\ProgrammerCalculatorPage.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\ProgrammerCalculatorPage.cs",
+      "bytes": 2158,
+      "hash": "414e5b4d48eebfba6e81bf6cd875e9a852cf63eb538fdf87a4d8fda3d1c01c1a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\ProgrammerOperatorsPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\ProgrammerOperatorsPanel.cs",
+      "bytes": 12153,
+      "hash": "c515612a8fb0cd7afa46c391d84831b6c3da68e0d878b4bd5a64cbadd764115d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\ScientificCalculatorPage.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\ScientificCalculatorPage.cs",
+      "bytes": 1960,
+      "hash": "fb7679e3cb6849bb3fad7c5ce060aba47a5e95ef898ec83b38e7ed7689459411",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\ScientificOperatorsPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\ScientificOperatorsPanel.cs",
+      "bytes": 8891,
+      "hash": "830b31e0a9a7ec91722dbb92c6ffb40d89670bd7459b5f584a728fae59f5e871",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\StandardAoTCalculatorPage.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\StandardAoTCalculatorPage.cs",
+      "bytes": 6220,
+      "hash": "338b8bb733339ad6a48683864e7804ca554d41e3d96cbfa23a4103ce0007b293",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\StandardCalculatorPage.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\StandardCalculatorPage.cs",
+      "bytes": 2957,
+      "hash": "a4e08e8c2da2f2cc9622b4b8b052a6f2a4017042b30699f1b297949eb58eb140",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\StandardOperatorsPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\StandardOperatorsPanel.cs",
+      "bytes": 2008,
+      "hash": "8badeec67ebe58139eb149d801b14a878ca703d5cf7318fb1be8a3b9bc9421ff",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\UnitConverterOperatorsPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\UnitConverterOperatorsPanel.cs",
+      "bytes": 810,
+      "hash": "44ec900c7656b3d9f43004f1bc27ec86fa8758791cf21fa539efc23ef5e46f5a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\UnitConverterPage.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\UnitConverterPage.cs",
+      "bytes": 3543,
+      "hash": "070622094ead2fb328fac0e4e7cbd934917a717088fc5823c659964717a56a18",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\UnitConverterResults.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\UnitConverterResults.cs",
+      "bytes": 1766,
+      "hash": "6e68d379ad9e3a0f362ae887540360527518dcb3aec8cb1eb1fb4cceb579e435",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\WinAppDriverLocalServer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\WinAppDriverLocalServer.cs",
+      "bytes": 4184,
+      "hash": "296dd62472dafa185de6de99c382c64197bfc0d794cda973b96c3818958546ea",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\WindowsDriverExtensions.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\WindowsDriverExtensions.cs",
+      "bytes": 3186,
+      "hash": "106b9e6705eecd2f9f1b36b8ae6b19004625c8f6ac73aeb160bfbe15a727bdb9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITestFramework\\WindowsElementExtensions.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITestFramework\\WindowsElementExtensions.cs",
+      "bytes": 1353,
+      "hash": "7f2dffac0ede9de87c7bef764749fe853eccde2bb1c2defc71017df8b89fa567",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\CalculatorUITests.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\CalculatorUITests.csproj",
+      "bytes": 1350,
+      "hash": "ffc93ae6fd197b75dc4802f6429279f20321c5ce99c4e93e90cae2528ebc16d0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\CurrencyConverterFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\CurrencyConverterFunctionalTests.cs",
+      "bytes": 16988,
+      "hash": "cc5bd2d06ffcdc2da3b2d2ca72697321608561600a418134c4a4f433bb0b10c3",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\HistoryFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\HistoryFunctionalTests.cs",
+      "bytes": 11596,
+      "hash": "797525c9eb0ee57ba0f418a2d63058d4c9d099c0f402cf59cb574129492c4c04",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\MemoryFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\MemoryFunctionalTests.cs",
+      "bytes": 10551,
+      "hash": "06f275d5ecf8a5106d1dc9bf5172002595ac7274a582d3bfb0b6df5474c037fa",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\ProgrammerModeFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\ProgrammerModeFunctionalTests.cs",
+      "bytes": 40282,
+      "hash": "58989e33ab5838364133afdd8dad29dd81964af2f36e416f0d58a562a84d9d00",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\ScientificModeFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\ScientificModeFunctionalTests.cs",
+      "bytes": 30609,
+      "hash": "bbdc6bc6432765270934f4a9c001f6f48e1f2266664cd4aff73e97b39d853e63",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUITests\\StandardModeFunctionalTests.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUITests\\StandardModeFunctionalTests.cs",
+      "bytes": 47733,
+      "hash": "17c185a4b827f0e81fc5b82975a4133783e29a1685304a2e4db3a8d0e52dd66d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUITests\\CalculatorUITests.csproj"
+    },
+    {
+      "path": "CalculatorUnitTests\\Package.appxmanifest",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUnitTests\\Package.appxmanifest",
+      "bytes": 1739,
+      "hash": "c6c314c9a959c76016a8c70bd412f4d8932598751eb47a165ee20668b8d82904",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj"
+    },
+    {
+      "path": "CalculatorUnitTests\\Test.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUnitTests\\Test.resw",
+      "bytes": 20620,
+      "hash": "031af7a4237aef23238772a2ecd670952feb288cc8e307bdbfd00800820abfda",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj"
+    },
+    {
+      "path": "CalculatorUnitTests\\UnitTestApp.rd.xml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUnitTests\\UnitTestApp.rd.xml",
+      "bytes": 1281,
+      "hash": "31399456edd4fec2073248ecadd30744bb3930918481f25afd6f44813bbd08ec",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj"
+    },
+    {
+      "path": "CalculatorUnitTests\\UnitTestApp.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\CalculatorUnitTests\\UnitTestApp.xaml",
+      "bytes": 290,
+      "hash": "51556dd7dae6d3e45ba6d1d8704eced5cc05ba5249faafc54a49856d95db0a7e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj"
+    },
+    {
+      "path": "Calculator\\App.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\App.xaml",
+      "bytes": 191507,
+      "hash": "9443091b815f35b71f57ef84472b5b591cb8616fc5890898930db15cdef27e34",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\App.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\App.xaml.cs",
+      "bytes": 7747,
+      "hash": "52e2020a49fe89c3e969d31d6b2e81a47e5bcb69425eff86fa20abc1fbcc67a3",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Calculator.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Calculator.csproj",
+      "bytes": 27872,
+      "hash": "278a6b7b4af55b2e5a314020ac805fbcc4ff43d3e56ef6a9749a59d820ba49be",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Common\\AppLifecycleLogger.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Common\\AppLifecycleLogger.cs",
+      "bytes": 6140,
+      "hash": "334f1834b3fad0c059f47e3bca61c78ab10a8483bcbc5fc0ea229abf72b43b4c",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Common\\KeyboardShortcutManager.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Common\\KeyboardShortcutManager.cs",
+      "bytes": 38843,
+      "hash": "d89ea629a89b092d6c8547aa1b8d579378ea6fc336e6653c89e25a31d17dbe1e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Common\\LaunchArguments.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Common\\LaunchArguments.cs",
+      "bytes": 1549,
+      "hash": "daa365d5ebb93e7e786f8a70bd858eb106f4a8da3e9ed859948e693543b7df45",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\CalculationResult.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\CalculationResult.cs",
+      "bytes": 20662,
+      "hash": "54b3abdbca6d255d163700de92e3b55c732c7fa6514893a3444733b6bdc4fe9a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\CalculationResultAutomationPeer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\CalculationResultAutomationPeer.cs",
+      "bytes": 1179,
+      "hash": "bb1c3361034a52b76a390608e0ed721ac54a8b01ad9dc7254883967c47f17a21",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\CalculatorButton.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\CalculatorButton.cs",
+      "bytes": 7671,
+      "hash": "38da331c29fce20387027e328328668d1fb03ac5e9f2068e12a1f9332108d84a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\EquationTextBox.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\EquationTextBox.cs",
+      "bytes": 25673,
+      "hash": "770206d998bcd7691ade8dd094dae441d63e97f856048f4f4f74247de869acf1",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\FlipButtons.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\FlipButtons.cs",
+      "bytes": 4453,
+      "hash": "6ded4ff70c64601081e3979fd2fa7f9329df5cde8ef009ffbba8896f6a5b1e97",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\HorizontalNoOverflowStackPanel.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\HorizontalNoOverflowStackPanel.cs",
+      "bytes": 3097,
+      "hash": "37b55e15b266895807139317a2a3e47567d18a9a952a9841cdf3fec501370694",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\MathRichEditBox.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\MathRichEditBox.cs",
+      "bytes": 9963,
+      "hash": "bdded73838a355039c229c8c0f0a84fd97a5adc83357081bc9433b75d4258cc5",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\OperatorPanelButton.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\OperatorPanelButton.cs",
+      "bytes": 3756,
+      "hash": "45cb32f3304c8fae20fbc16ac2a70fffeff3af98b22d207fe6e289e309956e55",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\OperatorPanelListView.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\OperatorPanelListView.cs",
+      "bytes": 5965,
+      "hash": "54ab5edd52e3fdd67c316718e1d23036aafed1533f82761ae251b50194e1363b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\OverflowTextBlock.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\OverflowTextBlock.cs",
+      "bytes": 14318,
+      "hash": "f83d84e51aff5b246ba8ffebea0873c9ccb972e474e503c8d762ddae484b37a9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\OverflowTextBlockAutomationPeer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\OverflowTextBlockAutomationPeer.cs",
+      "bytes": 826,
+      "hash": "90ab60bdc33908b1136c7447a5e369cb1b08d0ffb15bdc8e7dfb4a855961b866",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\RadixButton.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\RadixButton.cs",
+      "bytes": 603,
+      "hash": "7be01b5105bad92257ae288e1c0fb8ec1c16e6f25f75a5084be4d24cd56682aa",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Controls\\SupplementaryItemsControl.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Controls\\SupplementaryItemsControl.cs",
+      "bytes": 2085,
+      "hash": "28a66442c743998c0713945fd7ca8516582cc869ed0a89afa7aefd0f931a0fd2",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\BooleanNegationConverter.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\BooleanNegationConverter.cs",
+      "bytes": 966,
+      "hash": "cb4971e7306114a200f104b9037bcffee9e267b39fc3de4f8c82924a4cab473e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\BooleanToVisibilityConverter.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\BooleanToVisibilityConverter.cs",
+      "bytes": 2106,
+      "hash": "c25a741842a157c4810fde9c269cf520241872be20c120e6e1ba39ecf30b40e5",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\ExpressionItemTemplateSelector.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\ExpressionItemTemplateSelector.cs",
+      "bytes": 1586,
+      "hash": "bea90b21914b7266b6b42d44d6fbf37a93df663a28c9bcf778cf548af4ea5d2e",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\ItemSizeToVisibilityConverter.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\ItemSizeToVisibilityConverter.cs",
+      "bytes": 1424,
+      "hash": "2e8dbf09db6d76bc98c053e531cfc434dcf47d9952179f007585ba91d05cce83",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\RadixToStringConverter.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\RadixToStringConverter.cs",
+      "bytes": 2097,
+      "hash": "ae63c29f3cd5894822104f56b367a60e55b979c9a69567842b4c5150eabde744",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Converters\\VisibilityNegationConverter.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Converters\\VisibilityNegationConverter.cs",
+      "bytes": 1083,
+      "hash": "8b3cd94e952b2dddd9e1a9745bed8fbb3b8190809a93e4721e224c7d72626a80",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Package.Release.appxmanifest",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Package.Release.appxmanifest",
+      "bytes": 4305,
+      "hash": "b50241211f99048d80b5eab8ed09e34c3af464cadd35f2ac4ba8bed184ccf6e4",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Package.appxmanifest",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Package.appxmanifest",
+      "bytes": 4356,
+      "hash": "719964e4eed5d4cf1208e4fe02cedfc87e039571f25fe9de65069f2b989f0b57",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Properties\\AssemblyInfo.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Properties\\AssemblyInfo.cs",
+      "bytes": 674,
+      "hash": "2227d49d01282e125ecd668d0522e75d65f8a3f029c1e7ea67af3f208d41a641",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Properties\\Default.rd.xml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Properties\\Default.rd.xml",
+      "bytes": 1041,
+      "hash": "e3d0246fc484f396ded8879a28690de148bb2f6338683480f6faf6ba9d631935",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\af-ZA\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\af-ZA\\CEngineStrings.resw",
+      "bytes": 7264,
+      "hash": "ada5f24d2938ff1d3e6a3f7ded983e294fda397dc7b9e3c48747bba9706e7064",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\af-ZA\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\af-ZA\\Resources.resw",
+      "bytes": 236192,
+      "hash": "65a6384b2a365ddd96386b7262382d46b10b3f98cb7626dd5c98a34b5199f1eb",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\am-ET\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\am-ET\\CEngineStrings.resw",
+      "bytes": 7357,
+      "hash": "5adcada1c4811836f713827476f7d9e2a116c3bbab7556252ffd9a982eb6767a",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\am-ET\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\am-ET\\Resources.resw",
+      "bytes": 246590,
+      "hash": "8e51844c4f14b5b90d4ed547cb775eeafcdd9f7de54e7a967d76d8ac270a99bf",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ar-SA\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ar-SA\\CEngineStrings.resw",
+      "bytes": 7342,
+      "hash": "11d17c6245bde8f159fbfc74672a940fbc02195354bf6c756dce0261761e90b5",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ar-SA\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ar-SA\\Resources.resw",
+      "bytes": 247792,
+      "hash": "7966596cfd068056e63d3624637a1747be14cfcf6aef6107c52dc73769d8b9e0",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\az-Latn-AZ\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\az-Latn-AZ\\CEngineStrings.resw",
+      "bytes": 7294,
+      "hash": "a5a619b4f826e732e29309a5b82e8c03d14a3ca36fd5aceec7d880114e48b973",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\az-Latn-AZ\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\az-Latn-AZ\\Resources.resw",
+      "bytes": 237976,
+      "hash": "d73608d67f0d0c2843962bbb80327c94125a5a27f21eee64c9e72ae1e2a43d55",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\bg-BG\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\bg-BG\\CEngineStrings.resw",
+      "bytes": 7399,
+      "hash": "634c059e122dcd2792a1afa2fc9f69a0e73ca0a538c0e9fd07e341beaf238c8d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\bg-BG\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\bg-BG\\Resources.resw",
+      "bytes": 251587,
+      "hash": "7bdb9155b0cc354da2ece62023b42780cd4675b2bb7a106f80c7d2eba0e34b2b",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ca-ES\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ca-ES\\CEngineStrings.resw",
+      "bytes": 7296,
+      "hash": "1ce4c044cbf056b41ed223f4d1018b5068d85990fa9b005c938c5054ff897597",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ca-ES\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ca-ES\\Resources.resw",
+      "bytes": 238289,
+      "hash": "cf3ad087efacb5038e0284ce0062a54bbf59b990167c88024d742ce78863558c",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\cs-CZ\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\cs-CZ\\CEngineStrings.resw",
+      "bytes": 7260,
+      "hash": "a9037debea36cf2ac21e3563fdf7f9a6a0cb84cd510d3715494e30705002106d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\cs-CZ\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\cs-CZ\\Resources.resw",
+      "bytes": 237692,
+      "hash": "c0cb674c8c42d395ec343cd40a0ed1dfc499ccb2d59a05273c19b4b4eb7a036b",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\da-DK\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\da-DK\\CEngineStrings.resw",
+      "bytes": 7260,
+      "hash": "4aaf46513c84fc6997954e58a3e0cb0fba9a0a405cb93c28fbe310abc3650496",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\da-DK\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\da-DK\\Resources.resw",
+      "bytes": 236047,
+      "hash": "4afa1dee98e90611fb68e4c5f37f0f3f81d48ae215fb7d8cdf3866f3348e54ff",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\de-DE\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\de-DE\\CEngineStrings.resw",
+      "bytes": 7265,
+      "hash": "7967bf53e1df10ecfeaba5cd17a978be6d6487e4d4db72f0c93e3f608dfb393f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\de-DE\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\de-DE\\Resources.resw",
+      "bytes": 237566,
+      "hash": "cabe69666559b4de346e3507bb57f9793d4b7d4bba17b588a6c80cb50b6d6057",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\el-GR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\el-GR\\CEngineStrings.resw",
+      "bytes": 7428,
+      "hash": "a6b8b27e56902e33455c5ef81ae3ddebb7d1c1dc2308cc7351740f8306a6f4e7",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\el-GR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\el-GR\\Resources.resw",
+      "bytes": 251847,
+      "hash": "f8200bc53f8de300974bc05b352a64eaa2d1f302b26461d653fcea18d16f2ddf",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\en-GB\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\en-GB\\CEngineStrings.resw",
+      "bytes": 7227,
+      "hash": "2392f56de3f6b824b50f2bc8005992c1c24c5e8db7a5f51a6b6dd5fa486904f8",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\en-GB\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\en-GB\\Resources.resw",
+      "bytes": 235136,
+      "hash": "6ce025b0d24954356314c0e066fa353ac768d4586f1ca7ff4396af77e9042152",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\en-US\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\en-US\\CEngineStrings.resw",
+      "bytes": 22322,
+      "hash": "d33e34d2576655d61476c87c350a584b445218a9045bb72f71f42d6107853fca",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\en-US\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\en-US\\Resources.resw",
+      "bytes": 279612,
+      "hash": "c3482fe958c7da16f9fe35a7469ebfb158c8e182fb981c26deb5721ab0dfac92",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\es-ES\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\es-ES\\CEngineStrings.resw",
+      "bytes": 7269,
+      "hash": "c17b8e0cec5deca1a5eb668601703647576bb91a011c274996494b4fdbab7b29",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\es-ES\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\es-ES\\Resources.resw",
+      "bytes": 238252,
+      "hash": "dd74512f2303d6dceba23e27e0ad3e75f7f203c68c20ef0d296569836d78f7a9",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\es-MX\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\es-MX\\CEngineStrings.resw",
+      "bytes": 7269,
+      "hash": "c17b8e0cec5deca1a5eb668601703647576bb91a011c274996494b4fdbab7b29",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\es-MX\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\es-MX\\Resources.resw",
+      "bytes": 238331,
+      "hash": "dfc36a4efa936d5e374bdb1f69e88232ad9386f82a19dcc49f2d4925f31a541d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\et-EE\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\et-EE\\CEngineStrings.resw",
+      "bytes": 7269,
+      "hash": "c13ded8464d260c26bbb8aa24e5f78a72e3173400c25d3675a99fddd95102655",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\et-EE\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\et-EE\\Resources.resw",
+      "bytes": 236425,
+      "hash": "644ba2a490bbaa887a1b71733cef0a58945472679c1608b2f60f768b4cb92cee",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\eu-ES\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\eu-ES\\CEngineStrings.resw",
+      "bytes": 7274,
+      "hash": "42a6c8a00d85da129600f94ba2a1f7b2c4fd173f4a6d61945e0b6d05ae887abd",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\eu-ES\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\eu-ES\\Resources.resw",
+      "bytes": 236960,
+      "hash": "f1d834de2c9ff8428e2fbb44b12b313fbdd396caea9154be3d3539ef1304aad5",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fa-IR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fa-IR\\CEngineStrings.resw",
+      "bytes": 7344,
+      "hash": "71d62ea183d89ec02a855bca2c837f6b660142c7b343e9dff6a4651fe64026a0",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fa-IR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fa-IR\\Resources.resw",
+      "bytes": 246605,
+      "hash": "c380107838e5a0e64d57d62af8886c23a6d0ffc02472118f95953143ff82e447",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fi-FI\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fi-FI\\CEngineStrings.resw",
+      "bytes": 7250,
+      "hash": "dd2bfbb53f76e2f984a70abc41bd6d4be82bf05f5c73c0f0fb07025c5109aaef",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fi-FI\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fi-FI\\Resources.resw",
+      "bytes": 237020,
+      "hash": "a8f326c86882b370e882e8e11cb1b82a42b2f15e851d0956e7e6d387c0d974a3",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fil-PH\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fil-PH\\CEngineStrings.resw",
+      "bytes": 7261,
+      "hash": "376d4dec7561b80976263da7b4589e32124cb71a19d9d850b781809e8591cf88",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fil-PH\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fil-PH\\Resources.resw",
+      "bytes": 237676,
+      "hash": "869d839ddd5905acfe24c399ec9937d1b6c0456110dfde4c3a8c42c1dd7854d7",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fr-CA\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fr-CA\\CEngineStrings.resw",
+      "bytes": 7264,
+      "hash": "061bccb77c80967891723fe5856bbe7d223c7ccce4c388f92aabce6c8ce20c5b",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fr-CA\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fr-CA\\Resources.resw",
+      "bytes": 238852,
+      "hash": "01de3b7992f943d6f26ed67085640e73db6a1c5ba83a2d1ed3ffbf449d5526f9",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fr-FR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fr-FR\\CEngineStrings.resw",
+      "bytes": 7328,
+      "hash": "8d1cf1b0891d4a6736b87378be4e985d40b73ccf97f866352fe9aa774bffcaf9",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\fr-FR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\fr-FR\\Resources.resw",
+      "bytes": 239190,
+      "hash": "884e7f2b775eca1b5f2474a74980ac1ff441b02e73b53e1ec46944399cc7f8a7",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\gl-ES\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\gl-ES\\CEngineStrings.resw",
+      "bytes": 7258,
+      "hash": "2d951adf1aa211c79e5fd5e56cc8b96284ba62789486b7227b6926ec0905832d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\gl-ES\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\gl-ES\\Resources.resw",
+      "bytes": 238086,
+      "hash": "4ff326b54dea15d2f38bcbc92b9191bafba89594f88e799c99b28602f0a59d35",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\he-IL\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\he-IL\\CEngineStrings.resw",
+      "bytes": 7292,
+      "hash": "c0890e2db7190c4f92bb17f8351ccaf8e80d8b3e209ffd2c34090aaa70200e40",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\he-IL\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\he-IL\\Resources.resw",
+      "bytes": 244257,
+      "hash": "90c38b09d0860dae608ffb16633c2033dfd567e042b351d0cb4f26b5f4d35498",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hi-IN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hi-IN\\CEngineStrings.resw",
+      "bytes": 7507,
+      "hash": "e12cdf5a759f0a5c2334c0a05fec8c39055eea76012cd9c02f8963a9f6840160",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hi-IN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hi-IN\\Resources.resw",
+      "bytes": 258412,
+      "hash": "c7e2b00584e632a530d7222b403accdd3a2437f1df9040d271b2dbd76d3b2477",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hr-HR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hr-HR\\CEngineStrings.resw",
+      "bytes": 7267,
+      "hash": "c1b54e8fa125573f74e7f377d7dae101312a2fc49b95ec29f719399c1a7be01b",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hr-HR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hr-HR\\Resources.resw",
+      "bytes": 237028,
+      "hash": "0708aa511e4d924738e4d6770d09db4c25c58a127eb3ab728ba9cabefe7f69b1",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hu-HU\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hu-HU\\CEngineStrings.resw",
+      "bytes": 7291,
+      "hash": "7731b8bcbebed0ac37887bef557de4fe4fbd7a70682493c0a694f93822ccdffc",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\hu-HU\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\hu-HU\\Resources.resw",
+      "bytes": 237939,
+      "hash": "b0bd41a395a493b9732d608d1108111e44e2996b9b89acad0a3f1333d3d93edb",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\id-ID\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\id-ID\\CEngineStrings.resw",
+      "bytes": 7246,
+      "hash": "51b674ad820ce94be0af4f446b1d19181436244051bec301ede13dc99f958074",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\id-ID\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\id-ID\\Resources.resw",
+      "bytes": 235926,
+      "hash": "5abd836480a964571886f47dfa1c11bf0d206c9528a96250d809d04aa0f6174f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\is-IS\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\is-IS\\CEngineStrings.resw",
+      "bytes": 7278,
+      "hash": "cb2839695912f75f40c775711fdcce99fad15733d90767054f607935ecee6e7c",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\is-IS\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\is-IS\\Resources.resw",
+      "bytes": 236193,
+      "hash": "4f4dec0fbe1355e03683b5a99e455b7c644a3658cc14830e9503cf25c6b3c6ae",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\it-IT\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\it-IT\\CEngineStrings.resw",
+      "bytes": 7251,
+      "hash": "d93578f11ca64b0a73f7e502cdf482ce00007e37e2553b4ee776a32cd85d21da",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\it-IT\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\it-IT\\Resources.resw",
+      "bytes": 238080,
+      "hash": "fac7a7b6d12f412f287737fccfd18a5f501894f28d39e87fab88fa76c5e29c02",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ja-JP\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ja-JP\\CEngineStrings.resw",
+      "bytes": 7357,
+      "hash": "a815b06c2c7c0389a0c98e1e78703a59b258e08e9fca2afaa6257c1e82ab69f8",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ja-JP\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ja-JP\\Resources.resw",
+      "bytes": 239304,
+      "hash": "8a5079c1afeedf32e84352c815241de6433aeace1a9eea76935086115cfbe8c4",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\kk-KZ\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\kk-KZ\\CEngineStrings.resw",
+      "bytes": 7358,
+      "hash": "c8b51c1bccb297db706fab9e373c9d30d6da2c3af37e9a1506e7d5208f0d5821",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\kk-KZ\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\kk-KZ\\Resources.resw",
+      "bytes": 248211,
+      "hash": "ee164a569818e0c7dd6e8003b6799aae7db332627032fd769cc4a25dd9f65a26",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\km-KH\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\km-KH\\CEngineStrings.resw",
+      "bytes": 7502,
+      "hash": "375610666b5bd77ad16094d2182503e7cadc8a46a58df2adc4d18537ac4753fe",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\km-KH\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\km-KH\\Resources.resw",
+      "bytes": 258819,
+      "hash": "bfec8ef299adb8b252589ec2f43fc428b21c6065f51d70179adeccafa1b2cc3f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\kn-IN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\kn-IN\\CEngineStrings.resw",
+      "bytes": 7605,
+      "hash": "357405eb7d3665833b0a8717b987f325068e882d48db8b094e9076306815be01",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\kn-IN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\kn-IN\\Resources.resw",
+      "bytes": 262909,
+      "hash": "df194e478d6f1c089c04be56e01ec8d95c846e823de51c557d6c106df07cc464",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ko-KR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ko-KR\\CEngineStrings.resw",
+      "bytes": 7319,
+      "hash": "6060fbb9e1fb595ece4b8980e26edf81495554c09c9a28dda53a537f92260e7e",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ko-KR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ko-KR\\Resources.resw",
+      "bytes": 237399,
+      "hash": "9d1ac8d90769c6b02d757f4d87c47f065201ca0fa645f809dc86dde949c08247",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lo-LA\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lo-LA\\CEngineStrings.resw",
+      "bytes": 7457,
+      "hash": "2ccb507389445cd24a8a7db0c2c3f333c4b2334409ceee27f55c498049088816",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lo-LA\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lo-LA\\Resources.resw",
+      "bytes": 255673,
+      "hash": "b2f064799b6bf5c98e314a0a7ef8cfce39dab8097798bb8000ab8727d9a9d510",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lt-LT\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lt-LT\\CEngineStrings.resw",
+      "bytes": 7258,
+      "hash": "df0024cd7255a66b6795b94d911a4976c2df0badd3e8a716b4f0252a2caeb8ee",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lt-LT\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lt-LT\\Resources.resw",
+      "bytes": 238614,
+      "hash": "4a1298871635c065fef571d2e3240c0c3efb0fac74e4b8e2fe031b6a287b6efa",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lv-LV\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lv-LV\\CEngineStrings.resw",
+      "bytes": 7252,
+      "hash": "a7a5cd5d8fc46ee95dff00923fb4c5073dfa83a62dbe71f95142bf7587501bf9",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\lv-LV\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\lv-LV\\Resources.resw",
+      "bytes": 238320,
+      "hash": "5f04f3286f3dc01b053a15e9a0bbb00bf60c8a2e34c3ac4f73d3f194983989e2",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\mk-MK\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\mk-MK\\CEngineStrings.resw",
+      "bytes": 7408,
+      "hash": "17dae050439b3e056b89deaa33eb235a542f58548ac6fdf65a062fcb09fda188",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\mk-MK\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\mk-MK\\Resources.resw",
+      "bytes": 250307,
+      "hash": "a9d10ee3ac04a33045041243586b69b07457d6e8cab8f14498a4850a10f60b05",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ml-IN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ml-IN\\CEngineStrings.resw",
+      "bytes": 7550,
+      "hash": "daa9e5af65ff812f625ee2bb6b434a958a03e6e7910b2affb5fad47b786fec1d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ml-IN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ml-IN\\Resources.resw",
+      "bytes": 267527,
+      "hash": "3160f72a0077416465a7b9914848be29048011f95e5859f95d0f2272d3fb4ca1",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ms-MY\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ms-MY\\CEngineStrings.resw",
+      "bytes": 7254,
+      "hash": "c16e9f997879e44cb5a9be5fd8d4c5c056b1fe7621932ccb71565c8308fab8ff",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ms-MY\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ms-MY\\Resources.resw",
+      "bytes": 235909,
+      "hash": "856ab6ada6a645fa83c64336ae0d01153fb945dfe9b6becb8fbc2d75f9d8f239",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\nb-NO\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\nb-NO\\CEngineStrings.resw",
+      "bytes": 7244,
+      "hash": "d55176a8f02d4537b9d9f943d10288b3fc027650e34311dce91fef39e8ea4e74",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\nb-NO\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\nb-NO\\Resources.resw",
+      "bytes": 235685,
+      "hash": "8a9a51d381790374bf0dd0197875b9637ce6c85144257cc91112301f486955f2",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\nl-NL\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\nl-NL\\CEngineStrings.resw",
+      "bytes": 7267,
+      "hash": "7fc4317b49f742f51184198c303f6d80832d042330669f8955e9785ec9a41dab",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\nl-NL\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\nl-NL\\Resources.resw",
+      "bytes": 237155,
+      "hash": "313a38055ab7322f5b90c10dc14fdb12cfca238ba8d9e39bcb8ad51b188b0e27",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pl-PL\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pl-PL\\CEngineStrings.resw",
+      "bytes": 7273,
+      "hash": "a014ab41c16336b51c4d2fec0d4a6eb0fa045370991e66dda585a0470be32784",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pl-PL\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pl-PL\\Resources.resw",
+      "bytes": 237871,
+      "hash": "44f8cefe62264fe71bf590c5e0bd547d1f6e94f639831fbccdeb418225663ef1",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pt-BR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pt-BR\\CEngineStrings.resw",
+      "bytes": 7256,
+      "hash": "050b0e46c6679376bae6cffbc059f152d29185e6decf49cf3a923b4f09499f65",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pt-BR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pt-BR\\Resources.resw",
+      "bytes": 237907,
+      "hash": "e96c404897f367e417cec99b68304a2e0302dccfb6f34e12f2ce16a303237188",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pt-PT\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pt-PT\\CEngineStrings.resw",
+      "bytes": 7297,
+      "hash": "8788dcf72e8a1c93f5b4bb0d38ebc0e15a43b270de682800cef2190a29eb2a22",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\pt-PT\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\pt-PT\\Resources.resw",
+      "bytes": 237999,
+      "hash": "a484961cec0030866240cc4692a3a1b18e59dbc06056e319453e249e22b8ad5a",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ro-RO\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ro-RO\\CEngineStrings.resw",
+      "bytes": 7256,
+      "hash": "410d0e6f276e53b240000804a46c7a3bd347e3a6b1050b16eb54c0b4d19f282f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ro-RO\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ro-RO\\Resources.resw",
+      "bytes": 238156,
+      "hash": "e8ba82b3d3c4fc1e7fa483aabf9ffd6ca69b51c68748237616b92728fc97c4a5",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ru-RU\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ru-RU\\CEngineStrings.resw",
+      "bytes": 7406,
+      "hash": "ccefd263f351935411ee8fad14de91e7019210698b0b7d6ca2105b4c926bec4a",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ru-RU\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ru-RU\\Resources.resw",
+      "bytes": 250857,
+      "hash": "288be07a4dac17481c144ef5be3c34f4f5eb0920250bdc7ad82eeb88fa1f80bc",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sk-SK\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sk-SK\\CEngineStrings.resw",
+      "bytes": 7268,
+      "hash": "09ecc469d675373ab5bd80f2d4041689cdc55f6a90d7bbded28de5376b88ebe3",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sk-SK\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sk-SK\\Resources.resw",
+      "bytes": 237615,
+      "hash": "a520b3c7b4816832040299d54af114095bfe89e8cf2d5c1f492bbe23e3a6d8af",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sl-SI\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sl-SI\\CEngineStrings.resw",
+      "bytes": 7301,
+      "hash": "76be30e01edc5c339645fe1dea105217d05c0eb196ba99dfe56d8348ed981007",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sl-SI\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sl-SI\\Resources.resw",
+      "bytes": 237266,
+      "hash": "d3d47b3bf5fb1a044742ab350819c7bdb31cfc19fa72bdf99855fbb3e718b5dc",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sq-AL\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sq-AL\\CEngineStrings.resw",
+      "bytes": 7277,
+      "hash": "4c8bc71f5d4d20c9283fc807eb6b5e41154b63554f231e086b84c85ea985c020",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sq-AL\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sq-AL\\Resources.resw",
+      "bytes": 238332,
+      "hash": "f24038370c34b193f6ff517536951160d77707c6bcbf5c3dc5e993503996b844",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sr-Latn-RS\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sr-Latn-RS\\CEngineStrings.resw",
+      "bytes": 7263,
+      "hash": "49019c41dddb8374aa25de4c10fdf79673dfc1c7904ab8a8f8ee771fe7a6985a",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sr-Latn-RS\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sr-Latn-RS\\Resources.resw",
+      "bytes": 237131,
+      "hash": "7fcefd65306d8e25cbf5598a992488201b63ed9ed911d075d6129c19d1be1bd4",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sv-SE\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sv-SE\\CEngineStrings.resw",
+      "bytes": 7246,
+      "hash": "21117da983f7b0fa07fa94ef8fea30f2736b5c576e3597111018ab7762d2ae00",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\sv-SE\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\sv-SE\\Resources.resw",
+      "bytes": 236002,
+      "hash": "78271a914cbc0b2f0a241abff61b4996387d2c7d003d35cb105b39d5d0bfd69f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ta-IN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ta-IN\\CEngineStrings.resw",
+      "bytes": 7651,
+      "hash": "989ac21a8a46543cd178b66e02f00f8456b1a8060d17fe4c0c9965362aa1261f",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\ta-IN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\ta-IN\\Resources.resw",
+      "bytes": 266885,
+      "hash": "9cafd434878fdd8525739e441e22f7c7ccd7b4fd452e105c8de81cd98ab2a184",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\te-IN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\te-IN\\CEngineStrings.resw",
+      "bytes": 7501,
+      "hash": "00e3ab89be9fe9c01ab93dc5e010171dd08a7584d02c127f18dc60eaa116c8df",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\te-IN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\te-IN\\Resources.resw",
+      "bytes": 261792,
+      "hash": "2779c46f1dfbf58083baeaf48f810605effdacfb41908323e0ecb153f912922e",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\th-TH\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\th-TH\\CEngineStrings.resw",
+      "bytes": 7514,
+      "hash": "5c170e7ad0b6fe3ce789ed99f563405d8a5871b414ccd6e0b419c2295d441925",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\th-TH\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\th-TH\\Resources.resw",
+      "bytes": 257092,
+      "hash": "5f9396ea89b974930d768c850c375e0a7dbb951b63565b591e74586a37e56b0c",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\tr-TR\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\tr-TR\\CEngineStrings.resw",
+      "bytes": 7225,
+      "hash": "25156f41f9a273d60a5a6d560c6e2b15cecd58896b55755c48e19e249b129e80",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\tr-TR\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\tr-TR\\Resources.resw",
+      "bytes": 236248,
+      "hash": "e6ac3d563ab4b3aaf75caffab0d0fc7e34af172746f60e23b802ef3910c36ced",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\uk-UA\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\uk-UA\\CEngineStrings.resw",
+      "bytes": 7421,
+      "hash": "76188a1d28647c7af21bab7edae04974fe8408ab6b721af423924e2daeb0097e",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\uk-UA\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\uk-UA\\Resources.resw",
+      "bytes": 250161,
+      "hash": "32a12296b250b719b95dc437ca68b82f8a4ad24493cd6afde91645930256fa66",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\vi-VN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\vi-VN\\CEngineStrings.resw",
+      "bytes": 7328,
+      "hash": "e2b34af41963e6d0d810d6a6736f684057b99bbf886acb35ac549bb792c3caa9",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\vi-VN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\vi-VN\\Resources.resw",
+      "bytes": 239485,
+      "hash": "c732179fd8fab7a718794c5744c84a17ca8c4f5bb50bb0a6b61bb90428803eb8",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\zh-CN\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\zh-CN\\CEngineStrings.resw",
+      "bytes": 7211,
+      "hash": "815461dee60873cd82c7a12bb0fbcfca2b471711b27c0729c48a56f39f59a1cb",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\zh-CN\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\zh-CN\\Resources.resw",
+      "bytes": 233776,
+      "hash": "a45db2ae4d0763ccf4251766f8aa84f8b55ccd63c2dd27ef9b66e97b0a60ba92",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\zh-TW\\CEngineStrings.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\zh-TW\\CEngineStrings.resw",
+      "bytes": 7202,
+      "hash": "84c12d622b1df0926aac2c531b67d68768cf2466cf461b612ef0534b52bd4ee0",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Resources\\zh-TW\\Resources.resw",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Resources\\zh-TW\\Resources.resw",
+      "bytes": 234404,
+      "hash": "93b8b8383f088f3443b554843b6c3198a61a7dc2c8e4320596c724c7576d36a7",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Selectors\\KeyGraphFeaturesTemplateSelector.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Selectors\\KeyGraphFeaturesTemplateSelector.cs",
+      "bytes": 1478,
+      "hash": "a27cbf4791f31961b3833dfe3eebf87b290f8cfb0282edb781d4a75cab33d00f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Selectors\\NavViewMenuItemTemplateSelector.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Selectors\\NavViewMenuItemTemplateSelector.cs",
+      "bytes": 1188,
+      "hash": "048b5b693f36e635f93f279d2ddd739251afd5f3ccd44fbcdc7391228fee9b80",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\DeflateUtils.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\DeflateUtils.cs",
+      "bytes": 1118,
+      "hash": "3cb635b71bdecae43caac604eeec4aa8e7b18e890b1999d8bd73f84f206f0ae6",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\DelegateCommandUtils.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\DelegateCommandUtils.cs",
+      "bytes": 737,
+      "hash": "1d305a66154c317e9a5b9235488854719c84d78ea7a2c0c6823e5a98530ff9b9",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\DispatcherTimerDelayer.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\DispatcherTimerDelayer.cs",
+      "bytes": 1061,
+      "hash": "ebd2b7781fbdbb987212c2048c7d680c99ac2400df6f78821a60399320d28e1c",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\ResourceString.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\ResourceString.cs",
+      "bytes": 545,
+      "hash": "8f44218cf740f6e39e7d0f5c89a9269283185d8791152b792dc774e437f1966e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\ResourceVirtualKey.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\ResourceVirtualKey.cs",
+      "bytes": 654,
+      "hash": "484d40bdfa9e5c7dc0e8d1072b1536562bf27a8603f4b5a2aef9487e9165370a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\ThemeHelper.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\ThemeHelper.cs",
+      "bytes": 3014,
+      "hash": "48ab46fbdd6572d9bbb94baddbd7d68b39198df34c9ba5f7a34082d6076adb78",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Utils\\VisualTree.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Utils\\VisualTree.cs",
+      "bytes": 4627,
+      "hash": "585d999b398df49cde7d76091f533355a6e4c2f95021e8da53c9d1d876b68d93",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Calculator.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Calculator.xaml",
+      "bytes": 103964,
+      "hash": "70c721a166bb128eebd0a6fa2110e020a997cbbe15f2d5b596cdbdbabce84e75",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Calculator.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Calculator.xaml.cs",
+      "bytes": 37909,
+      "hash": "9b8a1b64515bf898b5bb4e6ae0cc55070d4c3a0ca4a36240af7298dd9b63dc54",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerBitFlipPanel.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerBitFlipPanel.xaml",
+      "bytes": 58551,
+      "hash": "9a31aef8a2cb47eb79a1bc7c2ea299cca1ebada42daa23542539e56afc6c892f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerBitFlipPanel.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerBitFlipPanel.xaml.cs",
+      "bytes": 10995,
+      "hash": "6c8637b68c41bdd5f3624fa14c1890f5dbd617b3fed24caf785494f23d34b2ac",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerDisplayPanel.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerDisplayPanel.xaml",
+      "bytes": 7565,
+      "hash": "7bdfb5362092716adb53a355f92142bf14dd424d3685c2f790f23d07ba553dad",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerDisplayPanel.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerDisplayPanel.xaml.cs",
+      "bytes": 3488,
+      "hash": "469e8e1d1394e260e9a0c2587bc3664da1013df5cb2c2ebbc182f3a823e141e8",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerOperators.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerOperators.xaml",
+      "bytes": 18221,
+      "hash": "20a2472fbfc6edd5511830d7b51b29b30721e4da173902a664aa3402da268ce1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerOperators.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerOperators.xaml.cs",
+      "bytes": 3768,
+      "hash": "994040f7b9e6afdda4be432c5afa56b7f39a5da80befc4e019e6bb365647e512",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerRadixOperators.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerRadixOperators.xaml",
+      "bytes": 61410,
+      "hash": "04b90a2cc02a84b033ddd3fd178a2c79252947f5757f2b796f791bf3c1ca50cb",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorProgrammerRadixOperators.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorProgrammerRadixOperators.xaml.cs",
+      "bytes": 9177,
+      "hash": "6e8ba701581029f68552f6e015577e8972d229e137906f6c43560b38f4532f9d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorScientificAngleButtons.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorScientificAngleButtons.xaml",
+      "bytes": 7174,
+      "hash": "cd843ff6df838da0ae6a75a412c2b08981e9c0226f9be34320724d0409edce2c",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorScientificAngleButtons.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorScientificAngleButtons.xaml.cs",
+      "bytes": 3226,
+      "hash": "b6abe0d446dae7aa936f4a72d981299626ebc13815d52116d26571a171bcce81",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorScientificOperators.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorScientificOperators.xaml",
+      "bytes": 114063,
+      "hash": "5a0dce5b8fd2154ee3b50c270200c8535504add1f9af5bc99ea819411debc0c0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorScientificOperators.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorScientificOperators.xaml.cs",
+      "bytes": 5485,
+      "hash": "6ea78d9a21dd59df1f2ed3ed375e6a25af3f097c3ebc4b1f169ff14f04df3830",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorStandardOperators.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorStandardOperators.xaml",
+      "bytes": 26876,
+      "hash": "5a848042d8477f022858d84936f6c32bd38eb3d42b1edd367f7c5d76a03daabf",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\CalculatorStandardOperators.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\CalculatorStandardOperators.xaml.cs",
+      "bytes": 1115,
+      "hash": "89754413aeb9337f384f6a678813aadae2ff5dc8305f0ace7e0445875d8e4b8f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\DateCalculator.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\DateCalculator.xaml",
+      "bytes": 107249,
+      "hash": "7a807fdc79e2d629aebe8abc0830de0c431623049d3d0bc5a2d3ea193cb92580",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\DateCalculator.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\DateCalculator.xaml.cs",
+      "bytes": 11015,
+      "hash": "c9111cc3d42db450271d9ed1be180f6d9d932364f26b05fd0562e063591e451f",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\DelighterUnitStyles.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\DelighterUnitStyles.xaml",
+      "bytes": 7356,
+      "hash": "180a1a42add0d28d93bb973d0dc5e5d208471ba3c7374ef05220aeccbdbd6759",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\EquationInputArea.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\EquationInputArea.xaml",
+      "bytes": 86690,
+      "hash": "996acbeefaec011d1120e0899e1ae9cbd8af524838de5ad4414b03645926ae02",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\EquationInputArea.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\EquationInputArea.xaml.cs",
+      "bytes": 24182,
+      "hash": "cff24fa5d31643be5f45bb5649887b6a8cb4f0f5c6cca12b3ebf7bb9a61c3be5",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\EquationStylePanelControl.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\EquationStylePanelControl.xaml",
+      "bytes": 8315,
+      "hash": "cf067d899ab8d15fff4e539ff4b9274686fb32c439bd70192c2ae31f34a712df",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\EquationStylePanelControl.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\EquationStylePanelControl.xaml.cs",
+      "bytes": 14446,
+      "hash": "02a6c4fc8a776b7d019a6f2ebe9a0f19c7f17bbdcf5a9176bfe6aad3de2eb50b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml",
+      "bytes": 61786,
+      "hash": "365698e572ae691442d46a72d853376e8f084f6b7539a72fe47a91e96122f5c1",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingCalculator.xaml.cs",
+      "bytes": 36064,
+      "hash": "aa36be2cf0fa032ca843cd8739123a160604e856451f2e1d7dddb78a363b3681",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingNumPad.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingNumPad.xaml",
+      "bytes": 128945,
+      "hash": "2315723f0bd6f50169dc70664c2d6def27c578416bfae63835447e5b44b68e14",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingNumPad.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingNumPad.xaml.cs",
+      "bytes": 13394,
+      "hash": "9f3e65b9d046e9e3dcb6a59c4d31fb9f7a2103afda5d98e744ef2fc8c44a6b9a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingSettings.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingSettings.xaml",
+      "bytes": 17497,
+      "hash": "2205020fa126b23007c86ae2874045739a5a7aa4fef57af0ae75e1f21bd03a10",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\GraphingSettings.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\GraphingSettings.xaml.cs",
+      "bytes": 3756,
+      "hash": "61b099c3e181fac455424a8fabd9db7ab7171b0d11c7ef7a0259368915f9598c",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\KeyGraphFeaturesPanel.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\KeyGraphFeaturesPanel.xaml",
+      "bytes": 20032,
+      "hash": "c0f4ad7d23c9ee8f54f116db85ea8a5ed1da6d27429c62561579cd9c52d7084a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\GraphingCalculator\\KeyGraphFeaturesPanel.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\GraphingCalculator\\KeyGraphFeaturesPanel.xaml.cs",
+      "bytes": 1777,
+      "hash": "92bec0e03fb7ffd001b4ab05fe3df265c16781fc5f10bf108f85b0b917c560d6",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\HistoryList.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\HistoryList.xaml",
+      "bytes": 10930,
+      "hash": "8eae5120e24c4632c8e52a39cef1d8ef27b4db29aad9f74bd17e2c79bae7992e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\HistoryList.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\HistoryList.xaml.cs",
+      "bytes": 4464,
+      "hash": "22b58d6ebdf72722ec841a17c26d353f7e1ea76732ca87eb92fd86d3d874a491",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\MainPage.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\MainPage.xaml",
+      "bytes": 12179,
+      "hash": "bfb96252e928ebc6c43c59c71ec482c8f5aa410ac86d8e39f7956f219f50a25e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\MainPage.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\MainPage.xaml.cs",
+      "bytes": 27085,
+      "hash": "3872275bacad5a8849a0296930850726fe1f11f02ed813f0c134bf72d521ed5e",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Memory.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Memory.xaml",
+      "bytes": 7804,
+      "hash": "76141352d6db8cfb799b0e01b9f81acac839c322bc977c40df4f5ffa4d67dac6",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Memory.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Memory.xaml.cs",
+      "bytes": 4454,
+      "hash": "e5a3f461cee16ef9893e66a79d85d3fe096e4f396e2fab40f360212aadd48c80",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\MemoryListItem.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\MemoryListItem.xaml",
+      "bytes": 6149,
+      "hash": "32e2b6da5f326dfce420f3e084a466d49060b84575c703cfc415c12a5de8f9a3",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\MemoryListItem.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\MemoryListItem.xaml.cs",
+      "bytes": 2904,
+      "hash": "f7e75e6a824c31f6af590026ea61de7ac58a1f2357656fd6e26cf1c697ea817d",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\NumberPad.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\NumberPad.xaml",
+      "bytes": 9773,
+      "hash": "7c800a6ad215af7867c6b1ad87e1103457b8e5bcace28cfc93016f75a986e20a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\NumberPad.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\NumberPad.xaml.cs",
+      "bytes": 4656,
+      "hash": "5a3403e28760828c60bc1627f2a36e0003558ca5a601f5844ce389a7e5e96f97",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\OperatorsPanel.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\OperatorsPanel.xaml",
+      "bytes": 2126,
+      "hash": "b384ecb8302ef2b7240ab121cb73740926e4846a49ea214d053440479bca95af",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\OperatorsPanel.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\OperatorsPanel.xaml.cs",
+      "bytes": 3476,
+      "hash": "8488ee1764233dbaf49c932af3fcd62e171cb02a7a14b5574f7520ea7f58d598",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Settings.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Settings.xaml",
+      "bytes": 11563,
+      "hash": "6579409ec9fe103808d592b466113e551393b9648598cc002157ea4159be61c4",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\Settings.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\Settings.xaml.cs",
+      "bytes": 6610,
+      "hash": "cf0349bcb90eb5431e083e9a57ac4c56687fc6a1256350dc459831a9ddf51e3a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\StateTriggers\\AspectRatioTrigger.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\StateTriggers\\AspectRatioTrigger.cs",
+      "bytes": 5660,
+      "hash": "3510d57534b7ca1ec5cc4452d5b346e738004431c52b2f20b6ecbcdfe0e74713",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\StateTriggers\\ControlSizeTrigger.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\StateTriggers\\ControlSizeTrigger.cs",
+      "bytes": 3476,
+      "hash": "49e95a1448c4c7eced7fa0ab0719d565edcd5f1e26f12179631cc44326c0f0a6",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\SupplementaryResults.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\SupplementaryResults.xaml",
+      "bytes": 5963,
+      "hash": "e5fe44d3b2745a236726f6a66b809421c62c306d357ebc5af81dcfdc48435664",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\SupplementaryResults.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\SupplementaryResults.xaml.cs",
+      "bytes": 3588,
+      "hash": "163a04f3614ef56f53ec0f75035172edbca310691780153773b9779247f5e970",
+      "encoding": "UTF-8 BOM",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\TitleBar.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\TitleBar.xaml",
+      "bytes": 4620,
+      "hash": "d22235c0f7bb166746754bbb983b24479f842d2de42b6afe0e6a93820d32c679",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\TitleBar.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\TitleBar.xaml.cs",
+      "bytes": 14136,
+      "hash": "666402038cbbac653bee26a9d5e6c6fa93822025f7c2bebfb3f776fcd815434b",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\UnitConverter.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\UnitConverter.xaml",
+      "bytes": 51392,
+      "hash": "7fa35e91cdfd04c0cfa3c8fb42e62a595f2173dab3254fb96f7b3548161b524d",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Calculator\\Views\\UnitConverter.xaml.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Calculator\\Views\\UnitConverter.xaml.cs",
+      "bytes": 16447,
+      "hash": "ec2f3df21fbccb28526bbf2c0ee9f4514391e9d87f5b9c32b351c2152cc67e9a",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "Calculator\\Calculator.csproj"
+    },
+    {
+      "path": "Directory.Build.props",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\Directory.Build.props",
+      "bytes": 101,
+      "hash": "53bbf60ddb49877c2a247fb32a591e2198799ac1bdd3a83e6731d66a93496c70",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": ""
+    },
+    {
+      "path": "GraphControl\\Themes\\generic.xaml",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\GraphControl\\Themes\\generic.xaml",
+      "bytes": 568,
+      "hash": "fe91610621e40a5b628c00cbf940e8d184444aacdebd8e6e9f712f3c12bbec31",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "GraphControl\\GraphControl.vcxproj"
+    },
+    {
+      "path": "TraceLogging.Managed\\Properties\\AssemblyInfo.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\TraceLogging.Managed\\Properties\\AssemblyInfo.cs",
+      "bytes": 321,
+      "hash": "5ac90bab00ff3b6f08abae649e8bfd6604e23aa2691e61f2c16795c38bd5fc44",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "TraceLogging.Managed\\TraceLogging.Managed.csproj"
+    },
+    {
+      "path": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "bytes": 806,
+      "hash": "41a5bd000b8044435f08572088c3ad9dc36b2af80dddcc42839596c3b4c23a04",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "TraceLogging.Managed\\TraceLogging.Managed.csproj"
+    },
+    {
+      "path": "TraceLogging.Managed\\TraceLoggingCommon.cs",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\TraceLogging.Managed\\TraceLoggingCommon.cs",
+      "bytes": 4138,
+      "hash": "6035b5bab96558491d6f355a6f7f3cea1c54634dcb45421473fcd25464534a36",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": "TraceLogging.Managed\\TraceLogging.Managed.csproj"
+    },
+    {
+      "path": "build\\Calculator.StampAssemblyInfo.targets",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\build\\Calculator.StampAssemblyInfo.targets",
+      "bytes": 1127,
+      "hash": "c91c7b73900d29f2b0519a038ea9b4298ff7a55ed32734f9f0b3813238938cbb",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": ""
+    },
+    {
+      "path": "nuget.config",
+      "sourcePath": "C:\\phase2\\calculator-winui3\\nuget.config",
+      "bytes": 537,
+      "hash": "8ae8d19e861e4e2ab78ea9ea61cecbc420ba90278c5c602b87d0313348cde6c0",
+      "encoding": "UTF-8",
+      "inclusionReason": "reviewed solution input",
+      "project": ""
+    }
+  ]
+}

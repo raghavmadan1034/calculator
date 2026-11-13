@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "about_the_app": true,
+  "artefact_kind": "winapp-project",
+  "artefact_path": "C:\\phase2\\calculator-winui3\\Calculator\\Calculator.csproj",
+  "layout_path": null,
+  "aumid": "Microsoft.WindowsCalculator.Dev_8wekyb3d8bbwe!App",
+  "activate_hr": "0x00000000",
+  "pid": 28192,
+  "window_appeared": true,
+  "window_title": "Calculator [Dev]",
+  "time_to_window_seconds": 1.2,
+  "errors": [],
+  "diagnostics": [],
+  "cleaned_up": true,
+  "say": "winapp provisioned and registered the existing build, which activated and presented a window ('Calculator [Dev]'). This proves startup only; it does not exercise application workflows or tests."
+}

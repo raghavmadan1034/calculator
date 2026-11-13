@@ -1,0 +1,10 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -184,7 +184,6 @@
+                                   TintColor="{ThemeResource SystemChromeLowColor}"
+                                   TintOpacity="0.7"/>
+                     <AcrylicBrush x:Key="AppChromeAcrylicOperatorFlyoutBackgroundBrush"
+-                                  BackgroundSource="HostBackdrop"
+                                   FallbackColor="{ThemeResource SystemChromeMediumColor}"
+                                   TintColor="{ThemeResource SystemChromeLowColor}"
+                                   TintOpacity="0.8"/>

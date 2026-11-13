@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "validatedCliVersion": "1.0.84-8",
+  "profile": "winui-skill-repair-v1",
+  "cliArguments": [
+    "--output-format",
+    "json",
+    "--silent",
+    "--no-color",
+    "--log-level",
+    "none",
+    "--no-custom-instructions",
+    "--no-ask-user",
+    "--sync-session=off",
+    "--no-auto-update",
+    "--disable-builtin-mcps",
+    "--disallow-temp-dir",
+    "--available-tools=glob,rg,view",
+    "--deny-tool=write",
+    "--deny-tool=shell",
+    "--effort",
+    "medium",
+    "-C",
+    "C:\\phase2\\calculator-winui3\\.winui-migrate\\proposals\\run-20261112-122647-52c3b9\\boundary-da852cdde4209b3a\\agent-context\\input",
+    "--allow-tool=glob",
+    "--allow-tool=rg",
+    "--allow-tool=view"
+  ],
+  "allowedTools": [
+    "glob",
+    "rg",
+    "view"
+  ],
+  "deniedCapabilities": [
+    "live-workspace",
+    "write",
+    "shell",
+    "process",
+    "build",
+    "restore",
+    "test",
+    "launch",
+    "network",
+    "mcp",
+    "git",
+    "ask-user",
+    "memory",
+    "nested-agent",
+    "approval",
+    "application"
+  ],
+  "limits": {
+    "maximumToolCalls": 64,
+    "maximumToolResultBytes": 8388608,
+    "maximumFinalResponseBytes": 262144,
+    "maximumRawOutputBytes": 33554432
+  },
+  "allowedOutputs": [
+    "Calculator\\App.xaml",
+    "Calculator\\App.xaml.cs",
+    "Calculator\\Views\\Calculator.xaml",
+    "Calculator\\Views\\Calculator.xaml.cs"
+  ]
+}

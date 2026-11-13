@@ -1,0 +1,37 @@
+{
+  "request": {
+    "workspace": "C:\\phase2\\calculator-winui3",
+    "runId": "run-20261112-122647-52c3b9",
+    "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+    "evaluator": "runtime-compatibility",
+    "skill": "winui2-to-winui3-resources-and-theming",
+    "intent": "Resolve the recorded winui2-to-winui3-resources-and-theming capability boundary for Calculator.ViewModels\\Calculator.ViewModels.csproj. Preserve the approved requirements and existing behavior; do not invent architecture. ResourceLoader.GetForViewIndependentUse has no registered deterministic repair yet. The UWP ResourceLoader factory does not carry its resource-map selection into MRT Core. D12 answered (a) Choose an MRT Core context and preserve every qualifier the app reads or writes; no deterministic recipe carries it out. ResourceLoader.GetForViewIndependentUse is unsafe in the desktop current-view model. Detection is read-only; no source repair is registered in this change. D12 answered (a) Choose an MRT Core context and preserve every qualifier the app reads or writes. ResourceContext.GetForCurrentView is unsafe in the desktop current-view model. Detection is read-only; no source repair is registered in this change.",
+    "files": [
+      "Calculator.ViewModels\\Common\\AppResourceProvider.cs",
+      "Calculator.ViewModels\\Common\\EngineResourceProvider.cs",
+      "Calculator.ViewModels\\Common\\LocalizationSettings.cs"
+    ],
+    "automaticUnitKey": "",
+    "automaticUnitName": ""
+  },
+  "transactionId": "boundary-d96954e1196f19ed",
+  "boundary": {
+    "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+    "evaluator": "runtime-compatibility",
+    "evaluationId": "3c3ecf1347644acfa086f0367537439c"
+  },
+  "parentHash": "0faeea42c8e1c4623579ad82462443f7772eb87307d1f71917b259053de766c3",
+  "startedAt": "2026-11-12T12:32:54.8714697+00:00",
+  "mode": "winui-skill-repair-v1",
+  "maxFiles": 16,
+  "maxSourceBytes": 131072,
+  "maxPromptCharacters": 30000,
+  "maxSeconds": 600,
+  "maxTransportInvocations": 1,
+  "maxContextFiles": 2000,
+  "maxContextBytes": 33554432,
+  "maxContextFileBytes": 524288,
+  "maxAgentToolCalls": 64,
+  "maxAgentToolResultBytes": 8388608,
+  "maxAgentOutputBytes": 33554432
+}

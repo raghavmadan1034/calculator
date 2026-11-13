@@ -1,0 +1,25 @@
+{
+  "status": "unavailable",
+  "about_the_app": false,
+  "artefact_kind": "winapp-project",
+  "artefact_path": "C:\\phase2\\calculator-winui3\\Calculator\\Calculator.csproj",
+  "layout_path": null,
+  "aumid": null,
+  "activate_hr": null,
+  "pid": null,
+  "window_appeared": false,
+  "window_title": null,
+  "time_to_window_seconds": null,
+  "errors": [
+    {
+      "classification": "winapp-run-failed",
+      "about_the_app": false,
+      "message": "{\n  \"Error\": \"'Calculator.csproj' resolves to a packaged (MSIX) app but no AppxManifest.xml was found in the build output (C:\\\\phase2\\\\calculator-winui3\\\\Calculator\\\\bin\\\\x64\\\\Debug\\\\net8.0-windows10.0.26100.0\\\\win-x64\\\\). Remove --no-build to rebuild the packaged layout, or point the run at an up-to-date packaged build.\",\n  \"devTools\": {\n    \"mode\": \"off\",\n    \"source\": \"option\"\n  }\n}"
+    }
+  ],
+  "diagnostics": [
+    "C:\\Users\\RAGHAV~1\\AppData\\Local\\Temp\\launch-app-ab265a7a\\winapp.stderr.log"
+  ],
+  "cleaned_up": false,
+  "say": "winapp could not provision dependencies and register the existing build output. Startup was not attempted."
+}

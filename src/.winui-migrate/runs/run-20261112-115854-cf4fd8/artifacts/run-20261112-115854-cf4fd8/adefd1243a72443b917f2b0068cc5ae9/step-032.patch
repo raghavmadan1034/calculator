@@ -1,0 +1,47 @@
+--- a/Calculator/Views/SupplementaryResults.xaml.cs
++++ b/Calculator/Views/SupplementaryResults.xaml.cs
+@@ -4,18 +4,18 @@
+ using System.Collections.Generic;
+ using System.Diagnostics;
+ 
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
+ 
+ namespace CalculatorApp
+ {
+-    public sealed class DelighterUnitToStyleConverter : Windows.UI.Xaml.Data.IValueConverter
++    public sealed class DelighterUnitToStyleConverter : Microsoft.UI.Xaml.Data.IValueConverter
+     {
+         public DelighterUnitToStyleConverter()
+         {
+-            m_delighters = new Windows.UI.Xaml.ResourceDictionary
++            m_delighters = new Microsoft.UI.Xaml.ResourceDictionary
+             {
+                 Source = new Uri(@"ms-appx:///Views/DelighterUnitStyles.xaml")
+             };
+@@ -41,17 +41,17 @@
+             return null;
+         }
+ 
+-        private readonly Windows.UI.Xaml.ResourceDictionary m_delighters;
++        private readonly Microsoft.UI.Xaml.ResourceDictionary m_delighters;
+     }
+ 
+-    public sealed class SupplementaryResultDataTemplateSelector : Windows.UI.Xaml.Controls.DataTemplateSelector
++    public sealed class SupplementaryResultDataTemplateSelector : Microsoft.UI.Xaml.Controls.DataTemplateSelector
+     {
+         public SupplementaryResultDataTemplateSelector()
+         { }
+ 
+-        public Windows.UI.Xaml.DataTemplate RegularTemplate { get; set; }
++        public Microsoft.UI.Xaml.DataTemplate RegularTemplate { get; set; }
+ 
+-        public Windows.UI.Xaml.DataTemplate DelighterTemplate { get; set; }
++        public Microsoft.UI.Xaml.DataTemplate DelighterTemplate { get; set; }
+ 
+         protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+         {

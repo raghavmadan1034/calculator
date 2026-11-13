@@ -1,0 +1,14 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -182,10 +182,7 @@
+ 
+                     <SolidColorBrush x:Key="AppControlForegroundTransparentRevealBorderBrush" Color="Transparent" />
+                     <SolidColorBrush x:Key="AppControlHighlightAccentRevealBackgroundBrush" Color="{ThemeResource SystemAccentColor}" />
+-                    <RevealBackgroundBrush x:Key="AppControlBackgroundListAccentHighRevealBackgroundBrush"
+-                                           FallbackColor="{ThemeResource SystemAccentColorLight3}"
+-                                           TargetTheme="Light"
+-                                           Color="{ThemeResource SystemAccentColorLight3}"/>
++                    <SolidColorBrush x:Key="AppControlBackgroundListAccentHighRevealBackgroundBrush" Color="{ThemeResource SystemAccentColorLight3}" />
+                     <AcrylicBrush x:Key="AppChromeAcrylicHostBackdropMediumLowBrush"
+                                   BackgroundSource="HostBackdrop"
+                                   FallbackColor="{ThemeResource SystemChromeMediumColor}"

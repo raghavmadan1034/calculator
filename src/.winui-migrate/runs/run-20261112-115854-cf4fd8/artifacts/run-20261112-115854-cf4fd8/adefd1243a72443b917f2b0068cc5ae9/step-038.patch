@@ -1,0 +1,11 @@
+--- a/Calculator/Utils/DispatcherTimerDelayer.cs
++++ b/Calculator/Utils/DispatcherTimerDelayer.cs
+@@ -3,7 +3,7 @@
+ 
+ using System;
+ 
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace CalculatorApp
+ {

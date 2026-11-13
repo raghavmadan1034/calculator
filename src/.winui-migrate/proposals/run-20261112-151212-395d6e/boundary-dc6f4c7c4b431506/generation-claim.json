@@ -1,0 +1,36 @@
+{
+  "request": {
+    "workspace": "C:\\phase2\\calculator-winui3",
+    "runId": "run-20261112-151212-395d6e",
+    "target": "Calculator.Tests\\Calculator.Tests.csproj",
+    "evaluator": "build",
+    "skill": "winui2-to-winui3-test-host",
+    "intent": "Resolve the recorded winui2-to-winui3-test-host capability boundary for Calculator.Tests\\Calculator.Tests.csproj. Preserve the approved requirements and existing behavior; do not invent architecture. No deterministic execution recipe implements this procedure. \u0027Microsoft.VisualStudio.TestPlatform.TestExecutor\u0027 needs more than a rename. Identify the actual test application and use a coherent host conversion. Adding a test SDK package alone does not migrate the XAML bootstrap or establish package activation.",
+    "files": [
+      "Calculator.Tests\\UnitTestApp.xaml",
+      "Calculator.Tests\\UnitTestApp.xaml.cs"
+    ],
+    "automaticUnitKey": "",
+    "automaticUnitName": ""
+  },
+  "transactionId": "boundary-dc6f4c7c4b431506",
+  "boundary": {
+    "target": "Calculator.Tests\\Calculator.Tests.csproj",
+    "evaluator": "build",
+    "evaluationId": "d2172cb0e0db420b98d997e344ff7530"
+  },
+  "parentHash": "486224a4144256fb4304ddc16446057fa31866fe97ab015b4aea7c04314c85db",
+  "startedAt": "2026-11-12T15:19:21.4094804+00:00",
+  "mode": "winui-skill-repair-v1",
+  "maxFiles": 16,
+  "maxSourceBytes": 131072,
+  "maxPromptCharacters": 30000,
+  "maxSeconds": 600,
+  "maxTransportInvocations": 1,
+  "maxContextFiles": 2000,
+  "maxContextBytes": 33554432,
+  "maxContextFileBytes": 524288,
+  "maxAgentToolCalls": 64,
+  "maxAgentToolResultBytes": 8388608,
+  "maxAgentOutputBytes": 33554432
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <RootNamespace>CalculatorApp.ViewModel</RootNamespace>
+    <AssemblyName>Calculator.ViewModels</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <LangVersion>13.0</LangVersion>
+    <NoWarn>NU1201</NoWarn>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <UseWinUI>true</UseWinUI>
+    <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
+    <IncludeProjectPriFile>false</IncludeProjectPriFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CsWinRTIncludes>CalcManager.Interop</CsWinRTIncludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalcManager.Interop\CalcManager.Interop.vcxproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <OutputItemType>WinUIMigrateNativeWinRTComponent</OutputItemType>
+    </ProjectReference>
+    <ProjectReference Include="..\TraceLogging.Managed\TraceLogging.Managed.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.3.1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.6.5" />
+    <PackageReference Include="System.Text.Json" Version="10.0.5" />
+  </ItemGroup>
+
+  <!-- winui-migrate native component recipe: NuGet cannot restore a C++ project as a .NET dependency and .NET cannot reference Windows Runtime metadata directly, so the component's metadata
+       feeds the C#/WinRT projection and its implementation DLL is copied beside this project's output, where C#/WinRT activates it. -->
+  <Target Name="WinUIMigrateNativeWinRTComponents" AfterTargets="ResolveProjectReferences">
+    <ItemGroup>
+      <CsWinRTInputs Include="@(WinUIMigrateNativeWinRTComponent)" />
+      <ReferenceCopyLocalPaths Include="@(WinUIMigrateNativeWinRTComponent->'%(RootDir)%(Directory)%(Implementation)')" Condition="'%(WinUIMigrateNativeWinRTComponent.Implementation)' != ''" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,203 @@
+--- a/Calculator/App.xaml.cs
++++ b/Calculator/App.xaml.cs
+@@ -63,6 +63,7 @@
+         /// <param name="e">Details about the launch request and process.</param>
+         protected override void OnLaunched(LaunchActivatedEventArgs args)
+         {
++            MainWindow ??= new global::Microsoft.UI.Xaml.Window();
+             NavCategoryStates.SetCurrentUser(args.User.NonRoamableId);
+ 
+             // It takes time to check GraphingMode at the very first time. Warm up in a background thread.
+@@ -73,6 +74,7 @@
+ 
+         protected override void OnActivated(IActivatedEventArgs args)
+         {
++            MainWindow ??= new global::Microsoft.UI.Xaml.Window();
+             if (args.Kind != ActivationKind.Protocol)
+             {
+                 return;
+@@ -122,7 +124,7 @@
+ 
+             // Do not repeat app initialization when the Window already has content,
+             // just ensure that the window is active
+-            var rootFrame = Window.Current.Content as Frame;
++            var rootFrame = global::CalculatorApp.App.MainWindow.Content as Frame;
+             if (rootFrame == null)
+             {
+                 rootFrame = new Frame
+@@ -147,9 +149,9 @@
+             }
+ 
+             // Place the frame in the current Window
+-            Window.Current.Content = rootFrame;
++            global::CalculatorApp.App.MainWindow.Content = rootFrame;
+             ThemeHelper.InitializeAppTheme();
+-            Window.Current.Activate();
++            global::CalculatorApp.App.MainWindow.Activate();
+         }
+ 
+         private void OnSuspending(object sender, SuspendingEventArgs args)
+@@ -191,6 +193,8 @@
+ #endif
+             }
+         }
++
++    public static global::Microsoft.UI.Xaml.Window MainWindow { get; private set; } = null!;
+     }
+ }
+ 
+--- a/Calculator/Common/KeyboardShortcutManager.cs
++++ b/Calculator/Common/KeyboardShortcutManager.cs
+@@ -241,7 +241,7 @@
+ 
+             internal static void Initialize()
+             {
+-                var coreWindow = Window.Current.CoreWindow;
++                var coreWindow = global::CalculatorApp.App.MainWindow.CoreWindow;
+                 coreWindow.CharacterReceived += OnCharacterReceivedHandler;
+                 coreWindow.KeyDown += OnKeyDownHandler;
+                 coreWindow.KeyUp += OnKeyUpHandler;
+@@ -647,9 +647,9 @@
+                 var key = args.VirtualKey;
+                 int viewId = Utilities.GetWindowId();
+ 
+-                bool isControlKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+-                bool isShiftKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+-                bool isAltKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Menu) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
++                bool isControlKeyPressed = (global::CalculatorApp.App.MainWindow.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
++                bool isShiftKeyPressed = (global::CalculatorApp.App.MainWindow.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
++                bool isAltKeyPressed = (global::CalculatorApp.App.MainWindow.CoreWindow.GetKeyState(Windows.System.VirtualKey.Menu) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+ 
+                 // Handle Ctrl + E for DateCalculator
+                 if ((key == Windows.System.VirtualKey.E) && isControlKeyPressed && !isShiftKeyPressed && !isAltKeyPressed)
+@@ -731,14 +731,14 @@
+                         return;
+                     }
+ 
+-                    bool controlKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
++                    bool controlKeyPressed = (global::CalculatorApp.App.MainWindow.CoreWindow.GetKeyState(Windows.System.VirtualKey.Control) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                     // Ctrl is pressed in addition to alt, this means Alt Gr is intended.  do not navigate.
+                     if (controlKeyPressed)
+                     {
+                         return;
+                     }
+ 
+-                    bool shiftKeyPressed = (Window.Current.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
++                    bool shiftKeyPressed = (global::CalculatorApp.App.MainWindow.CoreWindow.GetKeyState(Windows.System.VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+                     NavigateModeByShortcut(false, shiftKeyPressed, true, key, null);
+                 }
+             }
+--- a/Calculator/Utils/ThemeHelper.cs
++++ b/Calculator/Utils/ThemeHelper.cs
+@@ -24,7 +24,7 @@
+         {
+             get
+             {
+-                if (Window.Current.Content is FrameworkElement rootElement)
++                if (global::CalculatorApp.App.MainWindow.Content is FrameworkElement rootElement)
+                 {
+                     return rootElement.RequestedTheme;
+                 }
+@@ -33,7 +33,7 @@
+             }
+             set
+             {
+-                if (Window.Current.Content is FrameworkElement rootElement)
++                if (global::CalculatorApp.App.MainWindow.Content is FrameworkElement rootElement)
+                 {
+                     rootElement.RequestedTheme = value;
+ 
+@@ -69,7 +69,7 @@
+ 
+         public static ThemeChangedCallbackToken RegisterAppThemeChangedCallback(DependencyPropertyChangedCallback callback)
+         {
+-            Frame rootFrame = Window.Current.Content as Frame;
++            Frame rootFrame = global::CalculatorApp.App.MainWindow.Content as Frame;
+             long token = rootFrame.RegisterPropertyChangedCallback(FrameworkElement.RequestedThemeProperty, callback);
+             return new ThemeChangedCallbackToken { RootFrame = new WeakReference(rootFrame), Token = token };
+         }
+--- a/Calculator/Views/MainPage.xaml.cs
++++ b/Calculator/Views/MainPage.xaml.cs
+@@ -99,7 +99,7 @@
+ 
+         public void UnregisterEventHandlers()
+         {
+-            Window.Current.SizeChanged -= WindowSizeChanged;
++            global::CalculatorApp.App.MainWindow.SizeChanged -= WindowSizeChanged;
+             m_accessibilitySettings.HighContrastChanged -= OnHighContrastChanged;
+ 
+             if (m_calculator != null)
+@@ -198,7 +198,7 @@
+ 
+                 if (!restored)
+                 {
+-                    _ = Window.Current.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
++                    _ = global::CalculatorApp.App.MainWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+                         async () => await ShowSnapshotLaunchErrorAsync());
+                     if (snapshotArgs.HasError)
+                     {
+@@ -215,7 +215,7 @@
+         private void InitializeNavViewCategoriesSource()
+         {
+             NavViewCategoriesSource = ExpandNavViewCategoryGroups(ViewModel.Categories);
+-            _ = Window.Current.Dispatcher.RunAsync(CoreDispatcherPriority.Low, () =>
++            _ = global::CalculatorApp.App.MainWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Low, () =>
+             {
+                 var graphCategory = (NavCategory)NavViewCategoriesSource.Find(x =>
+                 {
+@@ -392,7 +392,7 @@
+             {
+                 FindName("PopupContent");
+ 
+-                var windowBounds = Window.Current.Bounds;
++                var windowBounds = global::CalculatorApp.App.MainWindow.Bounds;
+                 PopupContent.Width = windowBounds.Width;
+                 PopupContent.Height = windowBounds.Height;
+             }
+@@ -449,7 +449,7 @@
+ 
+         private void TitleBarAlwaysOnTopButtonClick(object sender, RoutedEventArgs e)
+         {
+-            var bounds = Window.Current.Bounds;
++            var bounds = global::CalculatorApp.App.MainWindow.Bounds;
+             ViewModel.ToggleAlwaysOnTop(bounds.Width, bounds.Height);
+         }
+ 
+@@ -517,7 +517,7 @@
+                 ViewModel.CalculatorViewModel.IsStandard = true;
+             }
+ 
+-            Window.Current.SizeChanged += WindowSizeChanged;
++            global::CalculatorApp.App.MainWindow.SizeChanged += WindowSizeChanged;
+             m_accessibilitySettings.HighContrastChanged += OnHighContrastChanged;
+             UpdateViewState();
+ 
+--- a/Calculator/Views/TitleBar.xaml.cs
++++ b/Calculator/Views/TitleBar.xaml.cs
+@@ -21,7 +21,7 @@
+             InitializeComponent();
+ 
+             m_coreTitleBar.ExtendViewIntoTitleBar = true;
+-            Window.Current.SetTitleBar(BackgroundElement);
++            global::CalculatorApp.App.MainWindow.SetTitleBar(BackgroundElement);
+ 
+             Loaded += OnLoaded;
+             Unloaded += OnUnloaded;
+@@ -57,7 +57,7 @@
+ 
+             m_uiSettings.ColorValuesChanged += ColorValuesChanged;
+             m_accessibilitySettings.HighContrastChanged += OnHighContrastChanged;
+-            Window.Current.Activated += OnWindowActivated;
++            global::CalculatorApp.App.MainWindow.Activated += OnWindowActivated;
+ 
+             // Register RequestedTheme changed callback to update title bar system button colors.
+             m_rootFrameRequestedThemeCallbackToken =
+@@ -82,7 +82,7 @@
+             m_coreTitleBar.IsVisibleChanged -= CoreTitleBarIsVisibleChanged;
+             m_uiSettings.ColorValuesChanged -= ColorValuesChanged;
+             m_accessibilitySettings.HighContrastChanged -= OnHighContrastChanged;
+-            Window.Current.Activated -= OnWindowActivated;
++            global::CalculatorApp.App.MainWindow.Activated -= OnWindowActivated;
+ 
+             Utils.ThemeHelper.
+                 UnregisterAppThemeChangedCallback(m_rootFrameRequestedThemeCallbackToken);

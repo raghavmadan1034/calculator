@@ -1,0 +1,20 @@
+--- a/Calculator/Converters/ItemSizeToVisibilityConverter.cs
++++ b/Calculator/Converters/ItemSizeToVisibilityConverter.cs
+@@ -8,7 +8,7 @@
+     namespace Converters
+     {
+         [Windows.Foundation.Metadata.WebHostHidden]
+-        public sealed class ItemSizeToVisibilityConverter : Windows.UI.Xaml.Data.IValueConverter
++        public sealed class ItemSizeToVisibilityConverter : Microsoft.UI.Xaml.Data.IValueConverter
+         {
+             public object Convert(object value, Type targetType, object parameter, string language)
+             {
+@@ -22,7 +22,7 @@
+             }
+         }
+ 
+-        public sealed class ItemSizeToVisibilityNegationConverter : Windows.UI.Xaml.Data.IValueConverter
++        public sealed class ItemSizeToVisibilityNegationConverter : Microsoft.UI.Xaml.Data.IValueConverter
+         {
+             public object Convert(object value, Type targetType, object parameter, string language)
+             {

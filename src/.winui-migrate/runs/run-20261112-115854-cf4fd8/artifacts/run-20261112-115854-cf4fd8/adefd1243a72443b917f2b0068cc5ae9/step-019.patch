@@ -1,0 +1,37 @@
+--- a/Calculator/Views/Calculator.xaml.cs
++++ b/Calculator/Views/Calculator.xaml.cs
+@@ -11,11 +11,11 @@
+ using Windows.Globalization.NumberFormatting;
+ using Windows.UI.Core;
+ using Windows.UI.ViewManagement;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation;
+-using Windows.UI.Xaml.Controls;
+-using Windows.UI.Xaml.Controls.Primitives;
+-using Windows.UI.Xaml.Input;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Automation;
++using Microsoft.UI.Xaml.Controls;
++using Microsoft.UI.Xaml.Controls.Primitives;
++using Microsoft.UI.Xaml.Input;
+ 
+ namespace CalculatorApp
+ {
+@@ -643,7 +643,7 @@
+             }
+         }
+ 
+-        private readonly Windows.UI.Xaml.Controls.MenuFlyout m_displayFlyout;
++        private readonly Microsoft.UI.Xaml.Controls.MenuFlyout m_displayFlyout;
+         private bool m_doAnimate;
+         private bool m_resultAnimate;
+         private bool m_isLastAnimatedInScientific;
+@@ -658,7 +658,7 @@
+         private string m_dockPanelHistoryMemoryLists;
+         private string m_dockPanelMemoryList;
+ 
+-        private Windows.UI.Xaml.Controls.PivotItem m_pivotItem;
++        private Microsoft.UI.Xaml.Controls.PivotItem m_pivotItem;
+         private Memory m_memory;
+ 
+         private void HistoryFlyout_Opened(object sender, object args)

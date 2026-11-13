@@ -1,0 +1,18 @@
+--- a/Calculator/Controls/OverflowTextBlockAutomationPeer.cs
++++ b/Calculator/Controls/OverflowTextBlockAutomationPeer.cs
+@@ -3,13 +3,13 @@
+ 
+ using System.Collections.Generic;
+ 
+-using Windows.UI.Xaml.Automation.Peers;
++using Microsoft.UI.Xaml.Automation.Peers;
+ 
+ namespace CalculatorApp
+ {
+     namespace Controls
+     {
+-        public sealed class OverflowTextBlockAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
++        public sealed class OverflowTextBlockAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
+         {
+             public OverflowTextBlockAutomationPeer(OverflowTextBlock owner) : base(owner)
+             {

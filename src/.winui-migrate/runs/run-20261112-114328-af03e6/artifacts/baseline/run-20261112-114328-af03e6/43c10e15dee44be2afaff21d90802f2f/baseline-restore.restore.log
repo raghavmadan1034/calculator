@@ -1,0 +1,22 @@
+"C:\Program Files\Microsoft Visual Studio\18\Enterprise\MSBuild\Current\Bin\amd64\MSBuild.exe" C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx /t:Restore /p:Configuration=Debug /p:Platform=x64 -nologo -v:minimal
+
+
+  Determining projects to restore...
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.Tests\Calculator.Tests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj (in 7.85 sec).
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\CalcManager.Interop\CalcManager.Interop.vcxproj (in 7.81 sec).
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\CalculatorUITestFramework.csproj (in 7.81 sec).
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj (in 7.85 sec).
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.Tests\Calculator.Tests.csproj (in 7.91 sec).
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj (in 7.83 sec).
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator\Calculator.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json. [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.slnx]
+  Restored C:\phase2\calculator-winui3-baseline-a0de8551\Calculator\Calculator.csproj (in 9.93 sec).
+

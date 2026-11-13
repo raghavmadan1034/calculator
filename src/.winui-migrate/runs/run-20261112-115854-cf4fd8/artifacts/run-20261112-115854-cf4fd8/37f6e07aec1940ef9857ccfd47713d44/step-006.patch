@@ -1,0 +1,14 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -77,10 +77,7 @@
+ 
+                     <SolidColorBrush x:Key="AppControlForegroundAccentBrush" Color="{ThemeResource SystemAccentColor}"/>
+                     <SolidColorBrush x:Key="AppControlPageTextRedColorBrush" Color="Red"/>
+-                    <RevealBorderBrush x:Key="AppControlForegroundTransparentRevealBorderBrush"
+-                                       FallbackColor="Transparent"
+-                                       TargetTheme="Dark"
+-                                       Color="Transparent"/>
++                    <SolidColorBrush x:Key="AppControlForegroundTransparentRevealBorderBrush" Color="Transparent" />
+                     <RevealBackgroundBrush x:Key="AppControlHighlightAccentRevealBackgroundBrush"
+                                            FallbackColor="{ThemeResource SystemAccentColor}"
+                                            TargetTheme="Dark"

@@ -1,0 +1,11 @@
+--- a/Calculator/Views/CalculatorStandardOperators.xaml.cs
++++ b/Calculator/Views/CalculatorStandardOperators.xaml.cs
+@@ -6,7 +6,7 @@
+ // Declaration of the CalculatorStandardOperators class
+ //
+ 
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace CalculatorApp
+ {

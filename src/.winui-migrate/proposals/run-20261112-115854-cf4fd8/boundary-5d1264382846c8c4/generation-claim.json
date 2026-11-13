@@ -1,0 +1,36 @@
+{
+  "request": {
+    "workspace": "C:\\phase2\\calculator-winui3",
+    "runId": "run-20261112-115854-cf4fd8",
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "build",
+    "skill": "winui2-to-winui3-lifecycle",
+    "intent": "Resolve the recorded winui2-to-winui3-lifecycle capability boundary for Calculator\\Calculator.csproj. Preserve the approved requirements and existing behavior; do not invent architecture. No deterministic execution recipe implements this procedure. \u0027Windows.ApplicationModel.Activation.LaunchActivatedEventArgs\u0027 needs more than a rename. Type changed; properties UWPLaunchActivatedEventArgs exposes legacy data. Update OnLaunched override signature.",
+    "files": [
+      "Calculator\\App.xaml",
+      "Calculator\\App.xaml.cs"
+    ],
+    "automaticUnitKey": "",
+    "automaticUnitName": ""
+  },
+  "transactionId": "boundary-5d1264382846c8c4",
+  "boundary": {
+    "target": "Calculator\\Calculator.csproj",
+    "evaluator": "build",
+    "evaluationId": "c30b186a32bd4026852b385480382e3f"
+  },
+  "parentHash": "017fc4264e3f18f4d01b00d7300c68c7a42209dd4aa601d30f891731d759ac19",
+  "startedAt": "2026-11-12T12:07:09.796883+00:00",
+  "mode": "winui-skill-repair-v1",
+  "maxFiles": 16,
+  "maxSourceBytes": 131072,
+  "maxPromptCharacters": 30000,
+  "maxSeconds": 600,
+  "maxTransportInvocations": 1,
+  "maxContextFiles": 2000,
+  "maxContextBytes": 33554432,
+  "maxContextFileBytes": 524288,
+  "maxAgentToolCalls": 64,
+  "maxAgentToolResultBytes": 8388608,
+  "maxAgentOutputBytes": 33554432
+}

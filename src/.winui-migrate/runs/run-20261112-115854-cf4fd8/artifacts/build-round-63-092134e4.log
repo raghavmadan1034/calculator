@@ -1,0 +1,23 @@
+
+C:\phase2\calculator-winui3\Calculator\Calculator.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+  CalcManager.Interop.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager.Interop\CalcManager.dll
+C:\phase2\calculator-winui3\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3\Calculator.ViewModels\Calculator.ViewModels.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  TraceLogging.Managed -> C:\phase2\calculator-winui3\TraceLogging.Managed\bin\x64\Debug\net8.0-windows10.0.26100.0\TraceLogging.Managed.dll
+  Calculator.ViewModels -> C:\phase2\calculator-winui3\Calculator.ViewModels\bin\x64\Debug\net8.0-windows10.0.26100.0\Calculator.ViewModels.dll
+C:\phase2\calculator-winui3\Calculator\App.xaml(175,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(178,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(197,22): XamlCompiler error WMC0001: Unknown type 'RevealBorderBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(201,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(205,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(210,35): XamlCompiler error WMC0011: Unknown member 'BackgroundSource' on element 'AcrylicBrush' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(215,35): XamlCompiler error WMC0011: Unknown member 'BackgroundSource' on element 'AcrylicBrush' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(62,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(65,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(84,22): XamlCompiler error WMC0001: Unknown type 'RevealBorderBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(88,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(92,22): XamlCompiler error WMC0001: Unknown type 'RevealBackgroundBrush' in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+C:\phase2\calculator-winui3\Calculator\App.xaml(97,35): XamlCompiler error WMC0011: Unknown member 'BackgroundSource' on element 'AcrylicBrush' [C:\phase2\calculator-winui3\Calculator\Calculator.csproj]
+

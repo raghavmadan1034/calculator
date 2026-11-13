@@ -1,0 +1,218 @@
+
+  pch.cpp
+  pch.cpp
+  pch.cpp
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\CalculatorUITests.csproj : warning NU1902: Package 'OpenTelemetry.Api' 1.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.Tests\Calculator.Tests.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator\Calculator.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  dllmain.cpp
+  MathSolver.cpp
+  CalculatorHistory.cpp
+  CalculatorManager.cpp
+  calc.cpp
+  CalcUtils.cpp
+  History.cpp
+  CalcInput.cpp
+  Number.cpp
+  Rational.cpp
+  scicomm.cpp
+  scidisp.cpp
+  scifunc.cpp
+  RationalMath.cpp
+  scioper.cpp
+  sciset.cpp
+  ExpressionCommand.cpp
+  basex.cpp
+  conv.cpp
+  exp.cpp
+  fact.cpp
+  itrans.cpp
+  itransh.cpp
+  logic.cpp
+  num.cpp
+  rat.cpp
+  support.cpp
+  trans.cpp
+  transh.cpp
+  NumberFormattingUtils.cpp
+  UnitConverter.cpp
+     Creating library C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphingImpl\GraphingImpl.lib and object C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphingImpl\GraphingImpl.exp
+  GraphingImpl.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphingImpl\GraphingImpl.dll
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalcManager\CalcManager.lib
+  64 bit MIDLRT Processing C:\phase2\calculator-winui3-baseline-a0de8551\CalcManager.Interop\CalcManagerInterop.idl
+  CalcManagerInterop.idl
+  64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\winrtbase.idl
+  winrtbase.idl
+  64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\midlbase.idl
+  midlbase.idl
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ai.machinelearning.machinelearningcontract\5.0.0.0\windows.ai.machinelearning.machinelearningcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ai.machinelearning.preview.machinelearningpreviewcontract\2.0.0.0\windows.ai.machinelearning.preview.machinelearningpreviewcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.background.callsbackgroundcontract\4.0.0.0\windows.applicationmodel.calls.background.callsbackgroundcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.callsphonecontract\7.0.0.0\windows.applicationmodel.calls.callsphonecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.callsvoipcontract\5.0.0.0\windows.applicationmodel.calls.callsvoipcontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(80,84): warning CA1416: This call site is reachable on all platforms. 'LoggingOptions' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(52,20): warning CA1416: This call site is reachable on all platforms. 'LoggingChannel.Enabled' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(90,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddGuid(string, Guid)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.communicationblocking.communicationblockingcontract\2.0.0.0\windows.applicationmodel.communicationblocking.communicationblockingcontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(36,36): warning CA1416: This call site is reachable on all platforms. 'LoggingChannel' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(67,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddUInt64(string, ulong)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(68,13): warning CA1416: This call site is reachable on all platforms. 'LoggingChannel.LogEvent(string, LoggingFields, LoggingLevel, LoggingOptions)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.socialinfo.socialinfocontract\2.0.0.0\windows.applicationmodel.socialinfo.socialinfocontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(80,62): warning CA1416: This call site is reachable on all platforms. 'LoggingLevel.Verbose' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(38,17): warning CA1416: This call site is reachable on all platforms. 'LoggingChannelOptions' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(92,62): warning CA1416: This call site is reachable on all platforms. 'LoggingLevel.Verbose' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.startuptaskcontract\3.0.0.0\windows.applicationmodel.startuptaskcontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(66,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddGuid(string, Guid)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(92,84): warning CA1416: This call site is reachable on all platforms. 'LoggingOptions' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.custom.customdevicecontract\1.0.0.0\windows.devices.custom.customdevicecontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(68,84): warning CA1416: This call site is reachable on all platforms. 'LoggingOptions' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(78,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddGuid(string, Guid)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(68,62): warning CA1416: This call site is reachable on all platforms. 'LoggingLevel.Verbose' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.deviceslowlevelcontract\3.0.0.0\windows.devices.deviceslowlevelcontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(79,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddUInt64(string, ulong)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(92,13): warning CA1416: This call site is reachable on all platforms. 'LoggingChannel.LogEvent(string, LoggingFields, LoggingLevel, LoggingOptions)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(80,13): warning CA1416: This call site is reachable on all platforms. 'LoggingChannel.LogEvent(string, LoggingFields, LoggingLevel, LoggingOptions)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.printers.printerscontract\1.0.0.0\windows.devices.printers.printerscontract.winmd
+C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLoggingCommon.cs(91,13): warning CA1416: This call site is reachable on all platforms. 'LoggingFields.AddUInt64(string, ulong)' is only supported on: 'Windows' 10.0.10240.0 and later. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\TraceLogging.Managed.csproj]
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.smartcards.smartcardbackgroundtriggercontract\3.0.0.0\windows.devices.smartcards.smartcardbackgroundtriggercontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.smartcards.smartcardemulatorcontract\6.0.0.0\windows.devices.smartcards.smartcardemulatorcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.foundation.foundationcontract\4.0.0.0\windows.foundation.foundationcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.foundation.universalapicontract\19.0.0.0\windows.foundation.universalapicontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.gaming.xboxlive.storageapicontract\1.0.0.0\windows.gaming.xboxlive.storageapicontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.graphics.printing3d.printing3dcontract\4.0.0.0\windows.graphics.printing3d.printing3dcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.networking.connectivity.wwancontract\3.0.0.0\windows.networking.connectivity.wwancontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.networking.sockets.controlchanneltriggercontract\3.0.0.0\windows.networking.sockets.controlchanneltriggercontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.security.isolation.isolatedwindowsenvironmentcontract\5.0.0.0\windows.security.isolation.isolatedwindowsenvironmentcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.maps.guidancecontract\3.0.0.0\windows.services.maps.guidancecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.maps.localsearchcontract\4.0.0.0\windows.services.maps.localsearchcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.store.storecontract\4.0.0.0\windows.services.store.storecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.targetedcontent.targetedcontentcontract\1.0.0.0\windows.services.targetedcontent.targetedcontentcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.storage.provider.cloudfilescontract\7.0.0.0\windows.storage.provider.cloudfilescontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profilehardwaretokencontract\1.0.0.0\windows.system.profile.profilehardwaretokencontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profileretailinfocontract\2.0.0.0\windows.system.profile.profileretailinfocontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profilesharedmodecontract\2.0.0.0\windows.system.profile.profilesharedmodecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.systemmanufacturers.systemmanufacturerscontract\3.0.0.0\windows.system.profile.systemmanufacturers.systemmanufacturerscontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.systemmanagementcontract\7.0.0.0\windows.system.systemmanagementcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.uiautomation.uiautomationcontract\2.0.0.0\windows.ui.uiautomation.uiautomationcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.viewmanagement.viewmanagementviewscalingcontract\1.0.0.0\windows.ui.viewmanagement.viewmanagementviewscalingcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.xaml.core.direct.xamldirectcontract\5.0.0.0\windows.ui.xaml.core.direct.xamldirectcontract.winmd
+  CalculatorUITestFramework -> C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITestFramework\bin\Debug\net10.0\CalculatorUITestFramework.dll
+  TraceLogging.Managed -> C:\phase2\calculator-winui3-baseline-a0de8551\TraceLogging.Managed\bin\x64\Debug\net8.0-windows10.0.26100.0\TraceLogging.Managed.dll
+  64 bit MIDLRT Processing C:\phase2\calculator-winui3-baseline-a0de8551\CalcManager.Interop\UnitConverterInterop.idl
+  UnitConverterInterop.idl
+  64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\winrtbase.idl
+  winrtbase.idl
+  64 bit MIDLRT Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\midlbase.idl
+  midlbase.idl
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ai.machinelearning.machinelearningcontract\5.0.0.0\windows.ai.machinelearning.machinelearningcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ai.machinelearning.preview.machinelearningpreviewcontract\2.0.0.0\windows.ai.machinelearning.preview.machinelearningpreviewcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.background.callsbackgroundcontract\4.0.0.0\windows.applicationmodel.calls.background.callsbackgroundcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.callsphonecontract\7.0.0.0\windows.applicationmodel.calls.callsphonecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.calls.callsvoipcontract\5.0.0.0\windows.applicationmodel.calls.callsvoipcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.communicationblocking.communicationblockingcontract\2.0.0.0\windows.applicationmodel.communicationblocking.communicationblockingcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.socialinfo.socialinfocontract\2.0.0.0\windows.applicationmodel.socialinfo.socialinfocontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.applicationmodel.startuptaskcontract\3.0.0.0\windows.applicationmodel.startuptaskcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.custom.customdevicecontract\1.0.0.0\windows.devices.custom.customdevicecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.deviceslowlevelcontract\3.0.0.0\windows.devices.deviceslowlevelcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.printers.printerscontract\1.0.0.0\windows.devices.printers.printerscontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.smartcards.smartcardbackgroundtriggercontract\3.0.0.0\windows.devices.smartcards.smartcardbackgroundtriggercontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.devices.smartcards.smartcardemulatorcontract\6.0.0.0\windows.devices.smartcards.smartcardemulatorcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.foundation.foundationcontract\4.0.0.0\windows.foundation.foundationcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.foundation.universalapicontract\19.0.0.0\windows.foundation.universalapicontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.gaming.xboxlive.storageapicontract\1.0.0.0\windows.gaming.xboxlive.storageapicontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.graphics.printing3d.printing3dcontract\4.0.0.0\windows.graphics.printing3d.printing3dcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.networking.connectivity.wwancontract\3.0.0.0\windows.networking.connectivity.wwancontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.networking.sockets.controlchanneltriggercontract\3.0.0.0\windows.networking.sockets.controlchanneltriggercontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.security.isolation.isolatedwindowsenvironmentcontract\5.0.0.0\windows.security.isolation.isolatedwindowsenvironmentcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.maps.guidancecontract\3.0.0.0\windows.services.maps.guidancecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.maps.localsearchcontract\4.0.0.0\windows.services.maps.localsearchcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.store.storecontract\4.0.0.0\windows.services.store.storecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.services.targetedcontent.targetedcontentcontract\1.0.0.0\windows.services.targetedcontent.targetedcontentcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.storage.provider.cloudfilescontract\7.0.0.0\windows.storage.provider.cloudfilescontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profilehardwaretokencontract\1.0.0.0\windows.system.profile.profilehardwaretokencontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profileretailinfocontract\2.0.0.0\windows.system.profile.profileretailinfocontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.profilesharedmodecontract\2.0.0.0\windows.system.profile.profilesharedmodecontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.profile.systemmanufacturers.systemmanufacturerscontract\3.0.0.0\windows.system.profile.systemmanufacturers.systemmanufacturerscontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.system.systemmanagementcontract\7.0.0.0\windows.system.systemmanagementcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.uiautomation.uiautomationcontract\2.0.0.0\windows.ui.uiautomation.uiautomationcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.viewmanagement.viewmanagementviewscalingcontract\1.0.0.0\windows.ui.viewmanagement.viewmanagementviewscalingcontract.winmd
+  Processing WinMD c:\program files (x86)\windows kits\10\references\10.0.26100.0\windows.ui.xaml.core.direct.xamldirectcontract\5.0.0.0\windows.ui.xaml.core.direct.xamldirectcontract.winmd
+  pch.cpp
+  TraceLoggingCommon.cpp
+  Microsoft(R) Metadata Merge Utility Version 10.0.49.
+  
+  
+  Processing input metadata file x64\Debug\Unmerged\CalcManagerInterop.winmd.
+  Processing input metadata file x64\Debug\Unmerged\UnitConverterInterop.winmd.
+  Saved output metadata file CalcManager.Interop.winmd.
+  Validating metadata file x64\Debug\Merged\CalcManager.Interop.winmd.
+     Creating library C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\TraceLogging\TraceLogging.lib and object C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\TraceLogging\TraceLogging.exp
+  CalculatorUITests -> C:\phase2\calculator-winui3-baseline-a0de8551\CalculatorUITests\bin\Debug\net10.0\CalculatorUITests.dll
+  TraceLogging.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\TraceLogging\TraceLogging.dll
+  CalcManagerImpl.cpp
+  ExpressionCommandWrapper.cpp
+  HistoryItemWrapper.cpp
+  UnitConverterImpl.cpp
+  CategorySelectionResult.cpp
+  pch.cpp
+  module.g.cpp
+  pch.cpp
+  CalcEngineTests.cpp
+  CalcInputTest.cpp
+  CalculatorManagerTest.cpp
+  EngineResourceProvider.cpp
+  RationalTest.cpp
+  UnitConverterTest.cpp
+  UnitTestApp.xaml.cpp
+  XamlTypeInfo.Impl.g.cpp
+     Creating library C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalcManager.Interop\CalcManager.lib and object C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalcManager.Interop\CalcManager.exp
+  CalcManager.Interop.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalcManager.Interop\CalcManager.dll
+C:\phase2\calculator-winui3-baseline-a0de8551\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  XamlTypeInfo.g.cpp
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorAnnouncement.cs(5,34): error CS0234: The type or namespace name 'Peers' does not exist in the namespace 'Windows.UI.Xaml.Automation' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(5,34): error CS0234: The type or namespace name 'Peers' does not exist in the namespace 'Windows.UI.Xaml.Automation' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(6,23): error CS0234: The type or namespace name 'Controls' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\LocalizationSettings.cs(14,23): error CS0234: The type or namespace name 'Media' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Utils.cs(13,23): error CS0234: The type or namespace name 'Media' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorAnnouncement.cs(13,16): error CS0246: The type or namespace name 'AutomationNotificationKind' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorAnnouncement.cs(14,16): error CS0246: The type or namespace name 'AutomationNotificationProcessing' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(10,44): error CS0246: The type or namespace name 'DependencyObject' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorAnnouncement.cs(19,13): error CS0246: The type or namespace name 'AutomationNotificationKind' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorAnnouncement.cs(20,13): error CS0246: The type or namespace name 'AutomationNotificationProcessing' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(12,17): error CS0246: The type or namespace name 'UIElement' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(14,24): error CS0246: The type or namespace name 'DependencyProperty' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(26,23): error CS0246: The type or namespace name 'DependencyProperty' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(28,60): error CS0246: The type or namespace name 'DependencyObject' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(33,44): error CS0246: The type or namespace name 'DependencyObject' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(68,51): error CS0246: The type or namespace name 'DependencyObject' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Automation\NarratorNotifier.cs(68,86): error CS0246: The type or namespace name 'DependencyPropertyChangedEventArgs' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\UnitConverterViewModel.cs(32,32): error CS0234: The type or namespace name 'Visibility' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\ApplicationViewModel.cs(67,16): error CS0246: The type or namespace name 'Visibility' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\LocalizationSettings.cs(155,16): error CS0246: The type or namespace name 'FlowDirection' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\LocalizationSettings.cs(165,16): error CS0246: The type or namespace name 'FontFamily' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\UnitConverterViewModel.cs(404,32): error CS0234: The type or namespace name 'Visibility' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\UnitConverterViewModel.cs(407,32): error CS0234: The type or namespace name 'Visibility' does not exist in the namespace 'Windows.UI.Xaml' (are you missing an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Common\Utils.cs(157,23): error CS0246: The type or namespace name 'SolidColorBrush' could not be found (are you missing a using directive or an assembly reference?) [C:\phase2\calculator-winui3-baseline-a0de8551\Calculator.ViewModels\Calculator.ViewModels.csproj]
+     Creating library C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.lib and object C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.exp
+  CalculatorUnitTests.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.exe
+  CalculatorUnitTests -> C:\phase2\calculator-winui3-baseline-a0de8551\AppPackages\CalculatorUnitTests\CalculatorUnitTests_Test\CalculatorUnitTests.msix
+  CalculatorUnitTests -> x64\Debug\Symbols\CalculatorUnitTests.appxsym
+  Grapher.cpp
+  DeviceResources.cpp
+  NearestPointRenderer.cpp
+  RenderMain.cpp
+  TraceLogger.cpp
+  Equation.cpp
+  KeyGraphFeaturesInfo.cpp
+  XamlTypeInfo.Impl.g.cpp
+  XamlLibMetadataProvider.g.cpp
+  XamlTypeInfo.g.cpp
+     Creating library C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphControl\GraphControl.lib and object C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphControl\GraphControl.exp
+  GraphControl.vcxproj -> C:\phase2\calculator-winui3-baseline-a0de8551\x64\Debug\GraphControl\GraphControl.dll
+

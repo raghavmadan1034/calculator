@@ -1,0 +1,20 @@
+--- a/Calculator/Views/StateTriggers/AspectRatioTrigger.cs
++++ b/Calculator/Views/StateTriggers/AspectRatioTrigger.cs
+@@ -10,7 +10,7 @@
+ using System;
+ 
+ using Windows.Foundation;
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace CalculatorApp.Views.StateTriggers
+ {
+@@ -20,7 +20,7 @@
+         Width
+     };
+ 
+-    public sealed class AspectRatioTrigger : Windows.UI.Xaml.StateTriggerBase
++    public sealed class AspectRatioTrigger : Microsoft.UI.Xaml.StateTriggerBase
+     {
+         public AspectRatioTrigger()
+         {

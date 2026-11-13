@@ -1,0 +1,11 @@
+--- a/Calculator/Controls/OverflowTextBlock.cs
++++ b/Calculator/Controls/OverflowTextBlock.cs
+@@ -3,7 +3,7 @@
+ 
+ using Windows.UI.Xaml;
+ using Windows.UI.Xaml.Automation;
+-using Windows.UI.Xaml.Automation.Peers;
++using Microsoft.UI.Xaml.Automation.Peers;
+ using Windows.UI.Xaml.Controls;
+ using Windows.UI.Xaml.Input;
+ 

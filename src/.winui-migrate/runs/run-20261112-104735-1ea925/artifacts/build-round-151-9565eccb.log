@@ -1,0 +1,19 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+  pch.cpp
+  CalcEngineTests.cpp
+  CalcInputTest.cpp
+  CalculatorManagerTest.cpp
+  EngineResourceProvider.cpp
+  RationalTest.cpp
+  UnitConverterTest.cpp
+  UnitTestApp.xaml.cpp
+  XamlTypeInfo.Impl.g.cpp
+  XamlTypeInfo.g.cpp
+     Creating library C:\phase2\calculator-winui3\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.lib and object C:\phase2\calculator-winui3\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.exp
+  CalculatorUnitTests.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.exe
+  CalculatorUnitTests -> C:\phase2\calculator-winui3\AppPackages\CalculatorUnitTests\CalculatorUnitTests_Test\CalculatorUnitTests.msix
+  CalculatorUnitTests -> x64\Debug\Symbols\CalculatorUnitTests.appxsym
+

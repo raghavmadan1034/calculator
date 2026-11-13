@@ -1,0 +1,11 @@
+--- a/Calculator/Views/Settings.xaml.cs
++++ b/Calculator/Views/Settings.xaml.cs
+@@ -10,7 +10,7 @@
+ using Windows.System;
+ using Windows.UI.Core;
+ using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Automation.Peers;
++using Microsoft.UI.Xaml.Automation.Peers;
+ using Windows.UI.Xaml.Automation.Provider;
+ using Windows.UI.Xaml.Controls;
+ 

@@ -1,0 +1,11 @@
+--- a/Calculator/Controls/RadixButton.cs
++++ b/Calculator/Controls/RadixButton.cs
+@@ -7,7 +7,7 @@
+ {
+     namespace Controls
+     {
+-        public sealed class RadixButton : Windows.UI.Xaml.Controls.RadioButton
++        public sealed class RadixButton : Microsoft.UI.Xaml.Controls.RadioButton
+         {
+             public RadixButton()
+             { }

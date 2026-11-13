@@ -1,0 +1,30 @@
+Build started 11/12/2026 6:58:39 PM.
+     1>Project "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" on node 1 (default targets).
+     1>C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+     1>C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreGenerateAssemblyInfo:
+       Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj\x64\Debug\net10.0\CalculatorUITestFramework.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         CalculatorUITestFramework -> C:\phase2\calculator-winui3\CalculatorUITestFramework\bin\x64\Debug\net10.0\CalculatorUITestFramework.dll
+     1>Done Building Project "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" (default targets).
+
+Build succeeded.
+
+       "C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj" (default target) (1) ->
+       (ResolvePackageAssets target) -> 
+         C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1510: PackageReference System.Diagnostics.DiagnosticSource will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+         C:\phase2\calculator-winui3\CalculatorUITestFramework\CalculatorUITestFramework.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.99
+

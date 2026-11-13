@@ -1,0 +1,8 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+  CalculatorUnitTests.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalculatorUnitTests\CalculatorUnitTests.exe
+  CalculatorUnitTests -> C:\phase2\calculator-winui3\AppPackages\CalculatorUnitTests\CalculatorUnitTests_Test\CalculatorUnitTests.msix
+  CalculatorUnitTests -> x64\Debug\Symbols\CalculatorUnitTests.appxsym
+

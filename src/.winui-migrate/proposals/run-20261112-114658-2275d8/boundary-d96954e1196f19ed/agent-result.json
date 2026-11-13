@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "status": "Failed",
+  "answer": "",
+  "modelId": "not reported",
+  "failure": "The repair proposer CLI exited with 1. error: unexpected argument \u0027--sync-session\u0027 found Stdin failed: The pipe is being closed.",
+  "standardError": "error: unexpected argument \u0027--sync-session\u0027 found\n\n  tip: a similar argument exists: \u0027--new-session-id\u0027\n\nUsage: copilot --output-format \u003Cformat\u003E --silent --no-color --log-level \u003Clevel\u003E --no-custom-instructions --no-ask-user\n\nFor more information, try \u0027--help\u0027.\n",
+  "exitCode": 1,
+  "startedAt": "2026-11-12T11:51:08.2239141+00:00",
+  "completedAt": "2026-11-12T11:51:08.5881973+00:00",
+  "durationMilliseconds": 364,
+  "calls": []
+}

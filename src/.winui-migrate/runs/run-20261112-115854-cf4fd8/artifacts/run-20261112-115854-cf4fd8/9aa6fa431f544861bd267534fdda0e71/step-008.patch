@@ -1,0 +1,13 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -59,9 +59,7 @@
+                                      Opacity="0.4"
+                                      Color="{ThemeResource SystemAltMediumLowColor}"/>
+                     <SolidColorBrush x:Key="AppControlPageTextBaseMediumHighBrush" Color="{StaticResource SystemBaseMediumHighColor}"/>
+-                    <RevealBackgroundBrush x:Key="AppControlHoverButtonFaceBrush"
+-                                           FallbackColor="#18FFFFFF"
+-                                           Color="#18FFFFFF"/>
++                    <SolidColorBrush x:Key="AppControlHoverButtonFaceBrush" Color="#18FFFFFF" />
+                     <RevealBackgroundBrush x:Key="AppControlPressedButtonFaceBrush"
+                                            FallbackColor="#30FFFFFF"
+                                            Color="#30FFFFFF"/>

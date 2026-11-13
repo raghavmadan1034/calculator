@@ -1,0 +1,28 @@
+--- a/Calculator/Views/MemoryListItem.xaml.cs
++++ b/Calculator/Views/MemoryListItem.xaml.cs
+@@ -1,5 +1,5 @@
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
+ 
+@@ -23,7 +23,7 @@
+         public static readonly DependencyProperty ViewModelProperty =
+             DependencyProperty.Register(nameof(ViewModel), typeof(CalculatorApp.ViewModel.MemoryItemViewModel), typeof(MemoryListItem), new PropertyMetadata(default(CalculatorApp.ViewModel.MemoryItemViewModel)));
+ 
+-        protected override void OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
++        protected override void OnPointerEntered(Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
+         {
+             base.OnPointerEntered(e);
+ 
+@@ -35,7 +35,7 @@
+             }
+         }
+ 
+-        protected override void OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
++        protected override void OnPointerExited(Microsoft.UI.Xaml.Input.PointerRoutedEventArgs e)
+         {
+             base.OnPointerExited(e);
+ 

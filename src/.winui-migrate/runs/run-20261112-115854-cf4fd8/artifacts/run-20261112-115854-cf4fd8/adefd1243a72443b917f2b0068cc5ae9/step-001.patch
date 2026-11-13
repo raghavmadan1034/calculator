@@ -1,0 +1,13 @@
+--- a/Calculator/App.xaml.cs
++++ b/Calculator/App.xaml.cs
+@@ -15,8 +15,8 @@
+ using Windows.Storage;
+ using Windows.UI.StartScreen;
+ using Windows.UI.ViewManagement;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ using CalculatorApp.Utils;
+ using CalculatorApp.ViewModel.Common;

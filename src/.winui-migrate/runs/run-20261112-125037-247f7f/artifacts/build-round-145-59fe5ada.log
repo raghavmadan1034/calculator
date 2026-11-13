@@ -1,0 +1,8 @@
+
+  Determining projects to restore...
+C:\phase2\calculator-winui3\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  All projects are up-to-date for restore.
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+  CalcManager.Interop.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager.Interop\CalcManager.dll
+C:\phase2\calculator-winui3\CalcManager.Interop\CalcManager.Interop.vcxproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+

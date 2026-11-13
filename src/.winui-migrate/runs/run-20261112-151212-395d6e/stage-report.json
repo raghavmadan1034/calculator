@@ -1,0 +1,1179 @@
+{
+  "version": 1,
+  "runId": "run-20261112-151212-395d6e",
+  "stages": [
+    {
+      "order": 1,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 2,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 3,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 4,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 5,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 6,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 7,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 8,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 9,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 10,
+      "target": "CalcManager\\CalcManager.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 11,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 12,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 13,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 14,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 15,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 16,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 17,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 18,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 19,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 20,
+      "target": "CalcManager.Interop\\CalcManager.Interop.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 21,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 22,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 23,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 24,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 25,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 26,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 27,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 28,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 29,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 30,
+      "target": "TraceLogging.Managed\\TraceLogging.Managed.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 31,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 32,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 33,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 34,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 35,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 36,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 37,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 38,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 39,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 40,
+      "target": "Calculator.ViewModels\\Calculator.ViewModels.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 41,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 42,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 43,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 44,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 45,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 46,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "build",
+      "verdict": "MissingCapability",
+      "initialFindingCount": 1,
+      "finalFindingCount": 1,
+      "fixerAttempts": [
+        {
+          "fixerId": "deterministic-planner",
+          "tier": "Deterministic",
+          "outcome": "NothingApplicable",
+          "reason": "No deterministic rule matched this finding.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "window-ownership-recipe",
+          "tier": "Recipe",
+          "outcome": "NothingApplicable",
+          "reason": "Recipe found nothing applicable to this finding.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "model-planned",
+          "tier": "ModelPlanned",
+          "outcome": "NothingApplicable",
+          "reason": "Model planning produced no validated changes.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "reviewed-repair",
+          "tier": "ModelAgent",
+          "outcome": "NeedsDecision",
+          "reason": "A reviewed repair proposal can be prepared after the missing-capability stop.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        }
+      ]
+    },
+    {
+      "order": 47,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 48,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "test",
+      "verdict": "BlockedByAnEarlierEvaluation",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 49,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 50,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 51,
+      "target": "Calculator.Tests\\Calculator.Tests.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 52,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 53,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 54,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 55,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 56,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 57,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 58,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 59,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "launch",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 60,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 61,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 62,
+      "target": "Calculator\\Calculator.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 63,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 64,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 65,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 66,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 67,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 68,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 69,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 70,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 71,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 72,
+      "target": "CalculatorUITestFramework\\CalculatorUITestFramework.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 73,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 74,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 75,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 76,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 77,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 78,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 79,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 80,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "test",
+      "verdict": "NothingLeftToTry",
+      "initialFindingCount": 1,
+      "finalFindingCount": 1,
+      "fixerAttempts": [
+        {
+          "fixerId": "deterministic-planner",
+          "tier": "Deterministic",
+          "outcome": "NothingApplicable",
+          "reason": "No deterministic rule matched this finding.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "window-ownership-recipe",
+          "tier": "Recipe",
+          "outcome": "NothingApplicable",
+          "reason": "Recipe found nothing applicable to this finding.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "model-planned",
+          "tier": "ModelPlanned",
+          "outcome": "NothingApplicable",
+          "reason": "Model planning produced no validated changes.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        },
+        {
+          "fixerId": "reviewed-repair",
+          "tier": "ModelAgent",
+          "outcome": "Skipped",
+          "reason": "No skill-owned stopped group was selected for reviewed repair.",
+          "proposedChangeCount": 0,
+          "evidenceRefs": []
+        }
+      ]
+    },
+    {
+      "order": 81,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 82,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 83,
+      "target": "CalculatorUITests\\CalculatorUITests.csproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 84,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 85,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 86,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 87,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 88,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 89,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 90,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 91,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 92,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 93,
+      "target": "CalculatorUnitTests\\CalculatorUnitTests.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 94,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 95,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 96,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 97,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 98,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 99,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 100,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 101,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 102,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 103,
+      "target": "TraceLogging\\TraceLogging.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 104,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 105,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 106,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 107,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 108,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 109,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 110,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 111,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 112,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 113,
+      "target": "GraphControl\\GraphControl.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 114,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "prepare-environment",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 115,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "package-configuration",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 116,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "retarget",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 117,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "runtime-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 118,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "test-host-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 119,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "build",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 120,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "windowing-compatibility",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 121,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 122,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "sign-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    },
+    {
+      "order": 123,
+      "target": "GraphingImpl\\GraphingImpl.vcxproj",
+      "evaluator": "install-signed-package",
+      "verdict": "ItPasses",
+      "initialFindingCount": 0,
+      "finalFindingCount": 0,
+      "fixerAttempts": []
+    }
+  ]
+}

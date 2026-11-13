@@ -1,0 +1,74 @@
+--- a/Calculator.ViewModels/UnitConverterViewModel.cs
++++ b/Calculator.ViewModels/UnitConverterViewModel.cs
+@@ -13,7 +13,7 @@
+ 
+ namespace CalculatorApp.ViewModel
+ {
+-    [Windows.UI.Xaml.Data.Bindable]
++    [Microsoft.UI.Xaml.Data.Bindable]
+     public sealed partial class Category : ObservableObject
+     {
+         private readonly int _id;
+@@ -29,13 +29,13 @@
+ 
+         public string Name => _name;
+ 
+-        public Windows.UI.Xaml.Visibility NegateVisibility =>
+-            _supportsNegative ? Windows.UI.Xaml.Visibility.Visible : Windows.UI.Xaml.Visibility.Collapsed;
++        public Microsoft.UI.Xaml.Visibility NegateVisibility =>
++            _supportsNegative ? Microsoft.UI.Xaml.Visibility.Visible : Microsoft.UI.Xaml.Visibility.Collapsed;
+ 
+         public int GetModelCategoryId() => _id;
+     }
+ 
+-    [Windows.UI.Xaml.Data.Bindable]
++    [Microsoft.UI.Xaml.Data.Bindable]
+     public sealed partial class Unit : ObservableObject
+     {
+         private readonly int _id;
+@@ -63,7 +63,7 @@
+         public int ModelUnitID() => _id;
+     }
+ 
+-    [Windows.UI.Xaml.Data.Bindable]
++    [Microsoft.UI.Xaml.Data.Bindable]
+     public sealed class SupplementaryResult : ObservableObject
+     {
+         private string _value;
+@@ -100,7 +100,7 @@
+         bool IsActive { get; set; }
+     }
+ 
+-    [Windows.UI.Xaml.Data.Bindable]
++    [Microsoft.UI.Xaml.Data.Bindable]
+     public sealed partial class UnitConverterViewModel : ObservableObject
+     {
+         public const string NetworkBehaviorPropertyName = "NetworkBehavior";
+@@ -401,13 +401,13 @@
+             }
+         }
+ 
+-        public Windows.UI.Xaml.Visibility SupplementaryVisibility =>
+-            SupplementaryResults?.Count > 0 ? Windows.UI.Xaml.Visibility.Visible : Windows.UI.Xaml.Visibility.Collapsed;
++        public Microsoft.UI.Xaml.Visibility SupplementaryVisibility =>
++            SupplementaryResults?.Count > 0 ? Microsoft.UI.Xaml.Visibility.Visible : Microsoft.UI.Xaml.Visibility.Collapsed;
+ 
+-        public Windows.UI.Xaml.Visibility CurrencySymbolVisibility =>
++        public Microsoft.UI.Xaml.Visibility CurrencySymbolVisibility =>
+             string.IsNullOrEmpty(CurrencySymbol1) || string.IsNullOrEmpty(CurrencySymbol2)
+-                ? Windows.UI.Xaml.Visibility.Collapsed
+-                : Windows.UI.Xaml.Visibility.Visible;
++                ? Microsoft.UI.Xaml.Visibility.Collapsed
++                : Microsoft.UI.Xaml.Visibility.Visible;
+ 
+         #endregion
+ 
+@@ -1110,7 +1110,7 @@
+                     {
+                         Id = CurrentCategory.GetModelCategoryId(),
+                         Name = CurrentCategory.Name,
+-                        SupportsNegative = CurrentCategory.NegateVisibility == Windows.UI.Xaml.Visibility.Visible
++                        SupportsNegative = CurrentCategory.NegateVisibility == Microsoft.UI.Xaml.Visibility.Visible
+                     });
+ 
+                 BuildUnitList(result.Units);

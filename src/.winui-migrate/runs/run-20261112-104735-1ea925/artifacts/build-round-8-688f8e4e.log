@@ -1,0 +1,35 @@
+
+  Determining projects to restore...
+  Nothing to do. None of the projects specified contain packages to restore.
+  pch.cpp
+  CalculatorHistory.cpp
+  CalculatorManager.cpp
+  calc.cpp
+  CalcUtils.cpp
+  History.cpp
+  CalcInput.cpp
+  Number.cpp
+  Rational.cpp
+  scicomm.cpp
+  scidisp.cpp
+  scifunc.cpp
+  RationalMath.cpp
+  scioper.cpp
+  sciset.cpp
+  ExpressionCommand.cpp
+  basex.cpp
+  conv.cpp
+  exp.cpp
+  fact.cpp
+  itrans.cpp
+  itransh.cpp
+  logic.cpp
+  num.cpp
+  rat.cpp
+  support.cpp
+  trans.cpp
+  transh.cpp
+  NumberFormattingUtils.cpp
+  UnitConverter.cpp
+  CalcManager.vcxproj -> C:\phase2\calculator-winui3\x64\Debug\CalcManager\CalcManager.lib
+

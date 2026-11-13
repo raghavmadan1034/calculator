@@ -1,0 +1,5 @@
+{
+  "message": "Repair proposer Failed: The repair proposer CLI exited with 1. error: unexpected argument \u0027--sync-session\u0027 found Stdin failed: The pipe is being closed.",
+  "elapsedMilliseconds": 3252,
+  "at": "2026-11-12T12:33:07.6469255+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "about_the_app": false,
+  "artefact_kind": "winapp-project",
+  "artefact_path": "C:\\phase2\\calculator-winui3\\Calculator\\Calculator.csproj",
+  "layout_path": null,
+  "aumid": null,
+  "activate_hr": null,
+  "pid": null,
+  "window_appeared": false,
+  "window_title": null,
+  "time_to_window_seconds": null,
+  "errors": [],
+  "diagnostics": [],
+  "cleaned_up": true,
+  "say": "The packaged application used by the UI tests was unregistered."
+}
+

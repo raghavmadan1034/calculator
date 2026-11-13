@@ -1,0 +1,25 @@
+--- a/Calculator/Views/Settings.xaml.cs
++++ b/Calculator/Views/Settings.xaml.cs
+@@ -9,10 +9,10 @@
+ using Windows.ApplicationModel;
+ using Windows.System;
+ using Windows.UI.Core;
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ using Microsoft.UI.Xaml.Automation.Peers;
+-using Windows.UI.Xaml.Automation.Provider;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml.Automation.Provider;
++using Microsoft.UI.Xaml.Controls;
+ 
+ // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
+ 
+@@ -22,7 +22,7 @@
+     {
+         private const string BUILD_YEAR = "2025";
+ 
+-        public event Windows.UI.Xaml.RoutedEventHandler BackButtonClick;
++        public event Microsoft.UI.Xaml.RoutedEventHandler BackButtonClick;
+ 
+         public GridLength TitleBarHeight
+         {

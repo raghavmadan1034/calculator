@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <RootNamespace>Calculator.Tests</RootNamespace>
+    <AssemblyName>Calculator.Tests</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <LangVersion>13.0</LangVersion>
+    <NoWarn>;2008</NoWarn>
+    <OutputType>WinExe</OutputType>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <UseWinUI>true</UseWinUI>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <WindowsPackageType>MSIX</WindowsPackageType>
+  <WinUIMigrateTestHost>mstest-winui-mtp-v1</WinUIMigrateTestHost><IsTestProject>true</IsTestProject><EnableMSTestRunner>true</EnableMSTestRunner><GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint><GenerateTestingPlatformApplicationHelper>true</GenerateTestingPlatformApplicationHelper><TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport><WindowsAppSdkBootstrapInitialize>true</WindowsAppSdkBootstrapInitialize><WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp>true</WindowsAppSDKBootstrapAutoInitializeOptions_OnPackageIdentity_NoOp><WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize></PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GraphingViewModelTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="UnitTestApp.xaml" />
+    <ApplicationDefinition Include="UnitTestApp.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\StoreLogo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\Square150x150Logo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\Square44x44Logo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\Wide310x150Logo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\SplashScreen.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\Calculator.ViewModels\DataLoaders\DefaultFromToCurrency.json" CopyToOutputDirectory="PreserveNewest">
+      <Link>DataLoaders\DefaultFromToCurrency.json</Link>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Include="..\Calculator\Resources\en-US\Resources.resw">
+      <Link>Resources\en-US\Resources.resw</Link>
+    </PRIResource>
+    <PRIResource Include="..\Calculator\Resources\en-US\CEngineStrings.resw">
+      <Link>Resources\en-US\CEngineStrings.resw</Link>
+    </PRIResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="testhost">
+      <HintPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\$(UnitTestPlatformVersion)\References\CommonConfiguration\neutral\testhost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator.ViewModels\Calculator.ViewModels.csproj" />
+    <ProjectReference Include="..\CalcManager.Interop\CalcManager.Interop.vcxproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <OutputItemType>WinUIMigrateNativeWinRTComponent</OutputItemType>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.6.5" />
+    
+    
+  </ItemGroup>
+
+  <!-- winui-migrate native component recipe: NuGet cannot restore a C++ project as a .NET dependency and .NET cannot reference Windows Runtime metadata directly, so the component's metadata
+       feeds the C#/WinRT projection and its implementation DLL is copied beside this project's output, where C#/WinRT activates it. -->
+  <Target Name="WinUIMigrateNativeWinRTComponents" AfterTargets="ResolveProjectReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Include="@(WinUIMigrateNativeWinRTComponent-&gt;'%(RootDir)%(Directory)%(Implementation)')" Condition="'%(WinUIMigrateNativeWinRTComponent.Implementation)' != ''" />
+    </ItemGroup>
+  </Target>
+
+<ItemGroup><PackageReference Include="MSTest" Version="4.5.3" /><PackageReference Include="Microsoft.Testing.Extensions.PackagedApp" Version="2.5.3" /></ItemGroup></Project>

@@ -1,0 +1,11 @@
+--- a/Calculator/Converters/VisibilityNegationConverter.cs
++++ b/Calculator/Converters/VisibilityNegationConverter.cs
+@@ -3,7 +3,7 @@
+ 
+ using System;
+ 
+-using Windows.UI.Xaml;
++using Microsoft.UI.Xaml;
+ 
+ namespace CalculatorApp
+ {

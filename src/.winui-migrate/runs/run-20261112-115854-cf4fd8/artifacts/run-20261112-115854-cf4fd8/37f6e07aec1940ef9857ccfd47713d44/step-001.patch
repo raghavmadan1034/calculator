@@ -1,0 +1,14 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -186,10 +186,7 @@
+                                      Opacity="0.7"
+                                      Color="{ThemeResource SystemAccentColor}"/>
+ 
+-                    <RevealBorderBrush x:Key="AppControlForegroundTransparentRevealBorderBrush"
+-                                       FallbackColor="Transparent"
+-                                       TargetTheme="Light"
+-                                       Color="Transparent"/>
++                    <SolidColorBrush x:Key="AppControlForegroundTransparentRevealBorderBrush" Color="Transparent" />
+                     <RevealBackgroundBrush x:Key="AppControlHighlightAccentRevealBackgroundBrush"
+                                            FallbackColor="{ThemeResource SystemAccentColor}"
+                                            TargetTheme="Light"

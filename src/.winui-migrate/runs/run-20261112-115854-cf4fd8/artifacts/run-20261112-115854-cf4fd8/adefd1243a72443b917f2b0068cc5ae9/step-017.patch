@@ -1,0 +1,13 @@
+--- a/Calculator/Utils/ThemeHelper.cs
++++ b/Calculator/Utils/ThemeHelper.cs
+@@ -5,8 +5,8 @@
+ using System.Reflection;
+ 
+ using Windows.Storage;
+-using Windows.UI.Xaml;
+-using Windows.UI.Xaml.Controls;
++using Microsoft.UI.Xaml;
++using Microsoft.UI.Xaml.Controls;
+ 
+ namespace CalculatorApp.Utils
+ {

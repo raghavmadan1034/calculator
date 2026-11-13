@@ -1,0 +1,10 @@
+--- a/Calculator/App.xaml
++++ b/Calculator/App.xaml
+@@ -184,7 +184,6 @@
+                     <SolidColorBrush x:Key="AppControlHighlightAccentRevealBackgroundBrush" Color="{ThemeResource SystemAccentColor}" />
+                     <SolidColorBrush x:Key="AppControlBackgroundListAccentHighRevealBackgroundBrush" Color="{ThemeResource SystemAccentColorLight3}" />
+                     <AcrylicBrush x:Key="AppChromeAcrylicHostBackdropMediumLowBrush"
+-                                  BackgroundSource="HostBackdrop"
+                                   FallbackColor="{ThemeResource SystemChromeMediumColor}"
+                                   TintColor="{ThemeResource SystemChromeLowColor}"
+                                   TintOpacity="0.7"/>

@@ -1,0 +1,11 @@
+--- a/Calculator/Utils/ResourceString.cs
++++ b/Calculator/Utils/ResourceString.cs
+@@ -2,7 +2,7 @@
+ // Licensed under the MIT License.
+ 
+ using CalculatorApp.ViewModel.Common;
+-using Windows.UI.Xaml.Markup;
++using Microsoft.UI.Xaml.Markup;
+ 
+ namespace CalculatorApp.Utils
+ {

@@ -1,0 +1,18 @@
+--- a/Calculator/Package.appxmanifest
++++ b/Calculator/Package.appxmanifest
+@@ -24,7 +24,7 @@
+     <Applications>
+         <Application Id="App"
+                      Executable="$targetnametoken$.exe"
+-                     EntryPoint="Calculator.App"
++                     EntryPoint="Windows.FullTrustApplication"
+                      desktop4:SupportsMultipleInstances="true"
+                      iot2:SupportsMultipleInstances="true">
+             <uap:VisualElements DisplayName="ms-resource:DevAppName" Square150x150Logo="Assets\CalculatorMedTile.png" Square44x44Logo="Assets\CalculatorAppList.png" Description="ms-resource:DevAppDescription" BackgroundColor="transparent">
+@@ -65,5 +65,6 @@
+     <Capabilities>
+         <Capability Name="internetClient" />
+         <rescap:Capability Name="appLicensing" />
++        <rescap:Capability Name="runFullTrust" />
+     </Capabilities>
+ </Package>
