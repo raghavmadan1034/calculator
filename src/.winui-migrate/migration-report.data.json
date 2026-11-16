@@ -4,7 +4,7 @@
   "solution": "src\\Calculator.slnx, 12 projects (6 C#, 6 C++)",
   "target": "Calculator\\Calculator.csproj (the app)",
   "migration": "UWP + WinUI 2 to WinUI 3 (Windows App SDK 2.6.5, .NET 8, MSIX); C#/WinRT 2.3.1 for the C++/WinRT CalcManager.Interop component",
-  "tooling": "winui-migrate 0.2.4 from C:\\phase2\\winui-tools, local branch user/raghavmadan/temp-native-winrt-components (commits b074b99, dcfee29, fc3f7df, 46b9c43, e66abc4; not pushed)",
+  "tooling": "winui-migrate 0.2.4 from C:\\phase2\\winui-tools, local branch user/raghavmadan/temp-native-winrt-components (commits b074b99, dcfee29, fc3f7df, 46b9c43, e66abc4; not pushed). Report regenerated on 2026-11-16 with gim-home/winui-tools PR #128 (commit 3349518, open) applied on top of e66abc4, which shows uncached input and new tokens separately from cached input.",
   "note": "The user asked the agent to fix the harness and keep working until the migrated app launches, and was not available for approval prompts. The agent approved assessment revisions on that directive. Every decision answer is the same as the one the user approved for the first run. After the first launch the agent fixed six runtime problems the evaluators cannot see (E19-E24) and checked the app with UI Automation, comparing doubtful behaviour with the installed UWP Calculator.",
   "instructedRuns": [
     "1ea925",
@@ -565,5 +565,5 @@
       "activeMinutes": 115
     }
   ],
-  "timeNote": "Agent usage comes from this Copilot CLI session's local usage store (claude-opus-5.5), split at the first successful launch (13:28:28 UTC, run 108056); snapshot at 15:20 UTC, so the last report-refresh steps are not included. Input tokens include cache reads (182.9M before the launch, 57.5M after); fresh input was 3.78M before and 0.43M after. Premium requests are the sum of request multipliers. Active minutes add up gaps under 10 minutes between model calls, so waiting on harness runs and idle time are excluded. The migration row is all agent: loop steering (assessments, decision answers, approvals) was not separated from harness work and direct edits, so the agent share is an upper bound and the loop share a lower bound. Wall time: 06:45 to 15:20 UTC (about 8.6 hours)."
+  "timeNote": "Agent usage comes from this Copilot CLI session's local usage store (claude-opus-5.5), split at the first successful launch (13:28:28 UTC, run 108056); snapshot at 15:20 UTC, so the last report-refresh steps and the 2026-11-13 test catalogue and UI tests (UI-001 to UI-016, CORE) are not included. Input tokens include cache reads (182.9M before the launch, 57.5M after); uncached input was 3.78M before and 0.43M after. Premium requests are the sum of request multipliers. Active minutes add up gaps under 10 minutes between model calls, so waiting on harness runs and idle time are excluded. The migration row is all agent: loop steering (assessments, decision answers, approvals) was not separated from harness work and direct edits, so the agent share is an upper bound and the loop share a lower bound. Wall time: 06:45 to 15:20 UTC (about 8.6 hours)."
 }

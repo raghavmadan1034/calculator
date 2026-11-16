@@ -9,7 +9,7 @@
 | Solution | src\Calculator.slnx, 12 projects (6 C#, 6 C++) |
 | Target project | `C:\phase2\calculator-winui3\Calculator.slnx` |
 | Migration | UWP + WinUI 2 to WinUI 3 (Windows App SDK 2.6.5, .NET 8, MSIX); C#/WinRT 2.3.1 for the C++/WinRT CalcManager.Interop component |
-| Tooling | winui-migrate 0.2.4 from C:\phase2\winui-tools, local branch user/raghavmadan/temp-native-winrt-components (commits b074b99, dcfee29, fc3f7df, 46b9c43, e66abc4; not pushed) |
+| Tooling | winui-migrate 0.2.4 from C:\phase2\winui-tools, local branch user/raghavmadan/temp-native-winrt-components (commits b074b99, dcfee29, fc3f7df, 46b9c43, e66abc4; not pushed). Report regenerated on 2026-11-16 with gim-home/winui-tools PR #128 (commit 3349518, open) applied on top of e66abc4, which sh... |
 | Harness run dates | 2026-11-12 11:43Z to 2026-11-12 15:19Z |
 | Harness runs | 8 loop run(s); 1 assessment-only or interrupted; 0 unreadable; 0 without a result |
 | Latest run | `run-20261112-151212-395d6e`: Failed / MissingCapability; 120 of 123 required checks passed |
@@ -283,18 +283,20 @@ After the first launch, on clean Debug x64 builds (no diagnostic code) registere
 
 Anything not reported is shown as not reported, not as zero.
 
+How to read tokens: *Input (incl. cached)* is every prompt token sent and already includes *Cached input*, which was re-read from the provider's prompt cache, usually at a reduced rate. *Uncached input* = Input − Cached: tokens processed at the full input rate (cache writes included). *New tokens* = Uncached input + Output. Copilot bills premium requests, not tokens.
+
 ### Loop runs (harness record)
 
-| Run | Reasoning requests | Provider model calls | Input tokens | Output tokens | Cached tokens | Premium requests | Wall time |
-|---|---|---|---|---|---|---|---|
-| `af03e6` | 0 | 0 | not reported | not reported | not reported | not reported | 55.8s |
-| `2275d8` | 10 | not reported | not reported | not reported | not reported | not reported | 3m 58s |
-| `cf4fd8` | 16 | not reported | not reported | not reported | not reported | not reported | 8m 04s |
-| `52c3b9` | 18 | not reported | not reported | not reported | not reported | not reported | 5m 43s |
-| `247f7f` | 5 | not reported | not reported | not reported | not reported | not reported | 4m 56s |
-| `108056` | 3 | not reported | not reported | not reported | not reported | not reported | 9m 39s |
-| `7a761d` | 2 | not reported | not reported | not reported | not reported | not reported | 7m 10s |
-| `395d6e` | 2 | not reported | not reported | not reported | not reported | not reported | 7m 03s |
+| Run | Reasoning requests | Provider model calls | Uncached input | Cached input | Input (incl. cached) | Output | New tokens | Premium requests | Wall time |
+|---|---|---|---|---|---|---|---|---|---|
+| `af03e6` | 0 | 0 | not reported | not reported | not reported | not reported | not reported | not reported | 55.8s |
+| `2275d8` | 10 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 3m 58s |
+| `cf4fd8` | 16 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 8m 04s |
+| `52c3b9` | 18 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 5m 43s |
+| `247f7f` | 5 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 4m 56s |
+| `108056` | 3 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 9m 39s |
+| `7a761d` | 2 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 7m 10s |
+| `395d6e` | 2 | not reported | not reported | not reported | not reported | not reported | not reported | not reported | 7m 03s |
 
 Reasoning requests are completed reasoning and imported repair-preparation steps; tokens cover the same steps. Provider model calls come from observed provider usage events; a cache hit or replay counts as zero.
 
@@ -302,24 +304,27 @@ Loop usage measurement, as recorded by the harness: Not reported by transport.
 
 ### Agent usage by phase
 
-| Who | Label | Phase | Calls | Input | Cached | Output | Premium requests | Active time |
-|---|---|---|---|---|---|---|---|---|
-| agent | Agent before the first launch: setup, harness fixes H1-H3, ... | migration | 690 | 186,642,017 | 182,864,590 | 976,091 | 10,290 | 286.0 min |
-| **Migration subtotal** | | | **690** | **186,642,017** | **182,864,590** | **976,091** | **10,290** | **286.0 min** |
-| agent | Agent after the first launch: fixes E19-E24, UI Automation ... | post-migration | 200 | 57,961,422 | 57,534,201 | 284,592 | 2,985 | 115.0 min |
-| **Total** | | | **890** | **244,603,439** | **240,398,791** | **1,260,683** | **13,275** | **401.0 min** |
+| Who | Label | Phase | Calls | Uncached input | Cached input | Input (incl. cached) | Output | New tokens | Premium requests | Active time |
+|---|---|---|---|---|---|---|---|---|---|---|
+| agent | Agent before the first launch: setup, harness fixes H1-H3, ... | migration | 690 | 3,777,427 | 182,864,590 | 186,642,017 | 976,091 | 4,753,518 | 10,290 | 286.0 min |
+| **Migration subtotal** | | | **690** | **3,777,427** | **182,864,590** | **186,642,017** | **976,091** | **4,753,518** | **10,290** | **286.0 min** |
+| agent | Agent after the first launch: fixes E19-E24, UI Automation ... | post-migration | 200 | 427,221 | 57,534,201 | 57,961,422 | 284,592 | 711,813 | 2,985 | 115.0 min |
+| **Total** | | | **890** | **4,204,648** | **240,398,791** | **244,603,439** | **1,260,683** | **5,465,331** | **13,275** | **401.0 min** |
+
+New tokens: 5,465,331 (4,204,648 uncached input + 1,260,683 output). Cached input: 240,398,791, 98% of input.
 
 ### Loop vs. agent (migration only, up to build and launch)
 
 | Measure | Loop (harness + agent steering) | Agent |
 |---|---|---|
-| Input tokens | not reported (harness not reported by any of 6 run(s)) | 186,642,017 |
+| New tokens (uncached input + output) | not reported (harness not reported by any of 6 run(s)) | 4,753,518 |
+| Input incl. cached | not reported (harness not reported by any of 6 run(s)) | 186,642,017 |
 | Model calls | ≥0% (≥0: harness ≥0, complete for 1 of 6 run(s)) | ≤100% (690) |
 
 Loop counts 6 harness run(s) started before 2026-11-12 13:28Z plus 0 agent steering row(s). When some harness usage was not reported, the loop share is a lower bound (≥) and the agent share an upper bound (≤); no share is shown when the agent side is incomplete.
 Time is not split, because the measures differ: harness wall time is 33m 18s, loop steering active time is not reported, and agent active time is 286.0 min.
 
-Agent usage comes from this Copilot CLI session's local usage store (claude-opus-5.5), split at the first successful launch (13:28:28 UTC, run 108056); snapshot at 15:20 UTC, so the last report-refresh steps are not included. Input tokens include cache reads (182.9M before the launch, 57.5M after); fresh input was 3.78M before and 0.43M after. Premium requests are the sum of request multipliers. Active minutes add up gaps under 10 minutes between model calls, so waiting on harness runs and idle time are excluded. The migration row is all agent: loop steering (assessments, decision answers, approvals) was not separated from harness work and direct edits, so the agent share is an upper bound and the loop share a lower bound. Wall time: 06:45 to 15:20 UTC (about 8.6 hours).
+Agent usage comes from this Copilot CLI session's local usage store (claude-opus-5.5), split at the first successful launch (13:28:28 UTC, run 108056); snapshot at 15:20 UTC, so the last report-refresh steps and the 2026-11-13 test catalogue and UI tests (UI-001 to UI-016, CORE) are not included. Input tokens include cache reads (182.9M before the launch, 57.5M after); uncached input was 3.78M before and 0.43M after. Premium requests are the sum of request multipliers. Active minutes add up gaps under 10 minutes between model calls, so waiting on harness runs and idle time are excluded. The migration row is all agent: loop steering (assessments, decision answers, approvals) was not separated from harness work and direct edits, so the agent share is an upper bound and the loop share a lower bound. Wall time: 06:45 to 15:20 UTC (about 8.6 hours).
 
 ## 8. Evidence
 
